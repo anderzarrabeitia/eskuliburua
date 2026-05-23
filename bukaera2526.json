@@ -2014,16 +2014,59 @@
       "mota": "egutegikoa",
       "data": "2026-06-23",
       "ordua": null,
-      "argibideak": "ENBOR materialaren eskaria eginda.",
-      "estekak": [],
-      "arduradunak": [
+      "argibideak": "ENBOR materialaren eskaria jarri dagokion orrian",
+      "estekak": [
         {
-          "mota": "rola",
-          "balioa": "Tutorea"
+          "izena": "Eskaria egiteko txostena",
+          "url": "https://docs.google.com/spreadsheets/d/1D_njcatHFI9OD4n6zkJeePFo7cTxDi4smHP8oxdoCS8/edit?gid=1454133781#gid=1454133781",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / PO.1. / 1.1. Kurrikulum eta didaktika / Datorren ikasturteko karpeta"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
