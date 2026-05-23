@@ -601,7 +601,7 @@ function App() {
                 if (driveMatch) url = `https://drive.google.com/uc?export=download&id=${driveMatch[1]}`;
                 const driveMatch2 = url.match(/drive\.google\.com.*[?&]id=([^&]+)/);
                 if (!driveMatch && driveMatch2) url = `https://drive.google.com/uc?export=download&id=${driveMatch2[1]}`;
-                const cacheBuster = "?_t=" + Date.now();
+                const cacheBuster = (url.includes("?") ? "&" : "?") + "_t=" + Date.now();
                 const res = await fetch(url + cacheBuster, { cache: "no-store" });
                 if (!res.ok) throw new Error("HTTP " + res.status);
                 const text = await res.text();
@@ -1020,7 +1020,7 @@ function TaskRow({ t, c, onEdit, onDel, onDup }) {
         <div style={{ fontSize: 11, color: "#9ca3af", marginTop: 1, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{ard || "Esleipenik gabe"}</div>
       </div>
       <div style={{ display: "flex", gap: 2, flexShrink: 0 }}>
-        {t.estekak.length > 0 && <span style={{ fontSize: 11, color: "#9ca3af", marginRight: 4 }}>🔗{t.estekak.length}</span>}
+        {(t.estekak || []).length > 0 && <span style={{ fontSize: 11, color: "#9ca3af", marginRight: 4 }}>🔗{(t.estekak || []).length}</span>}
         <button onClick={e => { e.stopPropagation(); onDup(); }} style={S.btnIcon} title="Bikoiztu">📋</button>
         <button onClick={e => { e.stopPropagation(); onDel(); }} style={{ ...S.btnIcon, color: "#ef4444" }} title="Ezabatu">🗑️</button>
       </div>
