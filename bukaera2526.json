@@ -2502,26 +2502,38 @@
     },
     {
       "id": "ataza_158",
-      "izenburua": "Familiekin egindako bileren erregistroa",
+      "izenburua": "Geletan behar diren materialak erregistratu",
       "mota": "orokorra",
-      "data": "",
+      "data": "2026-05-30",
       "ordua": null,
-      "argibideak": "Tutore bakoitzak txosten honetan, gutxienez, familia bakoitzarekin noiz bildu den idatzi behar du eta OSO GARRANTZITSUA, errepikapenaren berri eman zaion data eguna/egunak.",
+      "argibideak": "Altzariak, esetokiak, arbelak, kable informatikoak, etab. jasotzeko txostena",
       "estekak": [
         {
-          "izena": "Familiekin batzarren erregistroa",
-          "url": "https://docs.google.com/spreadsheets/d/1goi0x7JM7fLWjyUTWpP7JqXgGbcm1OCCqgtm4Q_lknM/edit?usp=drive_link",
-          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.9. Koordinazioak / Dagokion urtea"
+          "izena": "Gelen beharren erregistroa",
+          "url": "https://drive.google.com/drive/folders/1tH9DDCOFFKuJM41U_Cd46plR5tYjRC8q",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P.07. / 7.4. Edificios e instalaciones / Dagokion urtea"
         }
       ],
       "arduradunak": [
         {
-          "mota": "rola",
-          "balioa": "Tutorea"
+          "mota": "etapa",
+          "balioa": "HE"
         },
         {
-          "mota": "rola",
-          "balioa": "Arloko irakaslea"
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
         },
         {
           "mota": "rola",
@@ -2530,11 +2542,27 @@
       ],
       "informatiboak": [
         {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
         }
       ],
-      "kategoria": "dokumentazioa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -2544,7 +2572,7 @@
       "id": "ataza_159",
       "izenburua": "Irakasleen liburu eskaria",
       "mota": "orokorra",
-      "data": "",
+      "data": "2026-05-30",
       "ordua": null,
       "argibideak": "Txosten honetan irakasle bakoitzak berarentzat nahi duen liburu eskaria idatziko du, beti ere, bere erabilera pertsonalerako (ez fotokopiak egiteko)",
       "estekak": [
@@ -2588,7 +2616,7 @@
       "id": "ataza_160",
       "izenburua": "Datorren urteko ordutegien baldintzak zehaztu",
       "mota": "orokorra",
-      "data": "",
+      "data": "2026-05-30",
       "ordua": null,
       "argibideak": "Datorren urtean zure eskola ordutegietan baldintzaren bat baduzu (bilerak, ordutegi murrizketa, ezintasunik...) txosten honetan ezarri datorren urteko eskola ordutegian zehazteko.",
       "estekak": [
