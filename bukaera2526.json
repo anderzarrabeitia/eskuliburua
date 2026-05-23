@@ -2197,12 +2197,12 @@
       "mota": "egutegikoa",
       "data": "2026-06-24",
       "ordua": "12:30",
-      "argibideak": "VEC inkestaren emaitzen itzulketa (R. Aguado).",
+      "argibideak": "VEC inkestaren emaitzen itzulketa (R. Aguado) STEAM gelan",
       "estekak": [],
       "arduradunak": [
         {
           "mota": "pertsona",
-          "balioa": "ander_zarrabeitia"
+          "balioa": "nerea_gonzalez"
         }
       ],
       "informatiboak": [
@@ -2217,9 +2217,17 @@
         {
           "mota": "etapa",
           "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "formakuntza",
       "filtroak": {
         "etapak": []
       },
