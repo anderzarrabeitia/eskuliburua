@@ -1,0 +1,2598 @@
+{
+  "izena": "Kurtso bukaera 2025-26",
+  "ikasturtea": "2025-26",
+  "pasahitza": "eami2026",
+  "mota": "kurtso_bukaera",
+  "sortzeData": "2026-05-22",
+  "etapak": [
+    "HE",
+    "HH",
+    "LH",
+    "DBH",
+    "PAS/EAE"
+  ],
+  "mailak": {
+    "HE": [
+      "HE0-1",
+      "HE1-2"
+    ],
+    "HH": [
+      "HH2",
+      "HH3",
+      "HH4",
+      "HH5"
+    ],
+    "LH": [
+      "LH1",
+      "LH2",
+      "LH3",
+      "LH4",
+      "LH5",
+      "LH6"
+    ],
+    "DBH": [
+      "DBH1",
+      "DBH2",
+      "DBH3",
+      "DBH4",
+      "DC3",
+      "DC4"
+    ]
+  },
+  "rolIrakaslegoa": [
+    "Tutorea",
+    "Arloko irakaslea",
+    "PT",
+    "PRL irakaslea",
+    "Beste motatako irakaslea",
+    "TEJI",
+    "Etapa koordinatzailea",
+    "Orientatzailea"
+  ],
+  "rolPas": [
+    "EAE",
+    "Idazkaria",
+    "Administratzailea",
+    "Atezaina",
+    "Mantenua",
+    "Beste motatako PAS"
+  ],
+  "rolOrokorra": [
+    "Prozesu/proiektu koordinatzailea",
+    "Prozesu/proiektu kidea"
+  ],
+  "kategoriak": [
+    {
+      "id": "ebaluazioa",
+      "izena": "Ebaluazioa",
+      "kolorea": "#3b82f6"
+    },
+    {
+      "id": "dokumentazioa",
+      "izena": "Dokumentazioa",
+      "kolorea": "#8b5cf6"
+    },
+    {
+      "id": "zirkularra",
+      "izena": "Zirkularra",
+      "kolorea": "#f59e0b"
+    },
+    {
+      "id": "koordinazioa",
+      "izena": "Koordinazioa",
+      "kolorea": "#10b981"
+    },
+    {
+      "id": "logistika",
+      "izena": "Logistika",
+      "kolorea": "#ef4444"
+    },
+    {
+      "id": "formakuntza",
+      "izena": "Formakuntza",
+      "kolorea": "#ec4899"
+    },
+    {
+      "id": "bestelakoa",
+      "izena": "Bestelakoa",
+      "kolorea": "#6b7280"
+    }
+  ],
+  "langileak": [
+    {
+      "id": "loli_gutierrez",
+      "izena": "Loli Gutierrez",
+      "etapa": "HE",
+      "maila": "HE0-1",
+      "rolak": [
+        "Tutorea",
+        "TEJI"
+      ],
+      "email": "loligutierrez@elavemaria.com"
+    },
+    {
+      "id": "sandra_delafuente",
+      "izena": "Sandra de la Fuente",
+      "etapa": "HE",
+      "maila": "HE1-2",
+      "rolak": [
+        "Tutorea",
+        "TEJI"
+      ],
+      "email": "sandrade@elavemaria.com"
+    },
+    {
+      "id": "maialen_etxebarria",
+      "izena": "Maialen Etxebarria",
+      "etapa": "HH",
+      "maila": "HH2",
+      "rolak": [
+        "Tutorea",
+        "Prozesu/proiektu kidea",
+        "Arloko irakaslea"
+      ],
+      "email": "maialenetxebarria@elavemaria.com"
+    },
+    {
+      "id": "begona_lorono",
+      "izena": "Begoña Loroño",
+      "etapa": "HH",
+      "maila": "HH3",
+      "rolak": [
+        "Tutorea",
+        "Etapa koordinatzailea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "begonalorono@elavemaria.com"
+    },
+    {
+      "id": "iratxe_otxandiano",
+      "izena": "Iratxe Otxandiano",
+      "etapa": "HH",
+      "maila": "HH4",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "iratxeotxandiano@elavemaria.com"
+    },
+    {
+      "id": "anemiren_sanchez",
+      "izena": "Ane Miren Sanchez",
+      "etapa": "HH",
+      "maila": "HH4",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anemirensanchez@elavemaria.com"
+    },
+    {
+      "id": "maitane_hernandez",
+      "izena": "Maitane Hernández",
+      "etapa": "HH",
+      "maila": "HH5",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "maitanehernandez@elavemaria.com"
+    },
+    {
+      "id": "nerea_fournier",
+      "izena": "Nerea Fournier",
+      "etapa": "HH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "nereafournier@elavemaria.com"
+    },
+    {
+      "id": "leire_navas",
+      "izena": "Leire Navas",
+      "etapa": "HH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "leirenavas@elavemaria.com"
+    },
+    {
+      "id": "alba_gonzalez",
+      "izena": "Alba Gonzalez",
+      "etapa": "LH",
+      "maila": "LH1",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "albagonzalez@elavemaria.com"
+    },
+    {
+      "id": "juncal_pipaon",
+      "izena": "Juncal Pipaon",
+      "etapa": "LH",
+      "maila": "LH2",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "juncalpipaon@elavemaria.com"
+    },
+    {
+      "id": "igor_arribas",
+      "izena": "Igor Arribas",
+      "etapa": "LH",
+      "maila": "LH3",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "igorarribas@elavemaria.com"
+    },
+    {
+      "id": "ander_alvarez",
+      "izena": "Ander Alvarez",
+      "etapa": "LH",
+      "maila": "LH4",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anderalvarez@elavemaria.com"
+    },
+    {
+      "id": "sergio_gorostiza",
+      "izena": "Sergio Gorostiza",
+      "etapa": "LH",
+      "maila": "LH5",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "sergiogorostiza@elavemaria.com"
+    },
+    {
+      "id": "ander_unamuno",
+      "izena": "Ander Unamuno",
+      "etapa": "LH",
+      "maila": "LH6",
+      "rolak": [
+        "Tutorea",
+        "PRL irakaslea",
+        "PT",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anderunamuno@elavemaria.com"
+    },
+    {
+      "id": "david_fernandez",
+      "izena": "David Fernandez",
+      "etapa": "LH",
+      "maila": "LH6",
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "davidf@elavemaria.com"
+    },
+    {
+      "id": "urtzi_carrera",
+      "izena": "Urtzi Carrera",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea",
+        "Etapa koordinatzailea"
+      ],
+      "email": "urtzicarrera@elavemaria.com"
+    },
+    {
+      "id": "txaro_cores",
+      "izena": "Txaro Cores",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "rosariocores@elavemaria.com"
+    },
+    {
+      "id": "iratxe_varela",
+      "izena": "Iratxe Varela",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "iratxevarela@elavemaria.com"
+    },
+    {
+      "id": "oihane_fraile",
+      "izena": "Oihane Fraile",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "oihanefraile@elavemaria.com"
+    },
+    {
+      "id": "olatz_ruiz",
+      "izena": "Olatz Ruiz de Zárate",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea"
+      ],
+      "email": "olatzruiz@elavemaria.com"
+    },
+    {
+      "id": "anemiren_iturrioz",
+      "izena": "Ane Miren Iturrioz",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea"
+      ],
+      "email": "anemiturrioz@elavemaria.com"
+    },
+    {
+      "id": "uxue_redondo",
+      "izena": "Uxue Redondo",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea"
+      ],
+      "email": "uxueredondo@elavemaria.com"
+    },
+    {
+      "id": "javier_baldazo",
+      "izena": "Javier Baldazo",
+      "etapa": "DBH",
+      "maila": "DBH1",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "javierbaldazo@elavemaria.com"
+    },
+    {
+      "id": "irati_castresana",
+      "izena": "Irati Castresana",
+      "etapa": "DBH",
+      "maila": "DBH1",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "iraticastresana@elavemaria.com"
+    },
+    {
+      "id": "maddi_martinez",
+      "izena": "Maddi Martínez",
+      "etapa": "DBH",
+      "maila": "DBH2",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "maddimartinez@elavemaria.com"
+    },
+    {
+      "id": "marta_sanz",
+      "izena": "Marta Sanz",
+      "etapa": "DBH",
+      "maila": "DBH2",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "martasanz@elavemaria.com"
+    },
+    {
+      "id": "teresa_salvarrey",
+      "izena": "Teresa Salvarrey",
+      "etapa": "DBH",
+      "maila": "DBH3",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "teresasalvarrey@elavemaria.com"
+    },
+    {
+      "id": "irune_uriarte",
+      "izena": "Irune Uriarte",
+      "etapa": "DBH",
+      "maila": "DBH3",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "iruneuriarte@elavemaria.com"
+    },
+    {
+      "id": "imanol_canales",
+      "izena": "Imanol Canales",
+      "etapa": "DBH",
+      "maila": "DBH4",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "imanolcanales@elavemaria.com"
+    },
+    {
+      "id": "naia_etxebarria",
+      "izena": "Naia Etxebarria",
+      "etapa": "DBH",
+      "maila": "DC4",
+      "rolak": [
+        "Tutorea"
+      ],
+      "email": "naiaetxebarria@elavemaria.com"
+    },
+    {
+      "id": "pello_lauzirika",
+      "izena": "Pello Lauzirika",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "pellolauzirika@elavemaria.com"
+    },
+    {
+      "id": "amaia_vergel",
+      "izena": "Amaia Vergel",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "amaiavergel@elavemaria.com"
+    },
+    {
+      "id": "julian_gonzalez",
+      "izena": "Julian Gonzalez",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "juliangonzalez@elavemaria.com"
+    },
+    {
+      "id": "alva_deprado",
+      "izena": "Alva de Prado",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea",
+        "PRL irakaslea"
+      ],
+      "email": "alvadeprado@elavemaria.com"
+    },
+    {
+      "id": "gemma_arrizabalaga",
+      "izena": "Gemma Arrizabalaga",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "gemmaarrizabalaga@elavemaria.com"
+    },
+    {
+      "id": "jon_julian",
+      "izena": "Jon Julian",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Beste motatako irakaslea"
+      ],
+      "email": "jonjulian@elavemaria.com"
+    },
+    {
+      "id": "asier_quintana",
+      "izena": "Asier Quintana",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "Arloko irakaslea"
+      ],
+      "email": "asierquintana@elavemaria.com"
+    },
+    {
+      "id": "nerea_gonzalez",
+      "izena": "Nerea Gonzalez",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "nereagonzalez@elavemaria.com"
+    },
+    {
+      "id": "ainara_ortega",
+      "izena": "Ainara Ortega",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "PT",
+        "Etapa koordinatzailea"
+      ],
+      "email": "ainaraortega@elavemaria.com"
+    },
+    {
+      "id": "patricia_quintanilla",
+      "izena": "Patricia Quintanilla",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT",
+        "Etapa koordinatzailea"
+      ],
+      "email": "patriciaquintanilla@elavemaria.com"
+    },
+    {
+      "id": "enara_alonso",
+      "izena": "Enara Alonso",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "enaraalonso@elavemaria.com"
+    },
+    {
+      "id": "ander_zarrabeitia",
+      "izena": "Ander Zarrabeitia",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "anderzarrabeitia@elavemaria.com"
+    },
+    {
+      "id": "iker_elorza",
+      "izena": "Iker Elorza",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "ikerelorza@elavemaria.com"
+    },
+    {
+      "id": "nerea_oskotz",
+      "izena": "Nerea Oskotz",
+      "etapa": "DBH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "nereaoskotz@elavemaria.com"
+    },
+    {
+      "id": "elena_fernandez",
+      "izena": "Elena Fernández",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT"
+      ],
+      "email": "elenafernandez@elavemaria.com"
+    },
+    {
+      "id": "lorea_espinosa",
+      "izena": "Lorea Espinosa",
+      "etapa": "LH",
+      "maila": null,
+      "rolak": [
+        "PT",
+        "PRL irakaslea"
+      ],
+      "email": "loreaespinosa@elavemaria.com"
+    },
+    {
+      "id": "maite_matesanz",
+      "izena": "Maite Matesanz",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "maitematesanz@elavemaria.com"
+    },
+    {
+      "id": "naia_sanchez",
+      "izena": "Naia Sánchez",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "naiasanchez@elavemaria.com"
+    },
+    {
+      "id": "ainara_mieres",
+      "izena": "Ainara Mieres",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "ainaramieres@elavemaria.com"
+    },
+    {
+      "id": "arrate_monzon",
+      "izena": "Arrate Monzón",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "arratemonzon@elavemaria.com"
+    },
+    {
+      "id": "henar_perez",
+      "izena": "Henar Perez",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "henarperez@elavemaria.com"
+    },
+    {
+      "id": "nekane_plaza",
+      "izena": "Nekane Plaza",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "nekaneplaza@elavemaria.com"
+    },
+    {
+      "id": "maider_mier",
+      "izena": "Maider Mier",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "maidermier@elavemaria.com"
+    },
+    {
+      "id": "sandra_sanchez",
+      "izena": "Sandra Sanchez",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "sandrasanchez@elavemaria.com"
+    },
+    {
+      "id": "maider_hernandez",
+      "izena": "Maider Hernandez",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "EAE"
+      ],
+      "email": "maiderhernandez@elavemaria.com"
+    },
+    {
+      "id": "gotzone_vazquez",
+      "izena": "Gotzone Vázquez",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "Idazkaria"
+      ],
+      "email": "gotzonevazquez@elavemaria.com"
+    },
+    {
+      "id": "josune_alonso",
+      "izena": "Josune Alonso",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "Atezaina"
+      ],
+      "email": "josunealonso@elavemaria.com"
+    },
+    {
+      "id": "rafa_gonzalez",
+      "izena": "Rafa González",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "Mantenua"
+      ],
+      "email": "rafagonzalez@elavemaria.com"
+    },
+    {
+      "id": "natxo_ribechini",
+      "izena": "Natxo Ribechini",
+      "etapa": null,
+      "maila": null,
+      "rolak": [
+        "Administratzailea"
+      ],
+      "email": "natxoribechini@elavemaria.com"
+    }
+  ],
+  "atazak": [
+    {
+      "id": "ataza_101",
+      "izenburua": "Familia festaren zirkularra",
+      "mota": "egutegikoa",
+      "data": "2026-05-25",
+      "ordua": null,
+      "argibideak": "Familia festaren zirkularra prestatu eta bidali.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_102",
+      "izenburua": "Jardunaldi trinkoa zirkularra HH-LH-DBH",
+      "mota": "egutegikoa",
+      "data": "2026-05-28",
+      "ordua": null,
+      "argibideak": "Jardunaldi trinoaren zirkularra prestatu eta bidali.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_103",
+      "izenburua": "3. ebaluazioko notak sartuta",
+      "mota": "egutegikoa",
+      "data": "2026-05-29",
+      "ordua": null,
+      "argibideak": "Hirugarren ebaluazioko notak aplikatiboan sartu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH",
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_104",
+      "izenburua": "3-4 Ebaluazio juntak",
+      "mota": "egutegikoa",
+      "data": "2026-06-01",
+      "ordua": null,
+      "argibideak": "Ebaluazio bilerak tutoreekin eta irakasle taldeekin. Aste osoan zehar.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH",
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_105",
+      "izenburua": "3. ebaluazioko notak sartuta (DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-01",
+      "ordua": null,
+      "argibideak": "DBHko hirugarren ebaluazioko notak aplikatiboan sartu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_106",
+      "izenburua": "Check de tareas (ESKULIBURUA) azaldu",
+      "mota": "egutegikoa",
+      "data": "2026-06-01",
+      "ordua": "14:00",
+      "argibideak": "Kurtso bukaerako check-list aplikatiboa (ESKULIBURUA) langileriari azaldu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_107",
+      "izenburua": "3. ebaluazioko juntak (DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-03",
+      "ordua": "15:00 - 18:00",
+      "argibideak": "DBHko ebaluazio bilerak.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_108",
+      "izenburua": "DBH 3. ebaluazioko notak argitaratu",
+      "mota": "egutegikoa",
+      "data": "2026-06-04",
+      "ordua": null,
+      "argibideak": "DBHko hirugarren ebaluazioko notak familiei argitaratu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_109",
+      "izenburua": "Materialen zirkularrak eginda",
+      "mota": "egutegikoa",
+      "data": "2026-06-05",
+      "ordua": null,
+      "argibideak": "Hurrengo ikasturterako materialen zirkularra prestatu koordinatzaileekin elkarlanean.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "txaro_cores"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_110",
+      "izenburua": "JPP Azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-06-05",
+      "ordua": "14:00",
+      "argibideak": "Jarduera Plan Pertsonalizatuaren azalpena irakaslegoari STEAM gelan",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_111",
+      "izenburua": "4. ebaluazioko notak sartu",
+      "mota": "egutegikoa",
+      "data": "2026-06-08",
+      "ordua": null,
+      "argibideak": "Laugarren ebaluazioko notak aplikatiboan sartu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH",
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_112",
+      "izenburua": "Zerbitzuen zirkularra bidali",
+      "mota": "egutegikoa",
+      "data": "2026-06-08",
+      "ordua": null,
+      "argibideak": "Zerbitzuen (jantokia, garraioa...) zirkularra prestatu eta bidali.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_113",
+      "izenburua": "Proiektuen Txosten ebaluatiboa azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-06-08",
+      "ordua": null,
+      "argibideak": "Txosten ebaluatiboa nola bete azaldu prozesu/proiektu koordinatzaileei eta proiektu kideei",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_114",
+      "izenburua": "4. ebaluazioko notak sartuta",
+      "mota": "egutegikoa",
+      "data": "2026-06-09",
+      "ordua": "14:30",
+      "argibideak": "Laugarren ebaluazioko notak sartuta egon behar dute.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH",
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_115",
+      "izenburua": "ACIen emaitzak aplikatiboan sartu.",
+      "mota": "egutegikoa",
+      "data": "2026-06-09",
+      "ordua": null,
+      "argibideak": "ACI duten ikasleen emaitzak Gotzoneri eman aplikatiboan sar ditzan.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_116",
+      "izenburua": "Proiektuen txosten ebaluatiboak egiteko bilera",
+      "mota": "egutegikoa",
+      "data": "2026-06-09",
+      "ordua": "13:30",
+      "argibideak": "Proiektuka bildu eta KUDEAPPeko txosten ebaluatiboak egiten hasi.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_117",
+      "izenburua": "LH notak EJ aplikatiboan pikatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-11",
+      "ordua": null,
+      "argibideak": "ZEREGINA\nHH eta LHko notak eta gaitasunak Eusko Jaurlaritzako aplikatibora igo.\n\nJARRAIBIDEAK\n- Estekan duzuen Eusko Jaurlaritzako aplikatibora sartu: Notas y faltas - Grupos de trabajo - Notas\n- Irakasle bakoitza bere arloan sartu eta ikasle bakoitzaren gaitasunaren maila pikatuko du (hasierakoa - oinarrizkoa - aurreratua - bikaina). \n- Guztiak eginda daudenean, Gotzonek inprimatuko ditu eta palkoan egongo dira ikasle bakoitzaren karpetan gordetzeko.\n\nAPLIKATIBORA SARTZEKO JARRAIBIDEAK\n- IRAKASLE BERRIAK: CAUra deitu: 901101132, opcion1 y luego opción 2 para trabajar en el aplicativo. Zentruko kodea: 014637.\n- ERABILTZAILEA EDO GAKOA GALDU DUZUENENTZAT: BAQKarekin ere sar zaitezkete. Halere, froga egin dezakezue erabiltzailea zuen Izenaren lehenengo letra + zuen abizenen lehehengo letrak eta bigarrenaren lehenengo letra: guztira 8 letra bete arte (adibidez, Ander Zarrabeitia Arrieta AZARRABA) eta pasahitza zuen NAN zenbakia + Ej letrak (77888999Ej).",
+      "estekak": [
+        {
+          "izena": "Eusko Jaurlaritzako aplikatiborako sarbidea",
+          "url": "https://hezkuntza.euskadi.eus/es/inicio",
+          "ruta": ""
+        },
+        {
+          "izena": "Aplikatibora sartzeko bideotutoriala",
+          "url": "https://drive.google.com/file/d/10RGWjR1FFhpjfsS8UwSmqNMofZRRUdbF/view?usp=sharing",
+          "ruta": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_119",
+      "izenburua": "Gaitasunak EJ aplikatiboan azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-06-10",
+      "ordua": null,
+      "argibideak": "Gaitasunak Eusko Jaurlaritzako aplikatiboan nola sartu azaldu LH irakasleei.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_122",
+      "izenburua": "Bakarkako txostenen azalpena HH",
+      "mota": "egutegikoa",
+      "data": "2026-06-11",
+      "ordua": "12:30",
+      "argibideak": "Bakarkako txostenak nola bete azaldu tutoreei.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": [
+          "HH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_123",
+      "izenburua": "Errefortzu linguistikoko txostenak eginda",
+      "mota": "egutegikoa",
+      "data": "2026-06-11",
+      "ordua": null,
+      "argibideak": "PRL irakasleek errefortzu linguistikoko txostenak egin.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_124",
+      "izenburua": "Materialaren zirkularra bidali",
+      "mota": "egutegikoa",
+      "data": "2026-06-12",
+      "ordua": null,
+      "argibideak": "Materialen zirkularra familiei bidali Alexiatik",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "josune_alonso"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_125",
+      "izenburua": "Kurtso bukaerako zirkularra",
+      "mota": "egutegikoa",
+      "data": "2026-06-12",
+      "ordua": null,
+      "argibideak": "Kurtso bukaerako zirkularra prestatu eta bidali.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_126",
+      "izenburua": "3. ebaluazioko notak argitaratu (HH-LH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-12",
+      "ordua": null,
+      "argibideak": "HH eta LHko hirugarren ebaluazioko notak argitaratu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_127",
+      "izenburua": "EJko aktak errepasatu (HH5)",
+      "mota": "egutegikoa",
+      "data": "2026-06-15",
+      "ordua": null,
+      "argibideak": "Eusko Jaurlaritzako aktak errepasatu HH5 taldean.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "maila",
+          "balioa": "HH5"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_128",
+      "izenburua": "EJko aktak errepasatu (LH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-15",
+      "ordua": null,
+      "argibideak": "Eusko Jaurlaritzako aktak errepasatu LH maila guztietan.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_129",
+      "izenburua": "4. ebaluazioko notak sartuta (DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-15",
+      "ordua": null,
+      "argibideak": "DBHko laugarren ebaluazioko notak sartuta.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_130",
+      "izenburua": "4. ebaluazioko juntak (DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-15",
+      "ordua": null,
+      "argibideak": "DBHko laugarren ebaluazioko bilerak.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_131",
+      "izenburua": "Gaitasunak aplikatiboan pikatu (DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-16",
+      "ordua": null,
+      "argibideak": "DBHko gaitasunak EJ aplikatiboan pikatu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_132",
+      "izenburua": "DBH 4. ebaluazioko notak argitaratu",
+      "mota": "egutegikoa",
+      "data": "2026-06-16",
+      "ordua": null,
+      "argibideak": "DBHko laugarren ebaluazioko notak familiei argitaratu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_133",
+      "izenburua": "Espazio berriak azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "Hurrengo ikasturterako espazio berrien azalpena.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_134",
+      "izenburua": "Erreparazioak azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "Erreparazio orriak nola bete azaldu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_135",
+      "izenburua": "Sobreak egin",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "Ikasleen sobreak prestatu dokumentazioarekin.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_136",
+      "izenburua": "EJ Informe indibidualak bete",
+      "mota": "egutegikoa",
+      "data": "2026-06-18",
+      "ordua": null,
+      "argibideak": "Eusko Jaurlaritzako informe indibidualak bete tutoreek.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_137",
+      "izenburua": "Sobreak eman joaten direnei",
+      "mota": "egutegikoa",
+      "data": "2026-06-18",
+      "ordua": null,
+      "argibideak": "Zentrutik joaten diren ikasleei sobreak eman.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_138",
+      "izenburua": "Geletako mahaiak mugitu",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "Gelak hustu eta mahaiak mugitu garbiketa sakonerako.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_139",
+      "izenburua": "Txosten ebaluatiboak eginda (Proiektuak)",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "Proiektuen txosten ebaluatiboak amaituta egon behar dute.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_140",
+      "izenburua": "Ekintza Plana + Adierazleak",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "KUDEAPP-en ekintza plana eta adierazleak eguneratuta eduki.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_141",
+      "izenburua": "Gelak txukundu",
+      "mota": "egutegikoa",
+      "data": "2026-06-22",
+      "ordua": null,
+      "argibideak": "Gelak txukundu, materialak jaso eta garbitegira eraman.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_142",
+      "izenburua": "Erreparazio orriak beteta",
+      "mota": "egutegikoa",
+      "data": "2026-06-23",
+      "ordua": null,
+      "argibideak": "Erreparazio orriak beteta entregatu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_143",
+      "izenburua": "ENBOR eskaria eginda",
+      "mota": "egutegikoa",
+      "data": "2026-06-23",
+      "ordua": null,
+      "argibideak": "ENBOR materialaren eskaria eginda.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_144",
+      "izenburua": "Txosten ebaluatiboa Anexo II",
+      "mota": "egutegikoa",
+      "data": "2026-06-23",
+      "ordua": null,
+      "argibideak": "Tutoreek Anexo II txosten ebaluatiboa bete.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_145",
+      "izenburua": "JPPak egin",
+      "mota": "egutegikoa",
+      "data": "2026-06-24",
+      "ordua": null,
+      "argibideak": "Jarduera Plan Pertsonalizatuak egin dagokien ikasleei.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_146",
+      "izenburua": "Artxibategiak antolatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-24",
+      "ordua": null,
+      "argibideak": "Ikasleen artxibategiak antolatu karpeta horietan.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_147",
+      "izenburua": "Familiekin bilerak",
+      "mota": "egutegikoa",
+      "data": "2026-06-25",
+      "ordua": "09:00-12:00",
+      "argibideak": "Familiekin banakako bilerak 9:00etatik 12:00etara.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_148",
+      "izenburua": "VEC itzulketa",
+      "mota": "egutegikoa",
+      "data": "2026-06-24",
+      "ordua": "12:30",
+      "argibideak": "VEC inkestaren emaitzen itzulketa (R. Aguado).",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_149",
+      "izenburua": "Etapen arteko koordinazioa",
+      "mota": "egutegikoa",
+      "data": "2026-06-25",
+      "ordua": null,
+      "argibideak": "Etapen arteko koordinazio bilera.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_150",
+      "izenburua": "Arloen arteko koordinazioa",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": null,
+      "argibideak": "Arloen arteko koordinazio bilera.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_151",
+      "izenburua": "DAFO / AMIA",
+      "mota": "egutegikoa",
+      "data": "2026-06-25",
+      "ordua": null,
+      "argibideak": "DAFO / AMIA analisia ikasturte bukaerako ebaluaziorako.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_152",
+      "izenburua": "EJko aktak sinatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": null,
+      "argibideak": "Eusko Jaurlaritzako aktak sinatu irakasle guztiek.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_153",
+      "izenburua": "Ospakizuna",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": null,
+      "argibideak": "Kurtso bukaerako ospakizun txikia.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_154",
+      "izenburua": "Giltza bueltatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": null,
+      "argibideak": "Gela eta bulegoen giltzak bueltatu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_155",
+      "izenburua": "Ordenagailuak teknikariari",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": null,
+      "argibideak": "Ordenagailuak teknikariari eman berrikusterako.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_156",
+      "izenburua": "Formakuntza erregistroa",
+      "mota": "orokorra",
+      "data": "2026-06-30",
+      "ordua": null,
+      "argibideak": "Ikasturtean jasotako formakuntzak erregistratu.",
+      "estekak": [
+        {
+          "izena": "Erregistro karpeta",
+          "url": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_157",
+      "izenburua": "Erreparazio orriak bete",
+      "mota": "orokorra",
+      "data": "2026-06-30",
+      "ordua": null,
+      "argibideak": "Gelako erreparazio beharrak erregistratu.",
+      "estekak": [
+        {
+          "izena": "Erreparazio orria",
+          "url": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_158",
+      "izenburua": "Familiekin egindako bileren erregistroa",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Tutore bakoitzak txosten honetan, gutxienez, familia bakoitzarekin noiz bildu den idatzi behar du eta OSO GARRANTZITSUA, errepikapenaren berri eman zaion data eguna/egunak.",
+      "estekak": [
+        {
+          "izena": "Familiekin batzarren erregistroa",
+          "url": "https://docs.google.com/spreadsheets/d/1goi0x7JM7fLWjyUTWpP7JqXgGbcm1OCCqgtm4Q_lknM/edit?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.9. Koordinazioak / Dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_159",
+      "izenburua": "Irakasleen liburu eskaria",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Txosten honetan irakasle bakoitzak berarentzat nahi duen liburu eskaria idatziko du, beti ere, bere erabilera pertsonalerako (ez fotokopiak egiteko)",
+      "estekak": [
+        {
+          "izena": "Irakasleen liburuen eskariaren erregistroa",
+          "url": "https://docs.google.com/document/d/10AjjsPC3QZIZeOxr3YtJZOSwFCw7J5SuXflo9-45l00/edit?usp=sharing",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P.01. / KURRIKULUM ETA DIDAKTIKA / Dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Administratzailea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_160",
+      "izenburua": "Datorren urteko ordutegien baldintzak zehaztu",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Datorren urtean zure eskola ordutegietan baldintzaren bat baduzu (bilerak, ordutegi murrizketa, ezintasunik...) txosten honetan ezarri datorren urteko eskola ordutegian zehazteko.",
+      "estekak": [
+        {
+          "izena": "Ordutegien baldintzen erregistroa",
+          "url": "https://docs.google.com/spreadsheets/d/14oAid6OT-HxuU0nuC8xYYsh7iyEbqHHtUd6DVJFfJaU/edit?usp=drive_link",
+          "ruta": "DRIVE / KOORDINAZIO TALDEA / Dagokion urtea / Ordutegiak"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Beste motatako irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "TEJI"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    }
+  ],
+  "url": "https://drive.google.com/file/d/109ric7m-gkHLVFxuECnbETtvqSw5xyym/view?usp=drive_link"
+}
