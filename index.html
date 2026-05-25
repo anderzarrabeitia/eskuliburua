@@ -46,142 +46,22 @@ const KATEGORIAK_LEHENESPENAK = [
   { id: "bestelakoa", izena: "Bestelakoa", kolorea: "#6b7280" },
 ];
 
-const LANGILEAK = [
-  { id: "loli_gutierrez", izena: "Loli Gutierrez", etapa: "HE", maila: "HE0-1", rolak: ["Tutorea", "TEJI"], email: "loligutierrez@elavemaria.com" },
-  { id: "sandra_delafuente", izena: "Sandra de la Fuente", etapa: "HE", maila: "HE1-2", rolak: ["Tutorea", "TEJI"], email: "sandrade@elavemaria.com" },
-  { id: "maialen_etxebarria", izena: "Maialen Etxebarria", etapa: "HH", maila: "HH2", rolak: ["Tutorea"], email: "maialenetxebarria@elavemaria.com" },
-  { id: "begona_lorono", izena: "Begoña Loroño", etapa: "HH", maila: "HH3", rolak: ["Tutorea", "Etapa koordinatzailea"], email: "begonalorono@elavemaria.com" },
-  { id: "iratxe_otxandiano", izena: "Iratxe Otxandiano", etapa: "HH", maila: "HH4", rolak: ["Tutorea"], email: "iratxeotxandiano@elavemaria.com" },
-  { id: "anemiren_sanchez", izena: "Ane Miren Sanchez", etapa: "HH", maila: "HH4", rolak: ["Tutorea"], email: "anemirensanchez@elavemaria.com" },
-  { id: "maitane_hernandez", izena: "Maitane Hernández", etapa: "HH", maila: "HH5", rolak: ["Tutorea"], email: "maitanehernandez@elavemaria.com" },
-  { id: "nerea_fournier", izena: "Nerea Fournier", etapa: "HH", maila: null, rolak: ["Beste motatako irakaslea"], email: "nereafournier@elavemaria.com" },
-  { id: "leire_navas", izena: "Leire Navas", etapa: "HH", maila: null, rolak: ["Beste motatako irakaslea"], email: "leirenavas@elavemaria.com" },
-  { id: "alba_gonzalez", izena: "Alba Gonzalez", etapa: "LH", maila: "LH1", rolak: ["Tutorea"], email: "albagonzalez@elavemaria.com" },
-  { id: "juncal_pipaon", izena: "Juncal Pipaon", etapa: "LH", maila: "LH2", rolak: ["Tutorea"], email: "juncalpipaon@elavemaria.com" },
-  { id: "igor_arribas", izena: "Igor Arribas", etapa: "LH", maila: "LH3", rolak: ["Tutorea"], email: "igorarribas@elavemaria.com" },
-  { id: "ander_alvarez", izena: "Ander Alvarez", etapa: "LH", maila: "LH4", rolak: ["Tutorea"], email: "anderalvarez@elavemaria.com" },
-  { id: "sergio_gorostiza", izena: "Sergio Gorostiza", etapa: "LH", maila: "LH5", rolak: ["Tutorea"], email: "sergiogorostiza@elavemaria.com" },
-  { id: "ander_unamuno", izena: "Ander Unamuno", etapa: "LH", maila: "LH6", rolak: ["Tutorea", "PRL irakaslea", "PT"], email: "anderunamuno@elavemaria.com" },
-  { id: "david_fernandez", izena: "David Fernandez", etapa: "LH", maila: "LH6", rolak: ["Tutorea"], email: "davidf@elavemaria.com" },
-  { id: "urtzi_carrera", izena: "Urtzi Carrera", etapa: "LH", maila: null, rolak: ["Arloko irakaslea", "Etapa koordinatzailea"], email: "urtzicarrera@elavemaria.com" },
-  { id: "txaro_cores", izena: "Txaro Cores", etapa: "LH", maila: null, rolak: ["Arloko irakaslea"], email: "rosariocores@elavemaria.com" },
-  { id: "iratxe_varela", izena: "Iratxe Varela", etapa: "LH", maila: null, rolak: ["Arloko irakaslea"], email: "iratxevarela@elavemaria.com" },
-  { id: "oihane_fraile", izena: "Oihane Fraile", etapa: "LH", maila: null, rolak: ["Arloko irakaslea"], email: "oihanefraile@elavemaria.com" },
-  { id: "olatz_ruiz", izena: "Olatz Ruiz de Zárate", etapa: "LH", maila: null, rolak: ["Beste motatako irakaslea"], email: "olatzruiz@elavemaria.com" },
-  { id: "anemiren_iturrioz", izena: "Ane Miren Iturrioz", etapa: "LH", maila: null, rolak: ["Beste motatako irakaslea"], email: "anemiturrioz@elavemaria.com" },
-  { id: "uxue_redondo", izena: "Uxue Redondo", etapa: "LH", maila: null, rolak: ["Beste motatako irakaslea"], email: "uxueredondo@elavemaria.com" },
-  { id: "javier_baldazo", izena: "Javier Baldazo", etapa: "DBH", maila: "DBH1", rolak: ["Tutorea"], email: "javierbaldazo@elavemaria.com" },
-  { id: "irati_castresana", izena: "Irati Castresana", etapa: "DBH", maila: "DBH1", rolak: ["Tutorea"], email: "iraticastresana@elavemaria.com" },
-  { id: "maddi_martinez", izena: "Maddi Martínez", etapa: "DBH", maila: "DBH2", rolak: ["Tutorea"], email: "maddimartinez@elavemaria.com" },
-  { id: "marta_sanz", izena: "Marta Sanz", etapa: "DBH", maila: "DBH2", rolak: ["Tutorea"], email: "martasanz@elavemaria.com" },
-  { id: "teresa_salvarrey", izena: "Teresa Salvarrey", etapa: "DBH", maila: "DBH3", rolak: ["Tutorea"], email: "teresasalvarrey@elavemaria.com" },
-  { id: "irune_uriarte", izena: "Irune Uriarte", etapa: "DBH", maila: "DBH3", rolak: ["Tutorea"], email: "iruneuriarte@elavemaria.com" },
-  { id: "imanol_canales", izena: "Imanol Canales", etapa: "DBH", maila: "DBH4", rolak: ["Tutorea"], email: "imanolcanales@elavemaria.com" },
-  { id: "naia_etxebarria", izena: "Naia Etxebarria", etapa: "DBH", maila: "DC4", rolak: ["Tutorea"], email: "naiaetxebarria@elavemaria.com" },
-  { id: "pello_lauzirika", izena: "Pello Lauzirika", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea"], email: "pellolauzirika@elavemaria.com" },
-  { id: "amaia_vergel", izena: "Amaia Vergel", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea"], email: "amaiavergel@elavemaria.com" },
-  { id: "julian_gonzalez", izena: "Julian Gonzalez", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea"], email: "juliangonzalez@elavemaria.com" },
-  { id: "alva_deprado", izena: "Alva de Prado", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea", "PRL irakaslea"], email: "alvadeprado@elavemaria.com" },
-  { id: "gemma_arrizabalaga", izena: "Gemma Arrizabalaga", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea"], email: "gemmaarrizabalaga@elavemaria.com" },
-  { id: "jon_julian", izena: "Jon Julian", etapa: "DBH", maila: null, rolak: ["Beste motatako irakaslea"], email: "jonjulian@elavemaria.com" },
-  { id: "asier_quintana", izena: "Asier Quintana", etapa: "DBH", maila: null, rolak: ["Arloko irakaslea"], email: "asierquintana@elavemaria.com" },
-  { id: "nerea_gonzalez", izena: "Nerea Gonzalez", etapa: "LH", maila: null, rolak: ["PT"], email: "nereagonzalez@elavemaria.com" },
-  { id: "ainara_ortega", izena: "Ainara Ortega", etapa: "DBH", maila: null, rolak: ["PT", "Etapa koordinatzailea"], email: "ainaraortega@elavemaria.com" },
-  { id: "patricia_quintanilla", izena: "Patricia Quintanilla", etapa: "LH", maila: null, rolak: ["PT", "Etapa koordinatzailea"], email: "patriciaquintanilla@elavemaria.com" },
-  { id: "enara_alonso", izena: "Enara Alonso", etapa: "LH", maila: null, rolak: ["PT"], email: "enaraalonso@elavemaria.com" },
-  { id: "ander_zarrabeitia", izena: "Ander Zarrabeitia", etapa: "LH", maila: null, rolak: ["PT"], email: "anderzarrabeitia@elavemaria.com" },
-  { id: "iker_elorza", izena: "Iker Elorza", etapa: "LH", maila: null, rolak: ["PT"], email: "ikerelorza@elavemaria.com" },
-  { id: "nerea_oskotz", izena: "Nerea Oskotz", etapa: "DBH", maila: null, rolak: ["PT"], email: "nereaoskotz@elavemaria.com" },
-  { id: "elena_fernandez", izena: "Elena Fernández", etapa: "LH", maila: null, rolak: ["PT"], email: "elenafernandez@elavemaria.com" },
-  { id: "lorea_espinosa", izena: "Lorea Espinosa", etapa: "LH", maila: null, rolak: ["PT", "PRL irakaslea"], email: "loreaespinosa@elavemaria.com" },
-  { id: "maite_matesanz", izena: "Maite Matesanz", etapa: null, maila: null, rolak: ["EAE"], email: "maitematesanz@elavemaria.com" },
-  { id: "naia_sanchez", izena: "Naia Sánchez", etapa: null, maila: null, rolak: ["EAE"], email: "naiasanchez@elavemaria.com" },
-  { id: "ainara_mieres", izena: "Ainara Mieres", etapa: null, maila: null, rolak: ["EAE"], email: "ainaramieres@elavemaria.com" },
-  { id: "arrate_monzon", izena: "Arrate Monzón", etapa: null, maila: null, rolak: ["EAE"], email: "arratemonzon@elavemaria.com" },
-  { id: "henar_perez", izena: "Henar Perez", etapa: null, maila: null, rolak: ["EAE"], email: "henarperez@elavemaria.com" },
-  { id: "nekane_plaza", izena: "Nekane Plaza", etapa: null, maila: null, rolak: ["EAE"], email: "nekaneplaza@elavemaria.com" },
-  { id: "maider_mier", izena: "Maider Mier", etapa: null, maila: null, rolak: ["EAE"], email: "maidermier@elavemaria.com" },
-  { id: "sandra_sanchez", izena: "Sandra Sanchez", etapa: null, maila: null, rolak: ["EAE"], email: "sandrasanchez@elavemaria.com" },
-  { id: "maider_hernandez", izena: "Maider Hernandez", etapa: null, maila: null, rolak: ["EAE"], email: "maiderhernandez@elavemaria.com" },
-  { id: "gotzone_vazquez", izena: "Gotzone Vázquez", etapa: null, maila: null, rolak: ["Idazkaria"], email: "gotzonevazquez@elavemaria.com" },
-  { id: "josune_alonso", izena: "Josune Alonso", etapa: null, maila: null, rolak: ["Atezaina"], email: "josunealonso@elavemaria.com" },
-  { id: "rafa_gonzalez", izena: "Rafa González", etapa: null, maila: null, rolak: ["Mantenua"], email: "rafagonzalez@elavemaria.com" },
-  { id: "natxo_ribechini", izena: "Natxo Ribechini", etapa: null, maila: null, rolak: ["Administratzailea"], email: "natxoribechini@elavemaria.com" },
-];
+// LANGILEAK eta ATAZAK hutsik — kanpaina bakoitzak bere datuak ditu JSON fitxategian
+const LANGILEAK_HUTSIK = [];
 
 let _ataId = 100;
 const mkId = () => `ataza_${++_ataId}`;
 
-const ATAZAK_HASIERAKOAK = [
-  { id: mkId(), izenburua: "Familia festaren zirkularra", mota: "egutegikoa", data: "2026-05-25", ordua: null, argibideak: "Familia festaren zirkularra prestatu eta bidali.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Jardunaldi jarraia zirkularra", mota: "egutegikoa", data: "2026-05-28", ordua: null, argibideak: "Jardunaldi jarraiaren zirkularra prestatu eta bidali.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "3. ebaluazioko notak sartuta", mota: "egutegikoa", data: "2026-05-29", ordua: null, argibideak: "Hirugarren ebaluazioko notak aplikatiboan sartu.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "3-4 Ebaluazio juntak", mota: "egutegikoa", data: "2026-06-01", ordua: null, argibideak: "Ebaluazio bilerak tutoreekin eta irakasle taldeekin. Aste osoan zehar.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "3. ebaluazioko notak sartuta (DBH)", mota: "egutegikoa", data: "2026-06-01", ordua: null, argibideak: "DBHko hirugarren ebaluazioko notak aplikatiboan sartu.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Check de tareas azaldu", mota: "egutegikoa", data: "2026-06-01", ordua: null, argibideak: "Kurtso bukaerako check-list aplikatiboa irakaslegoari azaldu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }, { mota: "pertsona", balioa: "urtzi_carrera" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "3. ebaluazioko juntak (DBH)", mota: "egutegikoa", data: "2026-06-03", ordua: null, argibideak: "DBHko ebaluazio bilerak.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "DBH 3. ebaluazioko notak argitaratu", mota: "egutegikoa", data: "2026-06-04", ordua: null, argibideak: "DBHko hirugarren ebaluazioko notak familiei argitaratu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "gotzone_vazquez" }], informatiboak: [{ mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Materialen zirkularra eginda", mota: "egutegikoa", data: "2026-06-05", ordua: null, argibideak: "Hurrengo ikasturterako materialen zirkularra prestatu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "nerea_gonzalez" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "JPP Azalpena", mota: "egutegikoa", data: "2026-06-05", ordua: null, argibideak: "Jarduera Plan Pertsonalizatuaren azalpena irakaslegoari.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "nerea_gonzalez" }], informatiboak: [{ mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "4. ebaluazioko notak sartu", mota: "egutegikoa", data: "2026-06-08", ordua: null, argibideak: "Laugarren ebaluazioko notak aplikatiboan sartu.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }, { mota: "rola", balioa: "Arloko irakaslea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "Zerbitzuen zirkularra bidali", mota: "egutegikoa", data: "2026-06-08", ordua: null, argibideak: "Zerbitzuen (jantokia, garraioa...) zirkularra prestatu eta bidali.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Txosten ebaluatiboa azalpena", mota: "egutegikoa", data: "2026-06-08", ordua: null, argibideak: "Txosten ebaluatiboa nola bete azaldu prozesu/proiektu koordinatzaileei.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "rola", balioa: "Prozesu/proiektu koordinatzailea" }] },
-  { id: mkId(), izenburua: "4. ebaluazioko notak sartuta", mota: "egutegikoa", data: "2026-06-09", ordua: null, argibideak: "Laugarren ebaluazioko notak sartuta egon behar dute.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }, { mota: "rola", balioa: "Arloko irakaslea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "ACIen emaitzak Gotzoneri", mota: "egutegikoa", data: "2026-06-09", ordua: null, argibideak: "ACI duten ikasleen emaitzak Gotzoneri eman.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "nerea_gonzalez" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Txosten ebaluatiboak egin", mota: "egutegikoa", data: "2026-06-09", ordua: "13:30", argibideak: "Proiektuka koordinatzaileek txosten ebaluatiboak egiten hasi.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Prozesu/proiektu koordinatzailea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "HH-LH notak EJ aplikatibora igo", mota: "egutegikoa", data: "2026-06-10", ordua: null, argibideak: "HH eta LHko notak Eusko Jaurlaritzako aplikatibora igo.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "gotzone_vazquez" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "Gaitasunak EJ aplikatiboan azalpena (HH)", mota: "egutegikoa", data: "2026-06-10", ordua: null, argibideak: "Gaitasunak Eusko Jaurlaritzako aplikatiboan nola sartu azaldu HH irakasleei.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "begona_lorono" }], informatiboak: [{ mota: "etapa", balioa: "HH" }] },
-  { id: mkId(), izenburua: "Gaitasunak EJ aplikatiboan azalpena (LH)", mota: "egutegikoa", data: "2026-06-10", ordua: null, argibideak: "Gaitasunak Eusko Jaurlaritzako aplikatiboan nola sartu azaldu LH irakasleei.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "urtzi_carrera" }], informatiboak: [{ mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "Gaitasunak aplikatiboan pikatu (HH5)", mota: "egutegikoa", data: "2026-06-11", ordua: null, argibideak: "HH5eko gaitasunak EJ aplikatiboan pikatu.", estekak: [], arduradunak: [{ mota: "maila", balioa: "HH5" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Gaitasunak aplikatiboan pikatu (LH)", mota: "egutegikoa", data: "2026-06-11", ordua: null, argibideak: "LHko gaitasunak EJ aplikatiboan pikatu.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "LH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Bakarkako txostenen azalpena", mota: "egutegikoa", data: "2026-06-11", ordua: null, argibideak: "Bakarkako txostenak nola bete azaldu tutoreei.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "rola", balioa: "Tutorea" }] },
-  { id: mkId(), izenburua: "Errefortzu linguistikoko txostenak eginda", mota: "egutegikoa", data: "2026-06-11", ordua: null, argibideak: "PRL irakasleek errefortzu linguistikoko txostenak egin.", estekak: [], arduradunak: [{ mota: "rola", balioa: "PRL irakaslea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Materialaren zirkularra bidali", mota: "egutegikoa", data: "2026-06-12", ordua: null, argibideak: "Materialen zirkularra familiei bidali.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "josune_alonso" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Kurtso bukaerako zirkularra", mota: "egutegikoa", data: "2026-06-12", ordua: null, argibideak: "Kurtso bukaerako zirkularra prestatu eta bidali.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "HH-LH 3. ebaluazioko notak argitaratu", mota: "egutegikoa", data: "2026-06-12", ordua: null, argibideak: "HH eta LHko hirugarren ebaluazioko notak argitaratu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "gotzone_vazquez" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }] },
-  { id: mkId(), izenburua: "EJko aktak errepasatu (HH5)", mota: "egutegikoa", data: "2026-06-15", ordua: null, argibideak: "Eusko Jaurlaritzako aktak errepasatu HH5 taldean.", estekak: [], arduradunak: [{ mota: "maila", balioa: "HH5" }], informatiboak: [] },
-  { id: mkId(), izenburua: "EJko aktak errepasatu (LH)", mota: "egutegikoa", data: "2026-06-15", ordua: null, argibideak: "Eusko Jaurlaritzako aktak errepasatu LH maila guztietan.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "LH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "4. ebaluazioko notak sartuta (DBH)", mota: "egutegikoa", data: "2026-06-15", ordua: null, argibideak: "DBHko laugarren ebaluazioko notak sartuta.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "4. ebaluazioko juntak (DBH)", mota: "egutegikoa", data: "2026-06-15", ordua: null, argibideak: "DBHko laugarren ebaluazioko bilerak.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Gaitasunak aplikatiboan pikatu (DBH)", mota: "egutegikoa", data: "2026-06-16", ordua: null, argibideak: "DBHko gaitasunak EJ aplikatiboan pikatu.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "DBH 4. ebaluazioko notak argitaratu", mota: "egutegikoa", data: "2026-06-16", ordua: null, argibideak: "DBHko laugarren ebaluazioko notak familiei argitaratu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "gotzone_vazquez" }], informatiboak: [{ mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Espazio berriak azalpena", mota: "egutegikoa", data: "2026-06-17", ordua: null, argibideak: "Hurrengo ikasturterako espazio berrien azalpena.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Erreparazioak azalpena", mota: "egutegikoa", data: "2026-06-17", ordua: null, argibideak: "Erreparazio orriak nola bete azaldu.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Sobreak egin", mota: "egutegikoa", data: "2026-06-17", ordua: null, argibideak: "Ikasleen sobreak prestatu dokumentazioarekin.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "EJ Informe indibidualak bete", mota: "egutegikoa", data: "2026-06-18", ordua: null, argibideak: "Eusko Jaurlaritzako informe indibidualak bete tutoreek.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Sobreak eman joaten direnei", mota: "egutegikoa", data: "2026-06-18", ordua: null, argibideak: "Zentrutik joaten diren ikasleei sobreak eman.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Geletako mahaiak mugitu", mota: "egutegikoa", data: "2026-06-19", ordua: null, argibideak: "Gelak hustu eta mahaiak mugitu garbiketa sakonerako.", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "urtzi_carrera" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Txosten ebaluatiboak eginda (Proiektuak)", mota: "egutegikoa", data: "2026-06-19", ordua: null, argibideak: "Proiektuen txosten ebaluatiboak amaituta egon behar dute.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Prozesu/proiektu koordinatzailea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Ekintza Plana + Adierazleak", mota: "egutegikoa", data: "2026-06-19", ordua: null, argibideak: "KUDEAPP-en ekintza plana eta adierazleak eguneratuta eduki.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Prozesu/proiektu koordinatzailea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Gelak txukundu", mota: "egutegikoa", data: "2026-06-22", ordua: null, argibideak: "Gelak txukundu, materialak jaso eta garbitegira eraman.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Erreparazio orriak beteta", mota: "egutegikoa", data: "2026-06-23", ordua: null, argibideak: "Erreparazio orriak beteta entregatu.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "ENBOR eskaria eginda", mota: "egutegikoa", data: "2026-06-23", ordua: null, argibideak: "ENBOR materialaren eskaria eginda.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Txosten ebaluatiboa Anexo II", mota: "egutegikoa", data: "2026-06-23", ordua: null, argibideak: "Tutoreek Anexo II txosten ebaluatiboa bete.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [] },
-  { id: mkId(), izenburua: "JPPak egin", mota: "egutegikoa", data: "2026-06-24", ordua: null, argibideak: "Jarduera Plan Pertsonalizatuak egin dagokien ikasleei.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Artxibategiak antolatu", mota: "egutegikoa", data: "2026-06-24", ordua: null, argibideak: "Ikasleen artxibategiak antolatu karpeta horietan.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Familiekin bilerak", mota: "egutegikoa", data: "2026-06-25", ordua: "09:00-12:00", argibideak: "Familiekin banakako bilerak 9:00etatik 12:00etara.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "VEC itzulketa", mota: "egutegikoa", data: "2026-06-24", ordua: "12:30", argibideak: "VEC inkestaren emaitzen itzulketa (R. Aguado).", estekak: [], arduradunak: [{ mota: "pertsona", balioa: "ander_zarrabeitia" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Etapen arteko koordinazioa", mota: "egutegikoa", data: "2026-06-25", ordua: null, argibideak: "Etapen arteko koordinazio bilera.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Etapa koordinatzailea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Arloen arteko koordinazioa", mota: "egutegikoa", data: "2026-06-26", ordua: null, argibideak: "Arloen arteko koordinazio bilera.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Arloko irakaslea" }], informatiboak: [{ mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "DAFO / AMIA", mota: "egutegikoa", data: "2026-06-25", ordua: null, argibideak: "DAFO / AMIA analisia ikasturte bukaerako ebaluaziorako.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "EJko aktak sinatu", mota: "egutegikoa", data: "2026-06-26", ordua: null, argibideak: "Eusko Jaurlaritzako aktak sinatu irakasle guztiek.", estekak: [], arduradunak: [{ mota: "rola", balioa: "Tutorea" }, { mota: "rola", balioa: "Arloko irakaslea" }], informatiboak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }] },
-  { id: mkId(), izenburua: "Ospakizuna", mota: "egutegikoa", data: "2026-06-26", ordua: null, argibideak: "Kurtso bukaerako ospakizun txikia.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }], informatiboak: [{ mota: "rola", balioa: "EAE" }] },
-  { id: mkId(), izenburua: "Giltza bueltatu", mota: "egutegikoa", data: "2026-06-26", ordua: null, argibideak: "Gela eta bulegoen giltzak bueltatu.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Ordenagailuak teknikariari", mota: "egutegikoa", data: "2026-06-26", ordua: null, argibideak: "Ordenagailuak teknikariari eman berrikusterako.", estekak: [], arduradunak: [{ mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Formakuntza erregistroa", mota: "orokorra", data: "2026-06-30", ordua: null, argibideak: "Ikasturtean jasotako formakuntzak erregistratu.", estekak: [{ izena: "Erregistro karpeta", url: "" }], arduradunak: [{ mota: "etapa", balioa: "HH" }, { mota: "etapa", balioa: "LH" }, { mota: "etapa", balioa: "DBH" }], informatiboak: [] },
-  { id: mkId(), izenburua: "Erreparazio orriak bete", mota: "orokorra", data: "2026-06-30", ordua: null, argibideak: "Gelako erreparazio beharrak erregistratu.", estekak: [{ izena: "Erreparazio orria", url: "" }], arduradunak: [{ mota: "rola", balioa: "Tutorea" }], informatiboak: [] },
-];
-
 const emptyTask = () => ({ id: mkId(), izenburua: "", mota: "egutegikoa", data: "", ordua: null, argibideak: "", estekak: [], arduradunak: [], informatiboak: [], kategoria: "bestelakoa", filtroak: { etapak: [] }, irudia: null });
 
 const defaultCampaign = () => ({
-  izena: "Kurtso bukaera 2025-26", ikasturtea: "2025-26", pasahitza: "eami2026",
+  izena: "Kanpaina berria", ikasturtea: "", pasahitza: "admin",
   mota: "kurtso_bukaera", sortzeData: toDateStr(new Date()),
   etapak: [...ETAPAK], mailak: JSON.parse(JSON.stringify(MAILAK)),
   rolIrakaslegoa: [...ROLAK_IRAKASLEGOA], rolPas: [...ROLAK_PAS], rolOrokorra: [...ROLAK_OROKORRA],
   kategoriak: JSON.parse(JSON.stringify(KATEGORIAK_LEHENESPENAK)),
-  langileak: JSON.parse(JSON.stringify(LANGILEAK)),
-  atazak: JSON.parse(JSON.stringify(ATAZAK_HASIERAKOAK)),
+  langileak: [],
+  atazak: [],
 });
 
 const normalizeTask = (t) => ({
@@ -219,6 +99,28 @@ const getAssignLabel = (a, langileak) => {
 };
 const MOTA_ICONS = { pertsona: "👤", rola: "🏷️", etapa: "🏫", maila: "📚" };
 const ETAPA_COLORS = { HE: "#8b5cf6", HH: "#f59e0b", LH: "#10b981", DBH: "#3b82f6" };
+
+// Excel template download
+const downloadExcelTemplate = (type) => {
+  if (typeof XLSX === "undefined") { alert("XLSX liburutegia ez dago kargatuta."); return; }
+  const wb = XLSX.utils.book_new();
+  if (type === "langileak") {
+    const data = [
+      ["izena", "emaila", "etapa", "maila", "rolak"],
+      ["Adibidea Izena", "adibidea@eskola.com", "LH", "LH3", "Tutorea"],
+      ["Beste Bat", "bestebat@eskola.com", "DBH", "", "Arloko irakaslea, PT"],
+    ];
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(data), "Langileak");
+  } else {
+    const data = [
+      ["izenburua", "mota", "data", "argibideak"],
+      ["Adibide ataza", "egutegikoa", "2026-06-15", "Hemen argibideak jarri"],
+      ["Beste ataza bat", "orokorra", "2026-06-30", "Mugaeguna duen ataza"],
+    ];
+    XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(data), "Atazak");
+  }
+  XLSX.writeFile(wb, type + "_txantiloia.xlsx");
+};
 
 // Excel import handler
 const handleExcelImport = (e, type, campaign, upCamp) => {
@@ -562,15 +464,19 @@ function App() {
                 const saved = JSON.parse(localStorage.getItem("eami_profiles_list") || "[]");
                 const others = saved.filter(p => p.id !== userProfile.id);
                 return others.length > 0 ? (
-                  <select onChange={e => {
-                    if (!e.target.value) return;
-                    const p = saved.find(x => x.id === e.target.value);
-                    if (p) { saveUserProfile(p); setView("user_main"); }
-                    e.target.value = "";
-                  }} style={{ ...S.select, fontSize: 12, color: "#6b7280" }} defaultValue="">
-                    <option value="">👤 Beste profil bat...</option>
-                    {others.map(p => <option key={p.id} value={p.id}>{p.izena}</option>)}
-                  </select>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 4, marginTop: 4 }}>
+                    {others.map(p => (
+                      <div key={p.id} style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                        <button onClick={() => { saveUserProfile(p); setView("user_main"); }}
+                          style={{ ...S.btnSm, flex: 1, textAlign: "left" }}>👤 {p.izena}</button>
+                        <button onClick={() => {
+                          const updated = saved.filter(x => x.id !== p.id);
+                          localStorage.setItem("eami_profiles_list", JSON.stringify(updated));
+                          setUserProfile(prev => prev);  // force re-render
+                        }} style={{ ...S.btnIcon, color: "#ef4444", fontSize: 11 }} title="Profila ezabatu">✕</button>
+                      </div>
+                    ))}
+                  </div>
                 ) : null;
               })()}
               <button onClick={() => { setView("user_profile"); }} style={S.btnSm}>⚙️ Profila aldatu</button>
@@ -618,30 +524,29 @@ function App() {
               }
             }} style={{ ...S.btnSm, background: "#2B5EA7", color: "#fff", border: "none", transition: "background .2s" }}>🌐 Eguneratu URLtik</button>
           )}
-          {/* Autosave restore */}
-          {autoSaveRestore && !campaign && (
-            <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 10, padding: "12px 16px", marginTop: 4 }}>
-              <p style={{ fontSize: 12, color: "#92400e", margin: "0 0 8px" }}>📦 Autogordetze bat aurkitu da: <b>{autoSaveRestore.izena}</b></p>
-              <div style={{ display: "flex", gap: 6 }}>
-                <button onClick={() => {
-                  const pw = prompt("Admin pasahitza:");
-                  if (pw === autoSaveRestore.pasahitza) {
-                    setCampaign(normalizeCampaign(autoSaveRestore));
-                    setLoadedFilename(localStorage.getItem("eami_admin_autosave_filename") || null);
-                    setView("admin"); setAutoSaveRestore(null); showToast("Autogordetzetik berreskuratuta");
-                  } else if (pw !== null) alert("Pasahitz okerra!");
-                }} style={{ ...S.btnSm, flex: 1, background: "#f59e0b", color: "#fff", border: "none" }}>Berreskuratu</button>
-                <button onClick={() => {
-                  setAutoSaveRestore(null);
-                  localStorage.removeItem("eami_admin_autosave");
-                  localStorage.removeItem("eami_admin_autosave_filename");
-                }} style={{ ...S.btnSm, flex: 1 }}>Baztertu</button>
-              </div>
-            </div>
-          )}
           {/* Admin mode */}
           <div style={{ borderTop: "1px solid #e5ddd3", marginTop: 12, paddingTop: 16 }}>
             <p style={{ color: "#9ca3af", fontSize: 11, marginBottom: 10, fontFamily: "'Outfit', sans-serif" }}>Zuzendaritza taldea</p>
+            {autoSaveRestore && !campaign && (
+              <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 8, padding: "10px 12px", marginBottom: 10, textAlign: "left" }}>
+                <p style={{ fontSize: 11, color: "#92400e", margin: "0 0 6px" }}>📦 Autogordetze: <b>{autoSaveRestore.izena}</b></p>
+                <div style={{ display: "flex", gap: 6 }}>
+                  <button onClick={() => {
+                    const pw = prompt("Admin pasahitza:");
+                    if (pw === autoSaveRestore.pasahitza) {
+                      setCampaign(normalizeCampaign(autoSaveRestore));
+                      setLoadedFilename(localStorage.getItem("eami_admin_autosave_filename") || null);
+                      setView("admin"); setAutoSaveRestore(null); showToast("Berreskuratuta");
+                    } else if (pw !== null) alert("Pasahitz okerra!");
+                  }} style={{ ...S.btnSm, flex: 1, background: "#f59e0b", color: "#fff", border: "none" }}>Berreskuratu</button>
+                  <button onClick={() => {
+                    setAutoSaveRestore(null);
+                    localStorage.removeItem("eami_admin_autosave");
+                    localStorage.removeItem("eami_admin_autosave_filename");
+                  }} style={{ ...S.btnSm, flex: 1 }}>Baztertu</button>
+                </div>
+              </div>
+            )}
             <div style={{ display: "flex", gap: 8 }}>
               <button onClick={() => {
                 const pw = prompt("Admin pasahitza:");
@@ -1216,6 +1121,7 @@ function TaskModal({ task, c, onSave, onClose }) {
 // ─── STAFF VIEW ───
 function StaffView({ c, onEdit, onDel }) {
   const [fi, setFi] = useState("all");
+  const [viewMode, setViewMode] = useState("panel");
   const groups = { HE: [], HH: [], LH: [], DBH: [], PT: [], EAE: [], PAS: [] };
   c.langileak.forEach(l => {
     if (l.rolak.includes("EAE")) groups.EAE.push(l);
@@ -1224,13 +1130,23 @@ function StaffView({ c, onEdit, onDel }) {
     else if (l.etapa && groups[l.etapa]) groups[l.etapa].push(l);
     else groups.PAS.push(l);
   });
-  const list = fi === "all" ? c.langileak : (groups[fi] || []);
+  const list = (fi === "all" ? c.langileak : (groups[fi] || [])).slice().sort((a, b) => a.izena.localeCompare(b.izena, "eu"));
 
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <h2 style={{ color: "#1e3a5f", fontSize: 22, margin: 0, fontFamily: "'Source Serif 4', serif" }}>Langileak</h2>
-        <button onClick={() => onEdit({ id: `new_${Date.now()}`, izena: "", etapa: null, maila: null, rolak: [], email: "" })} style={S.btnPri}>+ Langile berria</button>
+        <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+          <div style={{ display: "flex", background: "#fff", borderRadius: 8, padding: 2, border: "1px solid #e5ddd3" }}>
+            {[{ id: "panel", icon: "▦" }, { id: "zerrenda", icon: "☰" }].map(v => (
+              <button key={v.id} onClick={() => setViewMode(v.id)} style={{
+                padding: "5px 10px", borderRadius: 6, border: "none", fontSize: 12, cursor: "pointer", fontFamily: "inherit",
+                background: viewMode === v.id ? "#1e3a5f" : "transparent", color: viewMode === v.id ? "#fff" : "#6b7280",
+              }}>{v.icon}</button>
+            ))}
+          </div>
+          <button onClick={() => onEdit({ id: `new_${Date.now()}`, izena: "", etapa: null, maila: null, rolak: [], email: "" })} style={S.btnPri}>+ Langile berria</button>
+        </div>
       </div>
       <div style={{ display: "flex", gap: 4, marginBottom: 16, flexWrap: "wrap", background: "#fff", borderRadius: 10, padding: 3, border: "1px solid #e5ddd3", width: "fit-content" }}>
         {["all", "HE", "HH", "LH", "DBH", "PT", "EAE", "PAS"].map(f => (
@@ -1241,6 +1157,7 @@ function StaffView({ c, onEdit, onDel }) {
           }}>{f === "all" ? "Guztiak" : f} ({f === "all" ? c.langileak.length : ((groups[f] || []).length)})</button>
         ))}
       </div>
+      {viewMode === "panel" ? (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 8 }}>
         {list.map(l => (
           <div key={l.id} style={{ background: "#fff", border: "1px solid #e5ddd3", borderRadius: 10, padding: "11px 16px", cursor: "pointer", transition: "box-shadow .15s",
@@ -1260,6 +1177,28 @@ function StaffView({ c, onEdit, onDel }) {
           </div>
         ))}
       </div>
+      ) : (
+      <table style={{ width: "100%", borderCollapse: "collapse", background: "#fff", borderRadius: 10, overflow: "hidden", border: "1px solid #e5ddd3" }}>
+        <thead><tr style={{ background: "#faf8f5", fontSize: 11, color: "#6b7280", textTransform: "uppercase" }}>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Izena</th>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Etapa</th>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Maila</th>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Rolak</th>
+          <th style={{ padding: "8px 6px", width: 40 }}></th>
+        </tr></thead>
+        <tbody>{list.map(l => (
+          <tr key={l.id} onClick={() => onEdit(l)} style={{ cursor: "pointer", borderTop: "1px solid #f0ebe3" }}
+            onMouseEnter={e => e.currentTarget.style.background = "#faf8f5"}
+            onMouseLeave={e => e.currentTarget.style.background = ""}>
+            <td style={{ padding: "8px 12px", fontSize: 13, fontWeight: 600, color: "#1f2937" }}>{l.izena}</td>
+            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{l.etapa || "—"}</td>
+            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{l.maila || "—"}</td>
+            <td style={{ padding: "8px 12px", fontSize: 11, color: "#6b7280" }}>{l.rolak.join(", ")}</td>
+            <td style={{ padding: "8px 6px" }}><button onClick={e => { e.stopPropagation(); onDel(l.id); }} style={{ ...S.btnIcon, color: "#ef4444", fontSize: 12 }}>🗑️</button></td>
+          </tr>
+        ))}</tbody>
+      </table>
+      )}
     </div>
   );
 }
@@ -1459,16 +1398,18 @@ function CampView({ c, upCamp }) {
         {/* Excel import */}
         <div style={{ background: "#eff6ff", borderRadius: 10, padding: 16, border: "1px solid #bfdbfe" }}>
           <div style={{ color: "#1e3a5f", fontSize: 13, fontWeight: 600, marginBottom: 8 }}>📥 Excel inportazioa</div>
-          <p style={{ fontSize: 11, color: "#6b7280", marginBottom: 10 }}>Langileen edo ataza berriak Excel fitxategi batetik inportatu.</p>
-          <div style={{ display: "flex", gap: 8 }}>
+          <p style={{ fontSize: 11, color: "#6b7280", marginBottom: 10 }}>Langileen edo ataza berriak Excel fitxategi batetik inportatu, edo txantiloia deskargatu.</p>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
             <label style={{ ...S.btnSm, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4 }}>
-              👥 Langileak inportatu (.xlsx)
+              👥 Langileak inportatu
               <input type="file" accept=".xlsx,.xls,.csv" onChange={(e) => handleExcelImport(e, "langileak", c, upCamp)} style={{ display: "none" }} />
             </label>
             <label style={{ ...S.btnSm, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 4 }}>
-              📋 Atazak inportatu (.xlsx)
+              📋 Atazak inportatu
               <input type="file" accept=".xlsx,.xls,.csv" onChange={(e) => handleExcelImport(e, "atazak", c, upCamp)} style={{ display: "none" }} />
             </label>
+            <button onClick={() => downloadExcelTemplate("langileak")} style={{ ...S.btnSm, color: "#2B5EA7" }}>⬇️ Langileen txantiloia</button>
+            <button onClick={() => downloadExcelTemplate("atazak")} style={{ ...S.btnSm, color: "#2B5EA7" }}>⬇️ Atazen txantiloia</button>
           </div>
           <p style={{ fontSize: 10, color: "#9ca3af", marginTop: 6 }}>Langileak: zutabeak → izena, emaila, etapa, maila, rolak (komaz bereizita). Atazak: zutabeak → izenburua, mota, data, argibideak.</p>
         </div>
