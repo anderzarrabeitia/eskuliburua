@@ -70,11 +70,18 @@ const normalizeTask = (t) => ({
   estekak: t.estekak || [],
   irudia: t.irudia || null,
 });
+const normalizeStaff = (l) => {
+  var et = l.etapak || (l.etapa ? [l.etapa] : []);
+  var ml = l.mailak || (l.maila ? [l.maila] : []);
+  var out = { id: l.id, izena: l.izena || "", etapak: et, mailak: ml, rolak: l.rolak || [], email: l.email || "" };
+  return out;
+};
 const normalizeCampaign = (c) => ({
   ...c,
   url: c.url || "",
   sortzeData: c.sortzeData || toDateStr(new Date()),
   kategoriak: c.kategoriak || JSON.parse(JSON.stringify(KATEGORIAK_LEHENESPENAK)),
+  langileak: (c.langileak || []).map(normalizeStaff),
   atazak: (c.atazak || []).map(normalizeTask),
 });
 
@@ -107,9 +114,9 @@ const downloadExcelTemplate = (type) => {
   const wb = XLSX.utils.book_new();
   if (type === "langileak") {
     const data = [
-      ["izena", "emaila", "etapa", "maila", "rolak"],
+      ["izena", "emaila", "etapak", "mailak", "rolak"],
       ["Adibidea Izena", "adibidea@eskola.com", "LH", "LH3", "Tutorea"],
-      ["Beste Bat", "bestebat@eskola.com", "DBH", "", "Arloko irakaslea, PT"],
+      ["Beste Bat", "bestebat@eskola.com", "LH, DBH", "LH5, DBH1", "Arloko irakaslea, PT"],
     ];
     XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(data), "Langileak");
   } else {
@@ -138,9 +145,9 @@ const handleExcelImport = (e, type, campaign, upCamp) => {
           id: `import_${Date.now()}_${i}`,
           izena: r.izena || r.Izena || r.nombre || "",
           email: r.emaila || r.Emaila || r.email || "",
-          etapa: r.etapa || r.Etapa || null,
-          maila: r.maila || r.Maila || null,
-          rolak: (r.rolak || r.Rolak || "").split(",").map(s => s.trim()).filter(Boolean),
+          etapak: (r.etapak || r.Etapak || r.etapa || r.Etapa || "").toString().split(",").map(function(s) { return s.trim(); }).filter(Boolean),
+          mailak: (r.mailak || r.Mailak || r.maila || r.Maila || "").toString().split(",").map(function(s) { return s.trim(); }).filter(Boolean),
+          rolak: (r.rolak || r.Rolak || "").toString().split(",").map(function(s) { return s.trim(); }).filter(Boolean),
         })).filter(l => l.izena);
         upCamp({ langileak: [...campaign.langileak, ...newStaff] });
         alert(`${newStaff.length} langile inportatu dira.`);
@@ -271,8 +278,8 @@ function App() {
   const [toast, setToast] = useState(null);
   const [confirmAction, setConfirmAction] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(typeof window !== "undefined" && window.innerWidth > 768);
-  const [userCampaign, setUserCampaign] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_user_campaign")); } catch(e) { return null; } });
-  const [userProfile, setUserProfile] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_user_profile")); } catch(e) { return null; } });
+  const [userCampaign, setUserCampaign] = useState(() => { try { var d = JSON.parse(localStorage.getItem("eami_user_campaign")); return d ? normalizeCampaign(d) : null; } catch(e) { return null; } });
+  const [userProfile, setUserProfile] = useState(() => { try { var p = JSON.parse(localStorage.getItem("eami_user_profile")); return p ? normalizeStaff(p) : null; } catch(e) { return null; } });
   const [completedTasks, setCompletedTasks] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_completed")) || {}; } catch(e) { return {}; } });
   const [enterLoading, setEnterLoading] = useState(false);
   const [profilesKey, setProfilesKey] = useState(0);
@@ -510,7 +517,7 @@ function App() {
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               <div style={{ background: "#faf8f5", borderRadius: 10, padding: "12px 16px", border: "1px solid #e5ddd3", textAlign: "left" }}>
                 <div style={{ fontSize: 13, fontWeight: 600, color: "#1e3a5f" }}>{userCampaign.izena || "Kanpaina"}</div>
-                <div style={{ fontSize: 11, color: "#8b7e74", marginTop: 3 }}>👤 {userProfile.izena}{userProfile.etapa ? " · " + [userProfile.etapa, userProfile.maila].filter(Boolean).join(" · ") : ""}</div>
+                <div style={{ fontSize: 11, color: "#8b7e74", marginTop: 3 }}>👤 {userProfile.izena}{(userProfile.etapak || []).length > 0 ? " · " + (userProfile.etapak || []).concat(userProfile.mailak || []).join(" · ") : ""}</div>
               </div>
               <button onClick={enterUserMode} disabled={enterLoading} style={{
                 ...S.btnPri, width: "100%", padding: "14px 20px", fontSize: 15,
@@ -1199,8 +1206,11 @@ function StaffView({ c, onEdit, onDel }) {
     if (l.rolak.includes("EAE")) groups.EAE.push(l);
     else if (l.rolak.includes("PT") && !l.rolak.includes("Tutorea")) groups.PT.push(l);
     else if (["Idazkaria", "Administratzailea", "Atezaina", "Mantenua"].some(r => l.rolak.includes(r))) groups.PAS.push(l);
-    else if (l.etapa && groups[l.etapa]) groups[l.etapa].push(l);
-    else groups.PAS.push(l);
+    else {
+      var placed = false;
+      (l.etapak || []).forEach(function(et) { if (groups[et]) { groups[et].push(l); placed = true; } });
+      if (!placed) groups.PAS.push(l);
+    }
   });
   const list = (fi === "all" ? c.langileak : (groups[fi] || [])).slice().sort((a, b) => a.izena.localeCompare(b.izena, "eu"));
 
@@ -1217,7 +1227,7 @@ function StaffView({ c, onEdit, onDel }) {
               }}>{v.icon}</button>
             ))}
           </div>
-          <button onClick={() => onEdit({ id: `new_${Date.now()}`, izena: "", etapa: null, maila: null, rolak: [], email: "" })} style={S.btnPri}>+ Langile berria</button>
+          <button onClick={() => onEdit({ id: `new_${Date.now()}`, izena: "", etapak: [], mailak: [], rolak: [], email: "" })} style={S.btnPri}>+ Langile berria</button>
         </div>
       </div>
       <div style={{ display: "flex", gap: 4, marginBottom: 16, flexWrap: "wrap", background: "#fff", borderRadius: 10, padding: 3, border: "1px solid #e5ddd3", width: "fit-content" }}>
@@ -1231,9 +1241,11 @@ function StaffView({ c, onEdit, onDel }) {
       </div>
       {viewMode === "panel" ? (
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 8 }}>
-        {list.map(l => (
+        {list.map(l => {
+          var firstEt = (l.etapak || [])[0];
+          return (
           <div key={l.id} style={{ background: "#fff", border: "1px solid #e5ddd3", borderRadius: 10, padding: "11px 16px", cursor: "pointer", transition: "box-shadow .15s",
-            borderLeft: l.etapa ? `4px solid ${ETAPA_COLORS[l.etapa] || "#9ca3af"}` : "4px solid #9ca3af"
+            borderLeft: firstEt ? `4px solid ${ETAPA_COLORS[firstEt] || "#9ca3af"}` : "4px solid #9ca3af"
           }} onClick={() => onEdit(l)}
             onMouseEnter={e => e.currentTarget.style.boxShadow = "0 2px 8px rgba(0,0,0,0.06)"}
             onMouseLeave={e => e.currentTarget.style.boxShadow = "none"}>
@@ -1241,20 +1253,21 @@ function StaffView({ c, onEdit, onDel }) {
               <div>
                 <div style={{ fontWeight: 600, fontSize: 13, color: "#1f2937" }}>{l.izena}</div>
                 <div style={{ fontSize: 11, color: "#6b7280", marginTop: 2 }}>
-                  {[l.etapa, l.maila].filter(Boolean).join(" · ")} {l.rolak.length > 0 && `— ${l.rolak.join(", ")}`}
+                  {(l.etapak || []).concat(l.mailak || []).join(" · ")} {l.rolak.length > 0 && `— ${l.rolak.join(", ")}`}
                 </div>
               </div>
               <button onClick={e => { e.stopPropagation(); onDel(l.id); }} style={{ ...S.btnIcon, color: "#ef4444", fontSize: 12 }}>🗑️</button>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
       ) : (
       <table style={{ width: "100%", borderCollapse: "collapse", background: "#fff", borderRadius: 10, overflow: "hidden", border: "1px solid #e5ddd3" }}>
         <thead><tr style={{ background: "#faf8f5", fontSize: 11, color: "#6b7280", textTransform: "uppercase" }}>
           <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Izena</th>
-          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Etapa</th>
-          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Maila</th>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Etapak</th>
+          <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Mailak</th>
           <th style={{ padding: "8px 12px", textAlign: "left", fontWeight: 600 }}>Rolak</th>
           <th style={{ padding: "8px 6px", width: 40 }}></th>
         </tr></thead>
@@ -1263,8 +1276,8 @@ function StaffView({ c, onEdit, onDel }) {
             onMouseEnter={e => e.currentTarget.style.background = "#faf8f5"}
             onMouseLeave={e => e.currentTarget.style.background = ""}>
             <td style={{ padding: "8px 12px", fontSize: 13, fontWeight: 600, color: "#1f2937" }}>{l.izena}</td>
-            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{l.etapa || "—"}</td>
-            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{l.maila || "—"}</td>
+            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{(l.etapak || []).join(", ") || "—"}</td>
+            <td style={{ padding: "8px 12px", fontSize: 12, color: "#6b7280" }}>{(l.mailak || []).join(", ") || "—"}</td>
             <td style={{ padding: "8px 12px", fontSize: 11, color: "#6b7280" }}>{l.rolak.join(", ")}</td>
             <td style={{ padding: "8px 6px" }}><button onClick={e => { e.stopPropagation(); onDel(l.id); }} style={{ ...S.btnIcon, color: "#ef4444", fontSize: 12 }}>🗑️</button></td>
           </tr>
@@ -1277,11 +1290,37 @@ function StaffView({ c, onEdit, onDel }) {
 
 // ─── STAFF MODAL ───
 function StaffModal({ person, c, onSave, onClose }) {
-  const [f, setF] = useState(JSON.parse(JSON.stringify(person)));
+  const [f, setF] = useState(function() {
+    var p = JSON.parse(JSON.stringify(person));
+    p.etapak = p.etapak || (p.etapa ? [p.etapa] : []);
+    p.mailak = p.mailak || (p.maila ? [p.maila] : []);
+    return p;
+  });
   const up = (k, v) => setF(p => ({ ...p, [k]: v }));
   const allRoles = [...(c.rolIrakaslegoa || ROLAK_IRAKASLEGOA), ...(c.rolPas || ROLAK_PAS), ...(c.rolOrokorra || ROLAK_OROKORRA)];
-  const mails = f.etapa ? ((c.mailak || {})[f.etapa] || MAILAK[f.etapa] || []) : [];
+  // Collect all available mailak for all selected etapak
+  var availableMailak = [];
+  (f.etapak || []).forEach(function(et) {
+    var ms = (c.mailak || {})[et] || MAILAK[et] || [];
+    ms.forEach(function(m) { if (availableMailak.indexOf(m) < 0) availableMailak.push(m); });
+  });
   const togR = r => { const a = [...f.rolak]; const i = a.indexOf(r); if (i >= 0) a.splice(i, 1); else a.push(r); up("rolak", a); };
+  const togEtapa = function(et) {
+    var a = [].concat(f.etapak || []);
+    var i = a.indexOf(et);
+    if (i >= 0) a.splice(i, 1); else a.push(et);
+    // Remove mailak that no longer belong to any selected etapa
+    var validMailak = [];
+    a.forEach(function(e) { (((c.mailak || {})[e]) || MAILAK[e] || []).forEach(function(m) { if (validMailak.indexOf(m) < 0) validMailak.push(m); }); });
+    var newMailak = (f.mailak || []).filter(function(m) { return validMailak.indexOf(m) >= 0; });
+    setF(function(p) { return { ...p, etapak: a, mailak: newMailak }; });
+  };
+  const togMaila = function(ml) {
+    var a = [].concat(f.mailak || []);
+    var i = a.indexOf(ml);
+    if (i >= 0) a.splice(i, 1); else a.push(ml);
+    up("mailak", a);
+  };
 
   return (
     <div style={S.overlay} onClick={onClose}>
@@ -1292,19 +1331,36 @@ function StaffModal({ person, c, onSave, onClose }) {
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
           <div><label style={S.label}>Izena *</label><input value={f.izena} onChange={e => up("izena", e.target.value)} style={S.input} /></div>
           <div><label style={S.label}>Emaila</label><input value={f.email} onChange={e => up("email", e.target.value)} style={S.input} /></div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-            <div><label style={S.label}>Etapa</label>
-              <select value={f.etapa || ""} onChange={e => up("etapa", e.target.value || null)} style={S.select}>
-                <option value="">— Transbertsala</option>
-                {(c.etapak || ETAPAK).map(e => <option key={e} value={e}>{e}</option>)}
-              </select>
-            </div>
-            <div><label style={S.label}>Maila</label>
-              <select value={f.maila || ""} onChange={e => up("maila", e.target.value || null)} style={S.select}>
-                <option value="">—</option>{mails.map(m => <option key={m} value={m}>{m}</option>)}
-              </select>
+          <div>
+            <label style={S.label}>Etapak</label>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+              {(c.etapak || ETAPAK).map(function(et) { return (
+                <button key={et} onClick={function() { togEtapa(et); }} style={{
+                  padding: "4px 10px", borderRadius: 6, fontSize: 11, cursor: "pointer", fontFamily: "inherit",
+                  border: "1.5px solid " + ((f.etapak || []).indexOf(et) >= 0 ? (ETAPA_COLORS[et] || "#1e3a5f") : "#d1d5db"),
+                  background: (f.etapak || []).indexOf(et) >= 0 ? (ETAPA_COLORS[et] || "#1e3a5f") + "20" : "#fff",
+                  color: (f.etapak || []).indexOf(et) >= 0 ? "#1e3a5f" : "#6b7280",
+                  fontWeight: (f.etapak || []).indexOf(et) >= 0 ? 600 : 400,
+                }}>{et}</button>
+              ); })}
             </div>
           </div>
+          {availableMailak.length > 0 && (
+          <div>
+            <label style={S.label}>Mailak</label>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+              {availableMailak.map(function(ml) { return (
+                <button key={ml} onClick={function() { togMaila(ml); }} style={{
+                  padding: "4px 10px", borderRadius: 6, fontSize: 11, cursor: "pointer", fontFamily: "inherit",
+                  border: "1.5px solid " + ((f.mailak || []).indexOf(ml) >= 0 ? "#1e3a5f" : "#d1d5db"),
+                  background: (f.mailak || []).indexOf(ml) >= 0 ? "#e0e7ef" : "#fff",
+                  color: (f.mailak || []).indexOf(ml) >= 0 ? "#1e3a5f" : "#6b7280",
+                  fontWeight: (f.mailak || []).indexOf(ml) >= 0 ? 600 : 400,
+                }}>{ml}</button>
+              ); })}
+            </div>
+          </div>
+          )}
           <div>
             <label style={S.label}>Rolak</label>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
@@ -1483,7 +1539,7 @@ function CampView({ c, upCamp }) {
             <button onClick={() => downloadExcelTemplate("langileak")} style={{ ...S.btnSm, color: "#2B5EA7" }}>⬇️ Langileen txantiloia</button>
             <button onClick={() => downloadExcelTemplate("atazak")} style={{ ...S.btnSm, color: "#2B5EA7" }}>⬇️ Atazen txantiloia</button>
           </div>
-          <p style={{ fontSize: 10, color: "#9ca3af", marginTop: 6 }}>Langileak: zutabeak → izena, emaila, etapa, maila, rolak (komaz bereizita). Atazak: zutabeak → izenburua, mota, data, argibideak.</p>
+          <p style={{ fontSize: 10, color: "#9ca3af", marginTop: 6 }}>Langileak: zutabeak → izena, emaila, etapak, mailak, rolak (komaz bereizita). Atazak: zutabeak → izenburua, mota, data, argibideak.</p>
         </div>
         <div style={{ background: "#faf8f5", borderRadius: 10, padding: 16 }}>
           <div style={{ color: "#1e3a5f", fontSize: 14, fontWeight: 600, marginBottom: 10 }}>📊 Laburpena</div>
@@ -1505,26 +1561,50 @@ function UserProfileSetup({ campaign, profile, onSave, onBack }) {
   const [customMode, setCustomMode] = useState(profile && profile.id && profile.id.startsWith("custom_") || false);
   const [customName, setCustomName] = useState((profile || {}).izena || "");
   const [customRoles, setCustomRoles] = useState((profile || {}).rolak || []);
-  const [customEtapa, setCustomEtapa] = useState((profile || {}).etapa || null);
-  const [customMaila, setCustomMaila] = useState((profile || {}).maila || null);
+  const [customEtapak, setCustomEtapak] = useState((profile || {}).etapak || []);
+  const [customMailak, setCustomMailak] = useState((profile || {}).mailak || []);
 
   const person = !customMode ? campaign.langileak.find(l => l.id === selectedId) : null;
   const allRoles = [...(campaign.rolIrakaslegoa || ROLAK_IRAKASLEGOA), ...(campaign.rolPas || ROLAK_PAS), ...(campaign.rolOrokorra || ROLAK_OROKORRA)];
-  const mailakForEtapa = customEtapa ? ((campaign.mailak || {})[customEtapa] || MAILAK[customEtapa] || []) : [];
+  var availableMailak = [];
+  customEtapak.forEach(function(et) {
+    var ms = (campaign.mailak || {})[et] || MAILAK[et] || [];
+    ms.forEach(function(m) { if (availableMailak.indexOf(m) < 0) availableMailak.push(m); });
+  });
 
   useEffect(() => {
-    if (person) { setCustomRoles(person.rolak || []); setCustomEtapa(person.etapa); setCustomMaila(person.maila); }
+    if (person) {
+      setCustomRoles(person.rolak || []);
+      setCustomEtapak(person.etapak || []);
+      setCustomMailak(person.mailak || []);
+    }
   }, [selectedId]);
 
   const togR = r => { const a = [...customRoles]; const i = a.indexOf(r); if (i >= 0) a.splice(i, 1); else a.push(r); setCustomRoles(a); };
+  const togEtapa = function(et) {
+    var a = [].concat(customEtapak);
+    var i = a.indexOf(et);
+    if (i >= 0) a.splice(i, 1); else a.push(et);
+    // Remove mailak that no longer belong to any selected etapa
+    var validMailak = [];
+    a.forEach(function(e) { (((campaign.mailak || {})[e]) || MAILAK[e] || []).forEach(function(m) { if (validMailak.indexOf(m) < 0) validMailak.push(m); }); });
+    setCustomMailak(customMailak.filter(function(m) { return validMailak.indexOf(m) >= 0; }));
+    setCustomEtapak(a);
+  };
+  const togMaila = function(ml) {
+    var a = [].concat(customMailak);
+    var i = a.indexOf(ml);
+    if (i >= 0) a.splice(i, 1); else a.push(ml);
+    setCustomMailak(a);
+  };
 
   const handleSave = () => {
     if (customMode) {
       if (!customName.trim()) return;
-      onSave({ id: "custom_" + Date.now(), izena: customName.trim(), etapa: customEtapa, maila: customMaila, rolak: customRoles, email: "" });
+      onSave({ id: "custom_" + Date.now(), izena: customName.trim(), etapak: customEtapak, mailak: customMailak, rolak: customRoles, email: "" });
     } else {
       if (!selectedId) return;
-      onSave({ id: selectedId, izena: (person || {}).izena || "", etapa: customEtapa, maila: customMaila || (person || {}).maila, rolak: customRoles, email: (person || {}).email || "" });
+      onSave({ id: selectedId, izena: (person || {}).izena || "", etapak: customEtapak, mailak: customMailak.length > 0 ? customMailak : (person || {}).mailak || [], rolak: customRoles, email: (person || {}).email || "" });
     }
   };
 
@@ -1544,7 +1624,10 @@ function UserProfileSetup({ campaign, profile, onSave, onBack }) {
               <label style={S.label}>Nire izena *</label>
               <select value={selectedId} onChange={e => setSelectedId(e.target.value)} style={{ ...S.select, fontSize: 14 }}>
                 <option value="">Hautatu zure izena...</option>
-                {[...campaign.langileak].sort((a, b) => a.izena.localeCompare(b.izena, "eu")).map(l => <option key={l.id} value={l.id}>{l.izena} {l.etapa ? `(${l.etapa}${l.maila ? ` · ${l.maila}` : ""})` : ""}</option>)}
+                {[...campaign.langileak].sort((a, b) => a.izena.localeCompare(b.izena, "eu")).map(function(l) {
+                  var info = (l.etapak || []).concat(l.mailak || []).join(" · ");
+                  return <option key={l.id} value={l.id}>{l.izena}{info ? " (" + info + ")" : ""}</option>;
+                })}
               </select>
               <button onClick={() => setCustomMode(true)} style={{ background: "none", border: "none", color: "#3b82f6", fontSize: 12, cursor: "pointer", marginTop: 8, padding: 0, fontFamily: "inherit" }}>
                 + Nire izena ez dago zerrendan
@@ -1563,22 +1646,37 @@ function UserProfileSetup({ campaign, profile, onSave, onBack }) {
 
         {showForm && (
           <>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
-              <div>
-                <label style={S.label}>Etapa</label>
-                <select value={customEtapa || ""} onChange={e => { setCustomEtapa(e.target.value || null); setCustomMaila(null); }} style={S.select}>
-                  <option value="">— Transbertsala</option>
-                  {(campaign.etapak || ETAPAK).map(e => <option key={e} value={e}>{e}</option>)}
-                </select>
+            <div style={{ marginBottom: 14 }}>
+              <label style={S.label}>Nire etapak</label>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+                {(campaign.etapak || ETAPAK).map(function(et) { return (
+                  <button key={et} onClick={function() { togEtapa(et); }} style={{
+                    padding: "5px 12px", borderRadius: 7, fontSize: 12, cursor: "pointer", fontFamily: "inherit",
+                    border: "1.5px solid " + (customEtapak.indexOf(et) >= 0 ? (ETAPA_COLORS[et] || "#1e3a5f") : "#d1d5db"),
+                    background: customEtapak.indexOf(et) >= 0 ? (ETAPA_COLORS[et] || "#1e3a5f") + "20" : "#fff",
+                    color: customEtapak.indexOf(et) >= 0 ? "#1e3a5f" : "#9ca3af",
+                    fontWeight: customEtapak.indexOf(et) >= 0 ? 600 : 400,
+                  }}>{et}</button>
+                ); })}
               </div>
-              <div>
-                <label style={S.label}>Maila</label>
-                <select value={customMaila || ""} onChange={e => setCustomMaila(e.target.value || null)} style={S.select}>
-                  <option value="">—</option>
-                  {mailakForEtapa.map(m => <option key={m} value={m}>{m}</option>)}
-                </select>
+              {customEtapak.length === 0 && <p style={{ fontSize: 10, color: "#9ca3af", margin: "4px 0 0" }}>Hutsik utziz gero, transbertsaltzat hartuko da.</p>}
+            </div>
+            {availableMailak.length > 0 && (
+            <div style={{ marginBottom: 14 }}>
+              <label style={S.label}>Nire mailak</label>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+                {availableMailak.map(function(ml) { return (
+                  <button key={ml} onClick={function() { togMaila(ml); }} style={{
+                    padding: "5px 12px", borderRadius: 7, fontSize: 12, cursor: "pointer", fontFamily: "inherit",
+                    border: "1.5px solid " + (customMailak.indexOf(ml) >= 0 ? "#1e3a5f" : "#d1d5db"),
+                    background: customMailak.indexOf(ml) >= 0 ? "#e0e7ef" : "#fff",
+                    color: customMailak.indexOf(ml) >= 0 ? "#1e3a5f" : "#9ca3af",
+                    fontWeight: customMailak.indexOf(ml) >= 0 ? 600 : 400,
+                  }}>{ml}</button>
+                ); })}
               </div>
             </div>
+            )}
             <div style={{ marginBottom: 20 }}>
               <label style={S.label}>Nire rolak</label>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
@@ -1613,17 +1711,19 @@ function UserMainView({ campaign, profile, completed, onToggleComplete, onEditPr
   // Filter tasks relevant to this user
   const myTasks = useMemo(() => {
     if (!campaign || !profile) return [];
+    var profEtapak = profile.etapak || [];
+    var profMailak = profile.mailak || [];
     return campaign.atazak.filter(t => {
       const filtroEtapak = (t.filtroak && t.filtroak.etapak) || [];
       const hasFiltro = filtroEtapak.length > 0;
-      const userInFiltro = !hasFiltro || filtroEtapak.includes(profile.etapa);
+      const userInFiltro = !hasFiltro || profEtapak.some(function(pe) { return filtroEtapak.indexOf(pe) >= 0; });
 
       const matchesAssignment = (list) => list.some(a => {
         if (a.mota === "pertsona" && a.balioa === profile.id) return true;
         if (!userInFiltro) return false;
         if (a.mota === "rola" && profile.rolak.includes(a.balioa)) return true;
-        if (a.mota === "etapa" && a.balioa === profile.etapa) return true;
-        if (a.mota === "maila" && a.balioa === profile.maila) return true;
+        if (a.mota === "etapa" && profEtapak.indexOf(a.balioa) >= 0) return true;
+        if (a.mota === "maila" && profMailak.indexOf(a.balioa) >= 0) return true;
         return false;
       });
       const isDirect = matchesAssignment(t.arduradunak);
@@ -1710,7 +1810,7 @@ function UserMainView({ campaign, profile, completed, onToggleComplete, onEditPr
       ${mode === "egutegia" ? "@page{size:landscape}" : ""}
       <` + `/style><` + `/head><body>
       <h1>📋 ESKULIBURUA — ${campaign.izena}<` + `/h1>
-      <h2>${profile.izena} · ${[profile.etapa, profile.maila].filter(Boolean).join(" · ")} · ${profile.rolak.join(", ")}<` + `/h2>`;
+      <h2>${profile.izena} · ${(profile.etapak || []).concat(profile.mailak || []).join(" · ")} · ${profile.rolak.join(", ")}<` + `/h2>`;
 
     if (mode === "egutegia") {
       // Calendar print
@@ -1781,7 +1881,7 @@ function UserMainView({ campaign, profile, completed, onToggleComplete, onEditPr
         <div style={{ width: 36, height: 36, background: "#1e3a5f", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, color: "#fff", flexShrink: 0 }}>📋</div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontWeight: 700, fontSize: 14, color: "#1e3a5f" }}>{profile.izena}</div>
-          <div style={{ fontSize: 11, color: "#8b7e74" }}>{[profile.etapa, profile.maila].filter(Boolean).join(" · ")} — {profile.rolak.join(", ")}</div>
+          <div style={{ fontSize: 11, color: "#8b7e74" }}>{(profile.etapak || []).concat(profile.mailak || []).join(" · ")} — {profile.rolak.join(", ")}</div>
         </div>
         <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
           <button onClick={() => handlePrint(viewMode, filteredTasks, campaign, completed, getStatus, STATUS_COLORS)}
