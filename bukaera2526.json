@@ -840,61 +840,47 @@
         {
           "mota": "etapa",
           "balioa": "HH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "LH"
         }
       ],
       "kategoria": "ebaluazioa",
       "filtroak": {
         "etapak": [
-          "HH",
-          "LH"
+          "HH"
         ]
       },
       "irudia": null
     },
     {
       "id": "ataza_104",
-      "izenburua": "3-4 Ebaluazio juntak",
+      "izenburua": "Aurreko kurtsoetako ez-gaindituak Gotzoneri LH",
       "mota": "egutegikoa",
-      "data": "2026-06-01",
+      "data": "2026-06-05",
       "ordua": null,
-      "argibideak": "Ebaluazio bilerak tutoreekin eta irakasle taldeekin. Aste osoan zehar.",
+      "argibideak": "Etapako arduradunak aurreko urtetako arlo ez-gaindituen zerrenda egingo du eta idazkariari aurkeztuko dio aplikatiboan datuak sartu ditzan.",
       "estekak": [],
       "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Arloko irakaslea"
-        },
         {
           "mota": "rola",
           "balioa": "Etapa koordinatzailea"
         },
         {
-          "mota": "rola",
-          "balioa": "PT"
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
         }
       ],
       "informatiboak": [
         {
           "mota": "etapa",
-          "balioa": "HH"
-        },
-        {
-          "mota": "etapa",
           "balioa": "LH"
         }
       ],
-      "kategoria": "ebaluazioa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": [
-          "HH",
           "LH"
         ]
       },
@@ -902,77 +888,65 @@
     },
     {
       "id": "ataza_105",
-      "izenburua": "3. ebaluazioko notak sartuta (DBH)",
+      "izenburua": "EJ aplikatibora notak igo Alexiatik (HH-LH)",
       "mota": "egutegikoa",
-      "data": "2026-06-01",
+      "data": "2026-06-10",
       "ordua": null,
-      "argibideak": "DBHko hirugarren ebaluazioko notak aplikatiboan sartu.",
+      "argibideak": "Idazkariak Alexiako notak aplikatibora igo ahal bada.",
       "estekak": [],
       "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_106",
+      "izenburua": "Ikuskariarentzat de Txosten ebaluatiboaren azalpena",
+      "mota": "egutegikoa",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Zuzendariak ikuskariari bidali behar zaizkion txostenak zeintzuk diren azalduko du hurrengo egunetan bete daitezen.",
+      "estekak": [
+        {
+          "izena": "Ikuskariaren Txosten ebaluatiboa",
+          "url": "https://drive.google.com/drive/folders/1ohFWtw9nZez3MuJYonNapwD4peZvaHNs?usp=drive_link",
+          "ruta": "DRIVE / P0.5 / 5.2. Urteko plana eta memoria / Dagokion urtea / Txosten ebaluatiboa"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
         {
           "mota": "rola",
           "balioa": "Tutorea"
         },
         {
           "mota": "rola",
-          "balioa": "Arloko irakaslea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        }
-      ],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "DBH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_106",
-      "izenburua": "Check de tareas (ESKULIBURUA) azaldu",
-      "mota": "egutegikoa",
-      "data": "2026-06-01",
-      "ordua": "14:00",
-      "argibideak": "Kurtso bukaerako check-list aplikatiboa (ESKULIBURUA) langileriari azaldu.",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "pertsona",
-          "balioa": "ander_zarrabeitia"
+          "balioa": "PRL irakaslea"
         },
         {
           "mota": "pertsona",
-          "balioa": "urtzi_carrera"
+          "balioa": "ainara_ortega"
         }
       ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "HH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "PAS/EAE"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HE"
-        }
-      ],
-      "kategoria": "koordinazioa",
+      "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
       },
@@ -1020,22 +994,34 @@
     },
     {
       "id": "ataza_108",
-      "izenburua": "DBH 3. ebaluazioko notak argitaratu",
+      "izenburua": "Kurtso amaierako bakarkako txostena DBH 1-2-3",
       "mota": "egutegikoa",
-      "data": "2026-06-04",
+      "data": "2026-06-18",
       "ordua": null,
-      "argibideak": "DBHko hirugarren ebaluazioko notak familiei argitaratu.",
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "pertsona",
-          "balioa": "gotzone_vazquez"
+          "mota": "maila",
+          "balioa": "DBH1"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DBH2"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DBH3"
         }
       ],
       "informatiboak": [
         {
-          "mota": "etapa",
-          "balioa": "DBH"
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
         }
       ],
       "kategoria": "dokumentazioa",
@@ -1046,50 +1032,30 @@
     },
     {
       "id": "ataza_109",
-      "izenburua": "Materialen zirkularrak eginda",
+      "izenburua": "Ziklo bukaerako bakarkako txostenak LH 2-4",
       "mota": "egutegikoa",
-      "data": "2026-06-05",
+      "data": "2026-06-18",
       "ordua": null,
-      "argibideak": "Hurrengo ikasturterako materialen zirkularra prestatu koordinatzaileekin elkarlanean.",
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
+        {
+          "mota": "maila",
+          "balioa": "LH2"
+        },
+        {
+          "mota": "maila",
+          "balioa": "LH4"
+        }
+      ],
+      "informatiboak": [
         {
           "mota": "pertsona",
           "balioa": "ander_zarrabeitia"
         },
         {
           "mota": "pertsona",
-          "balioa": "begona_lorono"
-        },
-        {
-          "mota": "pertsona",
-          "balioa": "ainara_ortega"
-        },
-        {
-          "mota": "pertsona",
           "balioa": "urtzi_carrera"
-        },
-        {
-          "mota": "pertsona",
-          "balioa": "txaro_cores"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "HH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HE"
         }
       ],
       "kategoria": "dokumentazioa",
@@ -1100,33 +1066,37 @@
     },
     {
       "id": "ataza_110",
-      "izenburua": "JPP Azalpena",
+      "izenburua": "Etapa bukaerako bakarkako txostena LH6 - DBH4",
       "mota": "egutegikoa",
-      "data": "2026-06-05",
-      "ordua": "14:00",
-      "argibideak": "Jarduera Plan Pertsonalizatuaren azalpena irakaslegoari STEAM gelan",
+      "data": "2026-06-18",
+      "ordua": null,
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "pertsona",
-          "balioa": "nerea_gonzalez"
+          "mota": "maila",
+          "balioa": "LH6"
         },
         {
-          "mota": "rola",
-          "balioa": "PT"
+          "mota": "maila",
+          "balioa": "DBH4"
         }
       ],
       "informatiboak": [
         {
-          "mota": "etapa",
-          "balioa": "LH"
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
         },
         {
-          "mota": "etapa",
-          "balioa": "DBH"
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
         }
       ],
-      "kategoria": "koordinazioa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1171,16 +1141,16 @@
     },
     {
       "id": "ataza_112",
-      "izenburua": "Zerbitzuen zirkularra bidali",
+      "izenburua": "Hasierako ebaluazioaren bakarkako txostena HH",
       "mota": "egutegikoa",
-      "data": "2026-06-08",
+      "data": "2026-06-18",
       "ordua": null,
-      "argibideak": "Zerbitzuen (jantokia, garraioa...) zirkularra prestatu eta bidali.",
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "pertsona",
-          "balioa": "ander_zarrabeitia"
+          "mota": "rola",
+          "balioa": "Tutorea"
         }
       ],
       "informatiboak": [
@@ -1189,53 +1159,43 @@
           "balioa": "HH"
         },
         {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "PAS/EAE"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HE"
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
         }
       ],
-      "kategoria": "zirkularra",
+      "kategoria": "dokumentazioa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH"
+        ]
       },
       "irudia": null
     },
     {
       "id": "ataza_113",
-      "izenburua": "Proiektuen Txosten ebaluatiboa azalpena",
+      "izenburua": "Ziklo bukaerako bakarkako txostena HH 2-5",
       "mota": "egutegikoa",
-      "data": "2026-06-08",
+      "data": "2026-06-18",
       "ordua": null,
-      "argibideak": "Txosten ebaluatiboa nola bete azaldu prozesu/proiektu koordinatzaileei eta proiektu kideei",
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "pertsona",
-          "balioa": "ander_zarrabeitia"
+          "mota": "maila",
+          "balioa": "HH2"
+        },
+        {
+          "mota": "maila",
+          "balioa": "HH5"
         }
       ],
       "informatiboak": [
         {
-          "mota": "rola",
-          "balioa": "Prozesu/proiektu koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Prozesu/proiektu kidea"
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
         }
       ],
-      "kategoria": "koordinazioa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1280,29 +1240,25 @@
     },
     {
       "id": "ataza_115",
-      "izenburua": "ACIen emaitzak aplikatiboan sartu.",
+      "izenburua": "Etapa amaierako bakarkako txostena HH5",
       "mota": "egutegikoa",
-      "data": "2026-06-09",
+      "data": "2026-06-18",
       "ordua": null,
-      "argibideak": "ACI duten ikasleen emaitzak Gotzoneri eman aplikatiboan sar ditzan.",
+      "argibideak": "",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "pertsona",
-          "balioa": "nerea_gonzalez"
-        },
-        {
-          "mota": "pertsona",
-          "balioa": "ainara_ortega"
+          "mota": "maila",
+          "balioa": "HH5"
         }
       ],
       "informatiboak": [
         {
-          "mota": "rola",
-          "balioa": "PT"
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
         }
       ],
-      "kategoria": "ebaluazioa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1335,41 +1291,30 @@
     },
     {
       "id": "ataza_117",
-      "izenburua": "LH notak EJ aplikatiboan pikatu",
+      "izenburua": "EJko notak ea gaitasunak jarrita LH",
       "mota": "egutegikoa",
-      "data": "2026-06-11",
-      "ordua": null,
-      "argibideak": "ZEREGINA\nHH eta LHko notak eta gaitasunak Eusko Jaurlaritzako aplikatibora igo.\n\nJARRAIBIDEAK\n- Estekan duzuen Eusko Jaurlaritzako aplikatibora sartu: Notas y faltas - Grupos de trabajo - Notas\n- Irakasle bakoitza bere arloan sartu eta ikasle bakoitzaren gaitasunaren maila pikatuko du (hasierakoa - oinarrizkoa - aurreratua - bikaina). \n- Guztiak eginda daudenean, Gotzonek inprimatuko ditu eta palkoan egongo dira ikasle bakoitzaren karpetan gordetzeko.\n\nAPLIKATIBORA SARTZEKO JARRAIBIDEAK\n- IRAKASLE BERRIAK: CAUra deitu: 901101132, opcion1 y luego opción 2 para trabajar en el aplicativo. Zentruko kodea: 014637.\n- ERABILTZAILEA EDO GAKOA GALDU DUZUENENTZAT: BAQKarekin ere sar zaitezkete. Halere, froga egin dezakezue erabiltzailea zuen Izenaren lehenengo letra + zuen abizenen lehehengo letrak eta bigarrenaren lehenengo letra: guztira 8 letra bete arte (adibidez, Ander Zarrabeitia Arrieta AZARRABA) eta pasahitza zuen NAN zenbakia + Ej letrak (77888999Ej).",
-      "estekak": [
-        {
-          "izena": "Eusko Jaurlaritzako aplikatiborako sarbidea",
-          "url": "https://hezkuntza.euskadi.eus/es/inicio",
-          "ruta": ""
-        },
-        {
-          "izena": "Aplikatibora sartzeko bideotutoriala",
-          "url": "https://drive.google.com/file/d/10RGWjR1FFhpjfsS8UwSmqNMofZRRUdbF/view?usp=sharing",
-          "ruta": ""
-        }
-      ],
+      "data": "2026-06-12",
+      "ordua": "14:30",
+      "argibideak": "EJko aplikatiboan, aurreko eguneko irizpideen arabera, pikatu.",
+      "estekak": [],
       "arduradunak": [
         {
           "mota": "rola",
-          "balioa": "Tutorea"
+          "balioa": "Arloko irakaslea"
         },
         {
           "mota": "rola",
-          "balioa": "Arloko irakaslea"
+          "balioa": "Tutorea"
         }
       ],
       "informatiboak": [
         {
-          "mota": "etapa",
-          "balioa": "LH"
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
         },
         {
           "mota": "pertsona",
-          "balioa": "gotzone_vazquez"
+          "balioa": "urtzi_carrera"
         }
       ],
       "kategoria": "dokumentazioa",
@@ -1382,11 +1327,11 @@
     },
     {
       "id": "ataza_119",
-      "izenburua": "Gaitasunak EJ aplikatiboan azalpena",
+      "izenburua": "EJ aplikatiboan datuak sartzeko azalpena",
       "mota": "egutegikoa",
       "data": "2026-06-10",
       "ordua": null,
-      "argibideak": "Gaitasunak Eusko Jaurlaritzako aplikatiboan nola sartu azaldu LH irakasleei.",
+      "argibideak": "Gaitasunak Eusko Jaurlaritzako aplikatiboan nola, gaitasunak... sartu azaldu LH irakasleei.",
       "estekak": [],
       "arduradunak": [
         {
@@ -1396,31 +1341,37 @@
       ],
       "informatiboak": [
         {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_122",
+      "izenburua": "Erreklamazio epea",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "Ikasle zein familiak erreklamaziorik egiten badute, horiek jasortzeko prozedura martxan jarri",
+      "estekak": [],
+      "arduradunak": [
+        {
           "mota": "rola",
           "balioa": "Tutorea"
         },
         {
           "mota": "rola",
           "balioa": "Arloko irakaslea"
-        }
-      ],
-      "kategoria": "koordinazioa",
-      "filtroak": {
-        "etapak": [
-          "LH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_122",
-      "izenburua": "Bakarkako txostenen azalpena HH",
-      "mota": "egutegikoa",
-      "data": "2026-06-11",
-      "ordua": "12:30",
-      "argibideak": "Bakarkako txostenak nola bete azaldu tutoreei.",
-      "estekak": [],
-      "arduradunak": [
+        },
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
         {
           "mota": "pertsona",
           "balioa": "ander_zarrabeitia"
@@ -1428,14 +1379,14 @@
       ],
       "informatiboak": [
         {
-          "mota": "rola",
-          "balioa": "Tutorea"
+          "mota": "etapa",
+          "balioa": "DBH"
         }
       ],
-      "kategoria": "koordinazioa",
+      "kategoria": "ebaluazioa",
       "filtroak": {
         "etapak": [
-          "HH"
+          "DBH"
         ]
       },
       "irudia": null
@@ -1581,8 +1532,13 @@
           "balioa": "HH5"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1602,8 +1558,13 @@
           "balioa": "LH"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1623,8 +1584,17 @@
           "balioa": "DBH"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1642,10 +1612,19 @@
         {
           "mota": "etapa",
           "balioa": "DBH"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1653,22 +1632,37 @@
     },
     {
       "id": "ataza_131",
-      "izenburua": "Gaitasunak aplikatiboan pikatu (DBH)",
+      "izenburua": "Gaitasunak aplikatiboan pikatuta (DBH)",
       "mota": "egutegikoa",
-      "data": "2026-06-16",
+      "data": "2026-06-17",
       "ordua": null,
       "argibideak": "DBHko gaitasunak EJ aplikatiboan pikatu.",
       "estekak": [],
       "arduradunak": [
         {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
           "mota": "etapa",
           "balioa": "DBH"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -1692,7 +1686,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1703,8 +1697,8 @@
       "izenburua": "Espazio berriak azalpena",
       "mota": "egutegikoa",
       "data": "2026-06-17",
-      "ordua": null,
-      "argibideak": "Hurrengo ikasturterako espazio berrien azalpena.",
+      "ordua": "13:30",
+      "argibideak": "Hurrengo ikasturterako espazio berrien azalpena. STEAM gelan",
       "estekak": [],
       "arduradunak": [
         {
@@ -1726,7 +1720,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -1737,13 +1731,17 @@
       "izenburua": "Erreparazioak azalpena",
       "mota": "egutegikoa",
       "data": "2026-06-17",
-      "ordua": null,
-      "argibideak": "Erreparazio orriak nola bete azaldu.",
+      "ordua": "13:30",
+      "argibideak": "Erreparazio orriak nola bete azaldu. ",
       "estekak": [],
       "arduradunak": [
         {
           "mota": "pertsona",
           "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
         }
       ],
       "informatiboak": [
@@ -1760,7 +1758,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -1768,11 +1766,11 @@
     },
     {
       "id": "ataza_135",
-      "izenburua": "Sobreak egin",
+      "izenburua": "Joaten diren ikasleentzako sobreak egin",
       "mota": "egutegikoa",
       "data": "2026-06-17",
       "ordua": null,
-      "argibideak": "Ikasleen sobreak prestatu dokumentazioarekin.",
+      "argibideak": "Ikasleen sobreak prestatu palkoan dagoen dokumentazioarekin: Anexo V. ",
       "estekak": [],
       "arduradunak": [
         {
@@ -1794,37 +1792,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_136",
-      "izenburua": "EJ Informe indibidualak bete",
-      "mota": "egutegikoa",
-      "data": "2026-06-18",
-      "ordua": null,
-      "argibideak": "Eusko Jaurlaritzako informe indibidualak bete tutoreek.",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        }
-      ],
-      "kategoria": "bestelakoa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -2679,6 +2647,74 @@
         }
       ],
       "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_120",
+      "izenburua": "Anexo traslado egin eta inprimatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-16",
+      "ordua": null,
+      "argibideak": "Gotzonek txostena egin, inprimatu eta palkoan eskuragarri utziko ditu sobre edo artxibategian gordetzeko.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_121",
+      "izenburua": "PRL Errefortzu linguistikoko kalifikazioak familiei bidali",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "PRL irakasleek kalifikazio txostena bete eta familia bakoitzari Alexiatik helaraziko dio.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
