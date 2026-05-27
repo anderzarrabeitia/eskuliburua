@@ -102,8 +102,12 @@
     {
       "id": "loli_gutierrez",
       "izena": "Loli Gutierrez",
-      "etapa": "HE",
-      "maila": "HE0-1",
+      "etapak": [
+        "HE"
+      ],
+      "mailak": [
+        "HE0-1"
+      ],
       "rolak": [
         "Tutorea",
         "TEJI"
@@ -113,8 +117,12 @@
     {
       "id": "sandra_delafuente",
       "izena": "Sandra de la Fuente",
-      "etapa": "HE",
-      "maila": "HE1-2",
+      "etapak": [
+        "HE"
+      ],
+      "mailak": [
+        "HE1-2"
+      ],
       "rolak": [
         "Tutorea",
         "TEJI"
@@ -124,8 +132,12 @@
     {
       "id": "maialen_etxebarria",
       "izena": "Maialen Etxebarria",
-      "etapa": "HH",
-      "maila": "HH2",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH2"
+      ],
       "rolak": [
         "Tutorea",
         "Prozesu/proiektu kidea",
@@ -136,8 +148,12 @@
     {
       "id": "begona_lorono",
       "izena": "Begoña Loroño",
-      "etapa": "HH",
-      "maila": "HH3",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH3"
+      ],
       "rolak": [
         "Tutorea",
         "Etapa koordinatzailea",
@@ -150,8 +166,12 @@
     {
       "id": "iratxe_otxandiano",
       "izena": "Iratxe Otxandiano",
-      "etapa": "HH",
-      "maila": "HH4",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH4"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -163,8 +183,12 @@
     {
       "id": "anemiren_sanchez",
       "izena": "Ane Miren Sanchez",
-      "etapa": "HH",
-      "maila": "HH4",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH4"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -175,8 +199,12 @@
     {
       "id": "maitane_hernandez",
       "izena": "Maitane Hernández",
-      "etapa": "HH",
-      "maila": "HH5",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH5"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -188,8 +216,10 @@
     {
       "id": "nerea_fournier",
       "izena": "Nerea Fournier",
-      "etapa": "HH",
-      "maila": null,
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea",
         "Arloko irakaslea",
@@ -200,8 +230,10 @@
     {
       "id": "leire_navas",
       "izena": "Leire Navas",
-      "etapa": "HH",
-      "maila": null,
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea",
         "Prozesu/proiektu kidea"
@@ -211,8 +243,12 @@
     {
       "id": "alba_gonzalez",
       "izena": "Alba Gonzalez",
-      "etapa": "LH",
-      "maila": "LH1",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH1"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -223,8 +259,12 @@
     {
       "id": "juncal_pipaon",
       "izena": "Juncal Pipaon",
-      "etapa": "LH",
-      "maila": "LH2",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH2"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -236,8 +276,12 @@
     {
       "id": "igor_arribas",
       "izena": "Igor Arribas",
-      "etapa": "LH",
-      "maila": "LH3",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH3"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -248,8 +292,12 @@
     {
       "id": "ander_alvarez",
       "izena": "Ander Alvarez",
-      "etapa": "LH",
-      "maila": "LH4",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH4"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -260,8 +308,12 @@
     {
       "id": "sergio_gorostiza",
       "izena": "Sergio Gorostiza",
-      "etapa": "LH",
-      "maila": "LH5",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH5"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -272,8 +324,12 @@
     {
       "id": "ander_unamuno",
       "izena": "Ander Unamuno",
-      "etapa": "LH",
-      "maila": "LH6",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH6"
+      ],
       "rolak": [
         "Tutorea",
         "PRL irakaslea",
@@ -285,8 +341,12 @@
     {
       "id": "david_fernandez",
       "izena": "David Fernandez",
-      "etapa": "LH",
-      "maila": "LH6",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH6"
+      ],
       "rolak": [
         "Tutorea",
         "Arloko irakaslea",
@@ -298,8 +358,10 @@
     {
       "id": "urtzi_carrera",
       "izena": "Urtzi Carrera",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea",
         "Etapa koordinatzailea"
@@ -309,8 +371,10 @@
     {
       "id": "txaro_cores",
       "izena": "Txaro Cores",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -319,8 +383,10 @@
     {
       "id": "iratxe_varela",
       "izena": "Iratxe Varela",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -329,8 +395,10 @@
     {
       "id": "oihane_fraile",
       "izena": "Oihane Fraile",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -339,8 +407,10 @@
     {
       "id": "olatz_ruiz",
       "izena": "Olatz Ruiz de Zárate",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea"
       ],
@@ -349,8 +419,10 @@
     {
       "id": "anemiren_iturrioz",
       "izena": "Ane Miren Iturrioz",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea"
       ],
@@ -359,8 +431,10 @@
     {
       "id": "uxue_redondo",
       "izena": "Uxue Redondo",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea"
       ],
@@ -369,8 +443,12 @@
     {
       "id": "javier_baldazo",
       "izena": "Javier Baldazo",
-      "etapa": "DBH",
-      "maila": "DBH1",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH1"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -379,8 +457,12 @@
     {
       "id": "irati_castresana",
       "izena": "Irati Castresana",
-      "etapa": "DBH",
-      "maila": "DBH1",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH1"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -389,8 +471,12 @@
     {
       "id": "maddi_martinez",
       "izena": "Maddi Martínez",
-      "etapa": "DBH",
-      "maila": "DBH2",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH2"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -399,8 +485,12 @@
     {
       "id": "marta_sanz",
       "izena": "Marta Sanz",
-      "etapa": "DBH",
-      "maila": "DBH2",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH2"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -409,8 +499,12 @@
     {
       "id": "teresa_salvarrey",
       "izena": "Teresa Salvarrey",
-      "etapa": "DBH",
-      "maila": "DBH3",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH3"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -419,8 +513,12 @@
     {
       "id": "irune_uriarte",
       "izena": "Irune Uriarte",
-      "etapa": "DBH",
-      "maila": "DBH3",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH3"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -429,8 +527,12 @@
     {
       "id": "imanol_canales",
       "izena": "Imanol Canales",
-      "etapa": "DBH",
-      "maila": "DBH4",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH4"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -439,8 +541,12 @@
     {
       "id": "naia_etxebarria",
       "izena": "Naia Etxebarria",
-      "etapa": "DBH",
-      "maila": "DC4",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DC4"
+      ],
       "rolak": [
         "Tutorea"
       ],
@@ -449,8 +555,10 @@
     {
       "id": "pello_lauzirika",
       "izena": "Pello Lauzirika",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -459,8 +567,10 @@
     {
       "id": "amaia_vergel",
       "izena": "Amaia Vergel",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -469,8 +579,10 @@
     {
       "id": "julian_gonzalez",
       "izena": "Julian Gonzalez",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -479,8 +591,10 @@
     {
       "id": "alva_deprado",
       "izena": "Alva de Prado",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea",
         "PRL irakaslea"
@@ -490,8 +604,10 @@
     {
       "id": "gemma_arrizabalaga",
       "izena": "Gemma Arrizabalaga",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -500,8 +616,10 @@
     {
       "id": "jon_julian",
       "izena": "Jon Julian",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Beste motatako irakaslea"
       ],
@@ -510,8 +628,10 @@
     {
       "id": "asier_quintana",
       "izena": "Asier Quintana",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "Arloko irakaslea"
       ],
@@ -520,8 +640,10 @@
     {
       "id": "nerea_gonzalez",
       "izena": "Nerea Gonzalez",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -530,8 +652,10 @@
     {
       "id": "ainara_ortega",
       "izena": "Ainara Ortega",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT",
         "Etapa koordinatzailea"
@@ -541,8 +665,10 @@
     {
       "id": "patricia_quintanilla",
       "izena": "Patricia Quintanilla",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT",
         "Etapa koordinatzailea"
@@ -552,8 +678,10 @@
     {
       "id": "enara_alonso",
       "izena": "Enara Alonso",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -562,8 +690,10 @@
     {
       "id": "ander_zarrabeitia",
       "izena": "Ander Zarrabeitia",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -572,8 +702,10 @@
     {
       "id": "iker_elorza",
       "izena": "Iker Elorza",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -582,8 +714,10 @@
     {
       "id": "nerea_oskotz",
       "izena": "Nerea Oskotz",
-      "etapa": "DBH",
-      "maila": null,
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -592,8 +726,10 @@
     {
       "id": "elena_fernandez",
       "izena": "Elena Fernández",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT"
       ],
@@ -602,8 +738,10 @@
     {
       "id": "lorea_espinosa",
       "izena": "Lorea Espinosa",
-      "etapa": "LH",
-      "maila": null,
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
       "rolak": [
         "PT",
         "PRL irakaslea"
@@ -613,8 +751,8 @@
     {
       "id": "maite_matesanz",
       "izena": "Maite Matesanz",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -623,8 +761,8 @@
     {
       "id": "naia_sanchez",
       "izena": "Naia Sánchez",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -633,8 +771,8 @@
     {
       "id": "ainara_mieres",
       "izena": "Ainara Mieres",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -643,8 +781,8 @@
     {
       "id": "arrate_monzon",
       "izena": "Arrate Monzón",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -653,8 +791,8 @@
     {
       "id": "henar_perez",
       "izena": "Henar Perez",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -663,8 +801,8 @@
     {
       "id": "nekane_plaza",
       "izena": "Nekane Plaza",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -673,8 +811,8 @@
     {
       "id": "maider_mier",
       "izena": "Maider Mier",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -683,8 +821,8 @@
     {
       "id": "sandra_sanchez",
       "izena": "Sandra Sanchez",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -693,8 +831,8 @@
     {
       "id": "maider_hernandez",
       "izena": "Maider Hernandez",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "EAE"
       ],
@@ -703,8 +841,8 @@
     {
       "id": "gotzone_vazquez",
       "izena": "Gotzone Vázquez",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "Idazkaria"
       ],
@@ -713,8 +851,8 @@
     {
       "id": "josune_alonso",
       "izena": "Josune Alonso",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "Atezaina"
       ],
@@ -723,8 +861,8 @@
     {
       "id": "rafa_gonzalez",
       "izena": "Rafa González",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "Mantenua"
       ],
@@ -733,8 +871,8 @@
     {
       "id": "natxo_ribechini",
       "izena": "Natxo Ribechini",
-      "etapa": null,
-      "maila": null,
+      "etapak": [],
+      "mailak": [],
       "rolak": [
         "Administratzailea"
       ],
@@ -1668,7 +1806,7 @@
     },
     {
       "id": "ataza_132",
-      "izenburua": "DBH 4. ebaluazioko notak argitaratu",
+      "izenburua": "4. ebaluazioko notak argitaratu DBH",
       "mota": "egutegikoa",
       "data": "2026-06-16",
       "ordua": null,
@@ -1860,7 +1998,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -1868,20 +2006,31 @@
     },
     {
       "id": "ataza_139",
-      "izenburua": "Txosten ebaluatiboak eginda (Proiektuak)",
+      "izenburua": "Txosten ebaluatiboak eginda KUDEAPPen (Proiektuak)",
       "mota": "egutegikoa",
       "data": "2026-06-19",
       "ordua": null,
-      "argibideak": "Proiektuen txosten ebaluatiboak amaituta egon behar dute.",
-      "estekak": [],
+      "argibideak": "Proiektuen txosten ebaluatiboak amaituta egon behar dute. Kudeappeko aplikatiboan.",
+      "estekak": [
+        {
+          "izena": "KUDEAPPera sarbidea",
+          "url": "https://elavemaria.kudeapp.net/usuarios/index.php",
+          "ruta": "KUDEAPP / KUDEAKETA AURRERATUA / PROZESUAK / Txosten ebaluatiboa "
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
           "balioa": "Prozesu/proiektu koordinatzailea"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1889,20 +2038,31 @@
     },
     {
       "id": "ataza_140",
-      "izenburua": "Ekintza Plana + Adierazleak",
+      "izenburua": "Ekintza Plana + Adierazleak egina proiektuka KUDEAPPen",
       "mota": "egutegikoa",
       "data": "2026-06-19",
       "ordua": null,
       "argibideak": "KUDEAPP-en ekintza plana eta adierazleak eguneratuta eduki.",
-      "estekak": [],
+      "estekak": [
+        {
+          "izena": "KUDEAPPera sarbidea",
+          "url": "https://elavemaria.kudeapp.net/usuarios/index.php",
+          "ruta": "KUDEAPP / KUDEAKETA AURRERATUA / PROZESUAL / Ekintza plana edo Adierazleak"
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
           "balioa": "Prozesu/proiektu koordinatzailea"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1914,7 +2074,7 @@
       "mota": "egutegikoa",
       "data": "2026-06-22",
       "ordua": null,
-      "argibideak": "Gelak txukundu, materialak jaso eta garbitegira eraman.",
+      "argibideak": "Gelak txukundu, materialak jaso eta garbitegira eraman. Tutoreak izango dira geletako arduradunak baina bestelako profesionalek lagunduko dute horretan.",
       "estekak": [],
       "arduradunak": [
         {
@@ -1936,7 +2096,7 @@
           "balioa": "DBH"
         }
       ],
-      "kategoria": "bestelakoa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -2080,7 +2240,7 @@
     },
     {
       "id": "ataza_144",
-      "izenburua": "Txosten ebaluatiboa Anexo II",
+      "izenburua": "Ikuraitzarako Txosten ebaluatiboa Anexo II BETETA",
       "mota": "egutegikoa",
       "data": "2026-06-23",
       "ordua": null,
@@ -2092,10 +2252,19 @@
           "balioa": "Tutorea"
         }
       ],
-      "informatiboak": [],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -2169,7 +2338,7 @@
       "mota": "egutegikoa",
       "data": "2026-06-25",
       "ordua": "09:00-12:00",
-      "argibideak": "Familiekin banakako bilerak 9:00etatik 12:00etara.",
+      "argibideak": "Familiekin banakako bilerak 9:00etatik 12:00etara.\nGOGORATU JPPn ebaluazio orri soltea sinatu behar dutela.",
       "estekak": [],
       "arduradunak": [
         {
@@ -2715,6 +2884,523 @@
         }
       ],
       "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779875373331_qhc8ts",
+      "izenburua": "Jardunaldi trinkoa zirkularra HE",
+      "mota": "egutegikoa",
+      "data": "2026-05-28",
+      "ordua": null,
+      "argibideak": "Jardunaldi trinoaren zirkularra prestatu eta bidali.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "zirkularra",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779875799740_31n86a",
+      "izenburua": "EJko aktak birpasatu DBH",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "Etapako koordinatzaileak aurkeztutako aktak birpasatu tutore zein arloko irakasleek. Zuzenketak marrkatu. Koontuz ACIekin.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779875900423_ybtbn9",
+      "izenburua": "B1 euskara tituluak inprimatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "Euskara tituluak inprimatu eta palkoan utzi",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DC4"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DBH4"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779875985159_nj9d0p",
+      "izenburua": "EJko aktak itxi",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "Aplikatiboan idazkaritzatik aktak itxi.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779876075018_ugq6l4",
+      "izenburua": "4. ebaluazioko notak argitaratu HH-LH",
+      "mota": "egutegikoa",
+      "data": "2026-06-19",
+      "ordua": null,
+      "argibideak": "HH-LHko laugarren ebaluazioko notak familiei argitaratu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779876250710_7mlulr",
+      "izenburua": "4. ebaluazioko aktak eginda HH-LH",
+      "mota": "egutegikoa",
+      "data": "2026-06-12",
+      "ordua": null,
+      "argibideak": "4. ebaluazioko ikaslez-ikasle egiten den akta bete. Adi errepikatzaile zein protokolo edo bestelakoak dituzten ikasleekin. Ondo markatu aurreko urtetatik gainditu ez dituzten arloak eta aurtengo ez-gaindituak.",
+      "estekak": [
+        {
+          "izena": "4. ebaluazioko aktak",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1 / 1.4. Ebaluazioa / Dagokion urtea / Ebaluazioa / Etapa / Maila / 4. ebaluazioa"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": [
+          "HH",
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779876530574_kfyqlg",
+      "izenburua": "4. ebaluazioko aktak eginda DBH",
+      "mota": "egutegikoa",
+      "data": "2026-06-22",
+      "ordua": null,
+      "argibideak": "4. ebaluazioko ikaslez-ikasle egiten den akta bete. Adi errepikatzaile zein protokolo edo bestelakoak dituzten ikasleekin. Ondo markatu aurreko urtetatik gainditu ez dituzten arloak eta aurtengo ez-gaindituak.",
+      "estekak": [
+        {
+          "izena": "4. ebaluazioko aktak",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1 / 1.4. Ebaluazioa / Dagokion urtea / Ebaluazioa / Etapa / Maila / 4. ebaluazioa"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779876607673_nuz0pr",
+      "izenburua": "Atapa amaierako istorialak deskargatu",
+      "mota": "egutegikoa",
+      "data": "2026-06-22",
+      "ordua": null,
+      "argibideak": "Idazkaritzatik inprimatu eta palkoan utziko dira tutoreek kudeatu ditzaten.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "maila",
+          "balioa": "LH6"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DBH4"
+        },
+        {
+          "mota": "maila",
+          "balioa": "DC4"
+        },
+        {
+          "mota": "maila",
+          "balioa": "HH5"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779876708656_rp3w9d",
+      "izenburua": "Aurtengo JPPak itxi",
+      "mota": "egutegikoa",
+      "data": "2026-06-22",
+      "ordua": null,
+      "argibideak": "Aurtengo JPPetan behar den ebaluazioaren idatziak egin eta DRIVEn ondo gorde.",
+      "estekak": [
+        {
+          "izena": "JPPen ebaluazio txostenak ikasleka",
+          "url": "https://drive.google.com/drive/folders/1vvpTSMNgs4gFNQ1uyS4asFT5mnp0mqY4?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.5. ANIZTASUNAREN TRATAERA / PAP-NJP / Aurtengo urtea / Etapa / Maila"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH",
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779877140480_acs2za",
+      "izenburua": "Aurtengo JPPak ITXITA",
+      "mota": "egutegikoa",
+      "data": "2026-06-23",
+      "ordua": null,
+      "argibideak": "Aurtengo JPPetan behar den ebaluazioaren idatziak egin eta DRIVEn ondo gorde.",
+      "estekak": [
+        {
+          "izena": "JPPen ebaluazio txostenak ikasleka",
+          "url": "https://drive.google.com/drive/folders/1vvpTSMNgs4gFNQ1uyS4asFT5mnp0mqY4?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.5. ANIZTASUNAREN TRATAERA / PAP-NJP / Aurtengo urtea / Etapa / Maila"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH",
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779877172881_rmzhzv",
+      "izenburua": "Datorren urteko JPPak egiten hasi",
+      "mota": "egutegikoa",
+      "data": "2026-06-24",
+      "ordua": null,
+      "argibideak": "Aurtengo JPPetan behar den ebaluazioaren idatziak egin eta DRIVEn ondo gorde.",
+      "estekak": [
+        {
+          "izena": "JPPak egiten hasteko karpeta",
+          "url": "https://drive.google.com/drive/folders/1q0p7LBpp9gEvZp9RVws1Yiwwu1hEAREc?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.5. ANIZTASUNAREN TRATAERA / PAP-NJP / Datorren urtea / Etapa / Maila"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH",
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779877317669_b50d50",
+      "izenburua": "Datorren urteko JPPak EGINDA",
+      "mota": "egutegikoa",
+      "data": "2026-06-25",
+      "ordua": null,
+      "argibideak": "Aurtengo JPPetan behar den ebaluazioaren idatziak egin eta DRIVEn ondo gorde.",
+      "estekak": [
+        {
+          "izena": "JPPak egiten hasteko karpeta",
+          "url": "https://drive.google.com/drive/folders/1q0p7LBpp9gEvZp9RVws1Yiwwu1hEAREc?usp=drive_link",
+          "ruta": "DRIVE / KUDEAKETA AURRERATUA / P0.1. / 1.5. ANIZTASUNAREN TRATAERA / PAP-NJP / Datorren urtea / Etapa / Maila"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH",
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779877456782_morem3",
+      "izenburua": "Behaketa medikurako izena ematea",
+      "mota": "egutegikoa",
+      "data": "2026-06-22",
+      "ordua": null,
+      "argibideak": "Izena eman eta eguna eta ordua aukeratu.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "natxo_ribechini"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
