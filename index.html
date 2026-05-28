@@ -282,12 +282,30 @@ function App() {
   const [userProfile, setUserProfile] = useState(() => { try { var p = JSON.parse(localStorage.getItem("eami_user_profile")); return p ? normalizeStaff(p) : null; } catch(e) { return null; } });
   const [completedTasks, setCompletedTasks] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_completed")) || {}; } catch(e) { return {}; } });
   const [subscriptions, setSubscriptions] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_subscriptions")) || {}; } catch(e) { return {}; } });
+  const [personalTasks, setPersonalTasks] = useState(() => { try { return JSON.parse(localStorage.getItem("eami_personal_tasks")) || []; } catch(e) { return []; } });
   const [enterLoading, setEnterLoading] = useState(false);
   const [profilesKey, setProfilesKey] = useState(0);
   const fileRef = useRef();
   const userFileRef = useRef();
 
   const showToast = (msg) => { setToast(msg); setTimeout(() => setToast(null), 2500); };
+
+  // Personal tasks CRUD
+  const savePersonalTask = function(task) {
+    setPersonalTasks(function(prev) {
+      var exists = prev.some(function(t) { return t.id === task.id; });
+      var next = exists ? prev.map(function(t) { return t.id === task.id ? task : t; }) : [].concat(prev, [task]);
+      localStorage.setItem("eami_personal_tasks", JSON.stringify(next));
+      return next;
+    });
+  };
+  const deletePersonalTask = function(taskId) {
+    setPersonalTasks(function(prev) {
+      var next = prev.filter(function(t) { return t.id !== taskId; });
+      localStorage.setItem("eami_personal_tasks", JSON.stringify(next));
+      return next;
+    });
+  };
   const askConfirm = (message, action) => setConfirmAction({ message, action });
 
   // User mode helpers
@@ -636,6 +654,7 @@ function App() {
   if (view === "user_main") return (
     <UserMainView campaign={userCampaign} profile={userProfile} completed={completedTasks}
       subscriptions={subscriptions} onToggleSubscription={toggleSubscription}
+      personalTasks={personalTasks} onSavePersonal={savePersonalTask} onDeletePersonal={deletePersonalTask}
       onToggleComplete={toggleComplete} onEditProfile={() => setView("user_profile")}
       onLogout={() => setView("login")} toast={toast} showToast={showToast} />
   );
@@ -750,7 +769,8 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
     var gen = tasks.filter(function(t) { return t.mota === "orokorra"; });
 
     var html = '<!DOCTYPE html><html><head><meta charset="UTF-8">' +
-      '<style>body{font-family:Arial,sans-serif;margin:20px;color:#333;font-size:13px}' +
+      '<style>*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}' +
+      'body{font-family:Arial,sans-serif;margin:20px;color:#333;font-size:13px}' +
       'h1{font-size:18px;margin-bottom:4px}h2{font-size:14px;color:#666;margin-bottom:16px}' +
       '.task{page-break-inside:avoid;margin-bottom:16px;padding:12px;border:1px solid #ddd;border-radius:8px;border-left:4px solid #1e3a5f}' +
       '.task h3{font-size:14px;margin:0 0 4px}.task .meta{font-size:11px;color:#888;margin-bottom:6px}' +
@@ -758,7 +778,7 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
       '.task .link{font-size:11px;color:#1e3a5f;margin:2px 0}.task .ruta{font-size:10px;color:#888}' +
       '.task img{max-width:300px;max-height:200px;border-radius:4px;margin-top:6px}' +
       '.cal-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid #ccc;font-size:11px}' +
-      '.cal-header{background:#1e3a5f;color:#fff;padding:6px;text-align:center;font-weight:bold}' +
+      '.cal-header{background:#1e3a5f!important;color:#fff!important;padding:6px;text-align:center;font-weight:bold}' +
       '.cal-day{border:1px solid #eee;padding:4px;min-height:70px;vertical-align:top}' +
       '.cal-day .num{text-align:right;font-weight:bold;font-size:12px;color:#999;margin-bottom:3px}' +
       '.cal-chip{padding:2px 5px;margin-bottom:2px;border-radius:3px;font-size:10px;border-left:3px solid #1e3a5f;background:#f5f5f5}' +
@@ -789,7 +809,9 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
             var dayTasks = byDate[ds] || [];
             html += '<div class="cal-day"><div class="num">' + dt.getDate() + '</div>';
             dayTasks.forEach(function(t) {
-              html += '<div class="cal-chip">' + t.izenburua + '</div>';
+              var kat = (c.kategoriak || KATEGORIAK_LEHENESPENAK).find(function(k) { return k.id === t.kategoria; });
+              var kc = (kat && kat.kolorea) || "#1e3a5f";
+              html += '<div class="cal-chip" style="border-left-color:' + kc + ';background:' + kc + '15">' + t.izenburua + '</div>';
             });
             html += '</div>';
             cursor.setDate(cursor.getDate() + 1);
@@ -808,9 +830,13 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
       allTasks.forEach(function(t) {
         var ard = (t.arduradunak || []).map(function(a) { return getAssignLabel(a, c.langileak); }).join(", ");
         var estekak = t.estekak || [];
-        html += '<div class="task">';
+        var kat = (c.kategoriak || KATEGORIAK_LEHENESPENAK).find(function(k) { return k.id === t.kategoria; });
+        var kc = (kat && kat.kolorea) || "#1e3a5f";
+        html += '<div class="task" style="border-left-color:' + kc + '">';
         html += '<h3>' + t.izenburua + '</h3>';
-        html += '<div class="meta">\ud83d\udcc5 ' + fmtDate(t.data) + (t.ordua ? ' \u00b7 \u23f0 ' + t.ordua : '') + (t.mota === "orokorra" ? ' \u00b7 \ud83d\udccc Mugaeguna' : '') + '</div>';
+        html += '<div class="meta">\ud83d\udcc5 ' + fmtDate(t.data) + (t.ordua ? ' \u00b7 \u23f0 ' + t.ordua : '') + (t.mota === "orokorra" ? ' \u00b7 \ud83d\udccc Mugaeguna' : '');
+        if (kat) html += ' \u00b7 <span style="color:' + kc + ';font-weight:bold">' + kat.izena + '</span>';
+        html += '</div>';
         if (ard) html += '<div class="assign">\ud83c\udfaf ' + ard + '</div>';
         if (t.argibideak) html += '<div class="desc">' + t.argibideak + '</div>';
         if (t.irudia) html += '<img src="' + t.irudia + '" />';
@@ -1794,7 +1820,7 @@ function UserProfileSetup({ campaign, profile, onSave, onBack }) {
 }
 
 // ─── USER: MAIN VIEW ───
-function UserMainView({ campaign, profile, completed, subscriptions, onToggleSubscription, onToggleComplete, onEditProfile, onLogout, toast, showToast }) {
+function UserMainView({ campaign, profile, completed, subscriptions, onToggleSubscription, personalTasks, onSavePersonal, onDeletePersonal, onToggleComplete, onEditProfile, onLogout, toast, showToast }) {
   const [viewMode, setViewMode] = useState("zerrenda");
   const [showInfo, setShowInfo] = useState(false);
   const [showAll, setShowAll] = useState(false);
@@ -1803,6 +1829,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
   const [filterKat, setFilterKat] = useState("all");
   const [filterDate, setFilterDate] = useState("all");
   const [filterText, setFilterText] = useState("");
+  const [editPersonalTask, setEditPersonalTask] = useState(null);
 
   // IDs of tasks assigned to this user (by role/etapa/maila/person)
   const myTaskIds = useMemo(() => {
@@ -1831,12 +1858,17 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
   }, [campaign, profile, showInfo]);
 
   // Tasks visible to user: assigned + subscribed
+  // Tasks visible to user: assigned + subscribed + personal
   const myTasks = useMemo(() => {
-    if (!campaign || !profile) return [];
-    return campaign.atazak.filter(function(t) {
+    var pTasks = (personalTasks || []).map(function(t) {
+      return Object.assign({}, t, { _personal: true, mota: "egutegikoa", kategoria: "pertsonala", arduradunak: [], informatiboak: [], estekak: t.estekak || [], filtroak: { etapak: [] } });
+    });
+    if (!campaign || !profile) return pTasks;
+    var campaignTasks = campaign.atazak.filter(function(t) {
       return myTaskIds[t.id] || subscriptions[t.id];
     });
-  }, [campaign, profile, myTaskIds, subscriptions]);
+    return [].concat(campaignTasks, pTasks);
+  }, [campaign, profile, myTaskIds, subscriptions, personalTasks]);
 
   // Date range helpers
   const today = toDateStr(new Date());
@@ -1894,6 +1926,53 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
   const STATUS_BG = { done: "#ecfdf5", overdue: "#fef2f2", today: "#fef2f2", soon: "#fffbeb", normal: "#fff" };
   const STATUS_LABELS = { done: "✅ Eginda", overdue: "🔴 Epez kanpo!", today: "🔴 Gaur!", soon: "🟡 Laster", normal: "" };
 
+  // ICS export for Google Calendar
+  var handleExportICS = function() {
+    var lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//EAMI//ESKULIBURUA//EU", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"];
+    var tasksToExport = myTasks.filter(function(t) { return t.data; });
+    tasksToExport.forEach(function(t) {
+      var dateClean = t.data.replace(/-/g, "");
+      var dtStart, dtEnd;
+      if (t.ordua) {
+        var timeParts = t.ordua.split(":");
+        var hh = (timeParts[0] || "12").padStart(2, "0");
+        var mm = (timeParts[1] || "00").padStart(2, "0");
+        dtStart = dateClean + "T" + hh + mm + "00";
+        // 1 hour duration by default
+        var endH = parseInt(hh, 10) + 1;
+        dtEnd = dateClean + "T" + String(endH).padStart(2, "0") + mm + "00";
+      } else {
+        dtStart = dateClean;
+        dtEnd = dateClean;
+      }
+      var desc = (t.argibideak || "").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+      var summary = (t.izenburua || "").replace(/,/g, "\\,").replace(/;/g, "\\;");
+      lines.push("BEGIN:VEVENT");
+      if (t.ordua) {
+        lines.push("DTSTART:" + dtStart);
+        lines.push("DTEND:" + dtEnd);
+      } else {
+        lines.push("DTSTART;VALUE=DATE:" + dtStart);
+        lines.push("DTEND;VALUE=DATE:" + dtEnd);
+      }
+      lines.push("SUMMARY:" + summary);
+      if (desc) lines.push("DESCRIPTION:" + desc);
+      lines.push("UID:" + t.id + "@eami-eskuliburua");
+      lines.push("END:VEVENT");
+    });
+    lines.push("END:VCALENDAR");
+    var blob = new Blob([lines.join("\r\n")], { type: "text/calendar;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement("a");
+    link.href = url;
+    link.download = "eskuliburua_" + profile.izena.replace(/\s+/g, "_") + ".ics";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    showToast("📤 .ics fitxategia deskargatuta — Google Calendar-era inportatu");
+  };
+
   // Print handler
   const handlePrint = (mode, tasks, camp, completed, getStatus, STATUS_COLORS) => {
     const w = window.open("", "_blank");
@@ -1902,7 +1981,8 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
     const gen = tasks.filter(t => t.mota === "orokorra");
 
     let html = `<!DOCTYPE html><html><head><meta charset="UTF-8">
-      <style>body{font-family:Arial,sans-serif;margin:20px;color:#333;font-size:13px}
+      <style>*{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;color-adjust:exact!important}
+      body{font-family:Arial,sans-serif;margin:20px;color:#333;font-size:13px}
       h1{font-size:18px;margin-bottom:4px}h2{font-size:14px;color:#666;margin-bottom:16px}
       .task{page-break-inside:avoid;margin-bottom:16px;padding:12px;border:1px solid #ddd;border-radius:8px;border-left:4px solid #1e3a5f}
       .task h3{font-size:14px;margin:0 0 4px}.task .meta{font-size:11px;color:#888;margin-bottom:6px}
@@ -1910,7 +1990,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
       .task .link{font-size:11px;color:#1e3a5f;margin:2px 0}.task .ruta{font-size:10px;color:#888}
       .task img{max-width:300px;max-height:200px;border-radius:4px;margin-top:6px}
       .cal-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid #ccc;font-size:11px}
-      .cal-header{background:#1e3a5f;color:#fff;padding:6px;text-align:center;font-weight:bold}
+      .cal-header{background:#1e3a5f!important;color:#fff!important;padding:6px;text-align:center;font-weight:bold}
       .cal-day{border:1px solid #eee;padding:4px;min-height:70px;vertical-align:top}
       .cal-day .num{text-align:right;font-weight:bold;font-size:12px;color:#999;margin-bottom:3px}
       .cal-chip{padding:2px 5px;margin-bottom:2px;border-radius:3px;font-size:10px;border-left:3px solid #1e3a5f;background:#f5f5f5}
@@ -1942,7 +2022,9 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
             html += `<div class="cal-day"><div class="num">${dt.getDate()}</div>`;
             dayTasks.forEach(t => {
               const done = completed[t.id];
-              html += `<div class="cal-chip" style="${done ? "text-decoration:line-through;opacity:0.5" : ""}">${t.izenburua}</div>`;
+              const kat = (campaign.kategoriak || KATEGORIAK_LEHENESPENAK).find(k => k.id === t.kategoria);
+              const kc = (kat && kat.kolorea) || "#1e3a5f";
+              html += `<div class="cal-chip" style="border-left-color:${kc};background:${kc}15${done ? ";text-decoration:line-through;opacity:0.5" : ""}">${t.izenburua}</div>`;
             });
             html += '</div>';
             cursor.setDate(cursor.getDate() + 1);
@@ -1963,9 +2045,13 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
         const status = getStatus(t);
         const done = completed[t.id];
         const estekak = t.estekak || [];
-        html += `<div class="task" style="border-left-color:${STATUS_COLORS[status]}${done ? ";opacity:0.5" : ""}">`;
+        const kat = (campaign.kategoriak || KATEGORIAK_LEHENESPENAK).find(k => k.id === t.kategoria);
+        const kc = (kat && kat.kolorea) || "#1e3a5f";
+        html += `<div class="task" style="border-left-color:${kc}${done ? ";opacity:0.5" : ""}">`;
         html += `<h3>${done ? "✅ " : ""}${t.izenburua}</h3>`;
-        html += `<div class="meta">📅 ${fmtDate(t.data)}${t.ordua ? ` · ⏰ ${t.ordua}` : ""}${t.mota === "orokorra" ? " · 📌 Mugaeguna" : ""}</div>`;
+        html += `<div class="meta">📅 ${fmtDate(t.data)}${t.ordua ? ` · ⏰ ${t.ordua}` : ""}${t.mota === "orokorra" ? " · 📌 Mugaeguna" : ""}`;
+        if (kat) html += ` · <span style="color:${kc};font-weight:bold">${kat.izena}</span>`;
+        html += `</div>`;
         if (t.argibideak) html += `<div class="desc">${t.argibideak}</div>`;
         if (t.irudia) html += `<img src="${t.irudia}" />`;
         estekak.forEach(l => {
@@ -1993,6 +2079,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
           <div style={{ fontSize: 11, color: "#8b7e74" }}>{(profile.etapak || []).concat(profile.mailak || []).join(" · ")} — {profile.rolak.join(", ")}</div>
         </div>
         <div style={{ display: "flex", gap: 6, flexShrink: 0 }}>
+          <button onClick={handleExportICS} style={S.btnSm} title="Google Calendar-era esportatu">📤</button>
           <button onClick={() => handlePrint(viewMode, filteredTasks, campaign, completed, getStatus, STATUS_COLORS)}
             style={S.btnSm} title="Inprimatu">🖨️</button>
           <button onClick={onEditProfile} style={S.btnSm} title="Profila editatu">⚙️</button>
@@ -2109,7 +2196,29 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
         <UserTaskDetail task={selectedTask} campaign={campaign} completed={completed}
           getStatus={getStatus} STATUS_COLORS={STATUS_COLORS} STATUS_LABELS={STATUS_LABELS}
           onToggle={() => onToggleComplete(selectedTask.id)}
-          onClose={() => setSelectedTask(null)} />
+          onClose={() => setSelectedTask(null)}
+          onEditPersonal={selectedTask._personal ? function() { setSelectedTask(null); setEditPersonalTask(selectedTask); } : null}
+          onDeletePersonal={selectedTask._personal ? function() { onDeletePersonal(selectedTask.id); setSelectedTask(null); showToast("Ataza pertsonala ezabatuta"); } : null} />
+      )}
+
+      {/* Personal task modal */}
+      {editPersonalTask && (
+        <PersonalTaskModal task={editPersonalTask}
+          onSave={function(t) { onSavePersonal(t); setEditPersonalTask(null); showToast("Ataza pertsonala gordeta"); }}
+          onClose={function() { setEditPersonalTask(null); }} />
+      )}
+
+      {/* FAB — create personal task */}
+      {!showAll && (
+        <button onClick={function() { setEditPersonalTask({ id: "personal_" + Date.now() + "_" + Math.random().toString(36).substr(2, 4), izenburua: "", data: toDateStr(new Date()), ordua: null, argibideak: "" }); }}
+          title="Ataza pertsonala gehitu" style={{
+          position: "fixed", bottom: 28, right: 28, width: 56, height: 56, borderRadius: "50%",
+          background: "#8b5cf6", color: "#fff", border: "none", fontSize: 28, cursor: "pointer",
+          boxShadow: "0 4px 16px rgba(139,92,246,0.4)", display: "flex", alignItems: "center", justifyContent: "center",
+          zIndex: 80, transition: "transform .15s",
+        }}
+          onMouseEnter={function(e) { e.currentTarget.style.transform = "scale(1.1)"; }}
+          onMouseLeave={function(e) { e.currentTarget.style.transform = "scale(1)"; }}>+</button>
       )}
 
       {toast && <div style={{ position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)", background: "#1e3a5f", color: "#fff", padding: "10px 22px", borderRadius: 10, fontWeight: 600, fontSize: 13, zIndex: 300, boxShadow: "0 4px 16px rgba(0,0,0,0.15)" }}>{toast}</div>}
@@ -2318,6 +2427,48 @@ function UserCalendarView({ tasks, campaign, completed, getStatus, STATUS_COLORS
   </div>
   );
 }
+// ─── PERSONAL TASK MODAL ───
+function PersonalTaskModal({ task, onSave, onClose }) {
+  const [f, setF] = useState(JSON.parse(JSON.stringify(task)));
+  var up = function(k, v) { setF(function(p) { var n = Object.assign({}, p); n[k] = v; return n; }); };
+  return (
+    <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.3)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 150 }}
+      onClick={onClose}>
+      <div style={{ background: "#fff", borderRadius: 16, padding: "28px 28px 24px", maxWidth: 440, width: "92%", boxShadow: "0 8px 32px rgba(0,0,0,0.15)" }}
+        onClick={function(e) { e.stopPropagation(); }}>
+        <h3 style={{ color: "#8b5cf6", margin: "0 0 16px", fontFamily: "'Source Serif 4', serif", fontSize: 18 }}>
+          📝 {f.izenburua ? "Ataza pertsonala editatu" : "Ataza pertsonala berria"}
+        </h3>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <div>
+            <label style={S.label}>Izenburua *</label>
+            <input value={f.izenburua} onChange={function(e) { up("izenburua", e.target.value); }} style={S.input} placeholder="Zer egin behar duzu?" />
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div>
+              <label style={S.label}>Data</label>
+              <input type="date" value={f.data || ""} onChange={function(e) { up("data", e.target.value); }} style={S.input} />
+            </div>
+            <div>
+              <label style={S.label}>Ordua (aukerakoa)</label>
+              <input type="time" value={f.ordua || ""} onChange={function(e) { up("ordua", e.target.value || null); }} style={S.input} />
+            </div>
+          </div>
+          <div>
+            <label style={S.label}>Oharrak (aukerakoa)</label>
+            <textarea value={f.argibideak || ""} onChange={function(e) { up("argibideak", e.target.value); }}
+              style={{ ...S.input, minHeight: 80, resize: "vertical" }} placeholder="Xehetasunak, oharrak..." />
+          </div>
+        </div>
+        <div style={{ display: "flex", gap: 10, justifyContent: "flex-end", marginTop: 20 }}>
+          <button onClick={onClose} style={S.btnSec}>Utzi</button>
+          <button onClick={function() { if (!f.izenburua) return; onSave(f); }} style={{ ...S.btnPri, background: "#8b5cf6" }}>💾 Gorde</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ImageLightbox({ src, onClose }) {
   var handleDownload = function() {
     try {
@@ -2352,11 +2503,12 @@ function ImageLightbox({ src, onClose }) {
   );
 }
 
-function UserTaskDetail({ task, campaign, completed, getStatus, STATUS_COLORS, STATUS_LABELS, onToggle, onClose }) {
+function UserTaskDetail({ task, campaign, completed, getStatus, STATUS_COLORS, STATUS_LABELS, onToggle, onClose, onEditPersonal, onDeletePersonal }) {
   const [showLightbox, setShowLightbox] = useState(false);
   const status = getStatus(task);
   const isDone = !!completed[task.id];
-  const ard = task.arduradunak.map(a => `${MOTA_ICONS[a.mota]} ${getAssignLabel(a, campaign.langileak)}`).join(", ");
+  const isPersonal = !!task._personal;
+  const ard = isPersonal ? "" : task.arduradunak.map(a => `${MOTA_ICONS[a.mota]} ${getAssignLabel(a, campaign.langileak)}`).join(", ");
   const estekak = task.estekak || [];
 
   return (
@@ -2366,26 +2518,33 @@ function UserTaskDetail({ task, campaign, completed, getStatus, STATUS_COLORS, S
         onClick={e => e.stopPropagation()}>
         <div style={{ width: 40, height: 4, background: "#d1d5db", borderRadius: 2, margin: "0 auto 16px" }} />
 
-        {STATUS_LABELS[status] && (
-          <div style={{ display: "inline-block", background: STATUS_COLORS[status] + "15", color: STATUS_COLORS[status], padding: "4px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600, marginBottom: 12 }}>
-            {STATUS_LABELS[status]}
-          </div>
-        )}
+        <div style={{ display: "flex", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
+          {isPersonal && (
+            <div style={{ display: "inline-block", background: "#ede9fe", color: "#8b5cf6", padding: "4px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600 }}>
+              📝 Pertsonala
+            </div>
+          )}
+          {STATUS_LABELS[status] && (
+            <div style={{ display: "inline-block", background: STATUS_COLORS[status] + "15", color: STATUS_COLORS[status], padding: "4px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600 }}>
+              {STATUS_LABELS[status]}
+            </div>
+          )}
+        </div>
 
-        <h3 style={{ color: "#1e3a5f", fontSize: 19, margin: "0 0 8px", fontFamily: "'Source Serif 4', serif", lineHeight: 1.3 }}>{task.izenburua}</h3>
+        <h3 style={{ color: isPersonal ? "#8b5cf6" : "#1e3a5f", fontSize: 19, margin: "0 0 8px", fontFamily: "'Source Serif 4', serif", lineHeight: 1.3 }}>{task.izenburua}</h3>
 
         <div style={{ display: "flex", gap: 12, fontSize: 12, color: "#6b7280", marginBottom: 16, flexWrap: "wrap" }}>
           <span>📅 {fmtDate(task.data)}</span>
           {task.ordua && <span>⏰ {task.ordua}</span>}
-          <span>{task.mota === "orokorra" ? "📌 Mugaeguna" : "📅 Egutegikoa"}</span>
+          {!isPersonal && <span>{task.mota === "orokorra" ? "📌 Mugaeguna" : "📅 Egutegikoa"}</span>}
         </div>
 
         {ard && <div style={{ fontSize: 12, color: "#8b7e74", marginBottom: 16 }}>🎯 {ard}</div>}
 
         {/* Instructions */}
         {task.argibideak && (
-          <div style={{ background: "#faf8f5", borderRadius: 10, padding: 16, marginBottom: 16, border: "1px solid #e5ddd3", maxHeight: 300, overflow: "auto" }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: "#8b7e74", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>Argibideak</div>
+          <div style={{ background: isPersonal ? "#f5f3ff" : "#faf8f5", borderRadius: 10, padding: 16, marginBottom: 16, border: "1px solid " + (isPersonal ? "#c4b5fd" : "#e5ddd3"), maxHeight: 300, overflow: "auto" }}>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#8b7e74", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>{isPersonal ? "Oharrak" : "Argibideak"}</div>
             <div style={{ fontSize: 14, color: "#374151", lineHeight: 1.6, whiteSpace: "pre-wrap" }}>{task.argibideak}</div>
           </div>
         )}
@@ -2419,13 +2578,27 @@ function UserTaskDetail({ task, campaign, completed, getStatus, STATUS_COLORS, S
           </div>
         )}
 
-        <button onClick={onToggle} style={{
-          width: "100%", padding: "14px 20px", borderRadius: 12, border: "none", fontSize: 15, fontWeight: 700,
-          cursor: "pointer", fontFamily: "inherit", transition: "all .2s",
-          background: isDone ? "#f3f4f6" : "#10b981", color: isDone ? "#6b7280" : "#fff",
-        }}>
-          {isDone ? "↩️ Eginda markatu kendu" : "✅ Eginda markatu"}
-        </button>
+        <div style={{ display: "flex", gap: 8 }}>
+          <button onClick={onToggle} style={{
+            flex: 1, padding: "14px 20px", borderRadius: 12, border: "none", fontSize: 15, fontWeight: 700,
+            cursor: "pointer", fontFamily: "inherit", transition: "all .2s",
+            background: isDone ? "#f3f4f6" : "#10b981", color: isDone ? "#6b7280" : "#fff",
+          }}>
+            {isDone ? "↩️ Kendu" : "✅ Eginda"}
+          </button>
+          {isPersonal && onEditPersonal && (
+            <button onClick={onEditPersonal} style={{
+              padding: "14px 16px", borderRadius: 12, border: "1.5px solid #8b5cf6", fontSize: 15,
+              cursor: "pointer", fontFamily: "inherit", background: "#f5f3ff", color: "#8b5cf6",
+            }}>✏️</button>
+          )}
+          {isPersonal && onDeletePersonal && (
+            <button onClick={onDeletePersonal} style={{
+              padding: "14px 16px", borderRadius: 12, border: "1.5px solid #ef4444", fontSize: 15,
+              cursor: "pointer", fontFamily: "inherit", background: "#fef2f2", color: "#ef4444",
+            }}>🗑️</button>
+          )}
+        </div>
       </div>
       {showLightbox && task.irudia && <ImageLightbox src={task.irudia} onClose={function() { setShowLightbox(false); }} />}
     </div>
