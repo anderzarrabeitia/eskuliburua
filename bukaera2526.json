@@ -962,8 +962,14 @@
       "mota": "egutegikoa",
       "data": "2026-05-28",
       "ordua": null,
-      "argibideak": "Hirugarren ebaluazioko notak aplikatiboan sartu.",
-      "estekak": [],
+      "argibideak": "Hirugarren ebaluazioko notak Alexian sartuta.",
+      "estekak": [
+        {
+          "izena": "Alexia",
+          "url": "https://web2.alexiaedu.com/acweb/logon.aspx?id=587",
+          "ruta": ""
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
@@ -3784,140 +3790,30 @@
       "izenburua": "3. eta 4. ebaluazio juntak (LH)",
       "mota": "egutegikoa",
       "data": "2026-06-01",
-      "ordua": null,
+      "ordua": "12:30-14:20",
       "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
           "balioa": "Etapa koordinatzailea"
         },
         {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
           "mota": "rola",
           "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
         }
       ],
       "informatiboak": [],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "LH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_1779881669599_nznbta",
-      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
-      "mota": "egutegikoa",
-      "data": "2026-06-02",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        }
-      ],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "LH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_1779881670405_yuh14f",
-      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
-      "mota": "egutegikoa",
-      "data": "2026-06-03",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        }
-      ],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "LH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_1779881673447_nr8vte",
-      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
-      "mota": "egutegikoa",
-      "data": "2026-06-04",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        }
-      ],
       "kategoria": "ebaluazioa",
       "filtroak": {
         "etapak": [
@@ -3931,71 +3827,15 @@
       "izenburua": "3. eta 4. ebaluazio juntak (HH)",
       "mota": "egutegikoa",
       "data": "2026-06-01",
-      "ordua": null,
+      "ordua": "12:30-14:20",
       "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
+      "estekak": [
         {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HH"
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
         }
       ],
-      "informatiboak": [],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "HH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_1779884598136_8aobmo",
-      "izenburua": "3. eta 4. ebaluazio juntak (HH) ",
-      "mota": "egutegikoa",
-      "data": "2026-06-02",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HH"
-        }
-      ],
-      "informatiboak": [],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "HH"
-        ]
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_1779884599796_thj4oc",
-      "izenburua": "3. eta 4. ebaluazio juntak (HH) (kopia)",
-      "mota": "egutegikoa",
-      "data": "2026-06-03",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
       "arduradunak": [
         {
           "mota": "rola",
@@ -4338,42 +4178,6 @@
       "irudia": null
     },
     {
-      "id": "ataza_1779894853699_l4wlwn",
-      "izenburua": "3. eta 4. ebaluazio juntak (LH)  ",
-      "mota": "egutegikoa",
-      "data": "2026-06-05",
-      "ordua": null,
-      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Etapa koordinatzailea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "PT"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        }
-      ],
-      "kategoria": "ebaluazioa",
-      "filtroak": {
-        "etapak": [
-          "LH"
-        ]
-      },
-      "irudia": null
-    },
-    {
       "id": "ataza_1779895016886_a48s2x",
       "izenburua": "JPPen ebaluaketa igota",
       "mota": "egutegikoa",
@@ -4519,6 +4323,228 @@
       "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945069685_28a55c",
+      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
+      "mota": "egutegikoa",
+      "data": "2026-06-02",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945070117_eh6r7a",
+      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
+      "mota": "egutegikoa",
+      "data": "2026-06-03",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945071437_fjgvj8",
+      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
+      "mota": "egutegikoa",
+      "data": "2026-06-04",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945074319_vvyze6",
+      "izenburua": "3. eta 4. ebaluazio juntak (LH) ",
+      "mota": "egutegikoa",
+      "data": "2026-06-05",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945287905_1lfsu9",
+      "izenburua": "3. eta 4. ebaluazio juntak (HH) ",
+      "mota": "egutegikoa",
+      "data": "2026-06-02",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1779945288624_uzr05w",
+      "izenburua": "3. eta 4. ebaluazio juntak (HH) (kopia)",
+      "mota": "egutegikoa",
+      "data": "2026-06-03",
+      "ordua": "12:30-14:20",
+      "argibideak": "3. eta 4. ebaluaketako juntak egin eta 4. ebaluaketarako noten zalantzak argituko ditugu",
+      "estekak": [
+        {
+          "izena": "Ebaluazio akta",
+          "url": "https://drive.google.com/drive/folders/1IicdEkpfv9gNz_7bqZ6-hWKYvAMx1cRy",
+          "ruta": "KUDEAKETA AURRERATUA/P01/1.4Ebaluazioa eta hobekuntza plana/dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "HH"
+        ]
       },
       "irudia": null
     }
