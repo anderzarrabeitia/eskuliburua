@@ -1277,10 +1277,19 @@ function TaskModal({ task, c, onSave, onClose }) {
   const [f, setF] = useState(JSON.parse(JSON.stringify(task)));
   const [nl, setNl] = useState({ izena: "", url: "", ruta: "" });
   const [at, setAt] = useState("arduradunak");
+  const [editingLink, setEditingLink] = useState(null); // index of link being edited
+  const originalRef = useRef(JSON.stringify(task));
   const up = (k, v) => setF(p => ({ ...p, [k]: v }));
   const allRoles = [...(c.rolIrakaslegoa || ROLAK_IRAKASLEGOA), ...(c.rolPas || ROLAK_PAS), ...(c.rolOrokorra || ROLAK_OROKORRA)];
   const allMailak = Object.values(c.mailak || MAILAK).flat();
   const sortedLangileak = [...c.langileak].sort((a, b) => a.izena.localeCompare(b.izena, "eu"));
+
+  var hasChanges = function() { return JSON.stringify(f) !== originalRef.current; };
+  var handleClose = function() {
+    if (hasChanges()) {
+      if (confirm("Aldaketak gorde gabe itxi nahi duzu?")) onClose();
+    } else { onClose(); }
+  };
 
   const addA = (list, mota, val) => { if (!val) return; const a = [...f[list]]; if (!a.some(x => x.mota === mota && x.balioa === val)) { a.push({ mota, balioa: val }); up(list, a); } };
   const remA = (list, i) => { const a = [...f[list]]; a.splice(i, 1); up(list, a); };
@@ -1290,7 +1299,13 @@ function TaskModal({ task, c, onSave, onClose }) {
     up("estekak", [].concat(f.estekak || [], [linkObj]));
     setNl({ izena: "", url: "", ruta: "" });
   };
-  const remL = (i) => { const a = [...(f.estekak || [])]; a.splice(i, 1); up("estekak", a); };
+  const remL = (i) => { const a = [...(f.estekak || [])]; a.splice(i, 1); up("estekak", a); setEditingLink(null); };
+  var updateLink = function(i, field, value) {
+    var a = [].concat(f.estekak || []);
+    a[i] = Object.assign({}, a[i]);
+    a[i][field] = value;
+    up("estekak", a);
+  };
   const handleImageUpload = (e) => {
     const file = e.target.files[0]; if (!file) return;
     const reader = new FileReader();
@@ -1302,13 +1317,13 @@ function TaskModal({ task, c, onSave, onClose }) {
   const accent = isArd ? "#1e3a5f" : "#0d9488";
 
   return (
-    <div style={S.overlay} onClick={onClose}>
+    <div style={S.overlay} onClick={handleClose}>
       <div style={S.modal} onClick={e => e.stopPropagation()}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
           <h3 style={{ color: "#1e3a5f", margin: 0, fontFamily: "'Source Serif 4', serif", fontSize: 19 }}>
             {task.izenburua ? "Ataza editatu" : "Ataza berria"}
           </h3>
-          <button onClick={onClose} style={{ ...S.btnIcon, fontSize: 18 }}>✕</button>
+          <button onClick={handleClose} style={{ ...S.btnIcon, fontSize: 18 }}>✕</button>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 14 }}>
@@ -1371,13 +1386,27 @@ function TaskModal({ task, c, onSave, onClose }) {
         <div style={{ marginBottom: 14 }}>
           <label style={S.label}>Estekak ({(f.estekak || []).length})</label>
           {(f.estekak || []).map((l, i) => (
-            <div key={i} style={{ background: "#faf8f5", borderRadius: 8, padding: "8px 10px", marginBottom: 4, border: "1px solid #e5ddd3" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12 }}>
-                <span style={{ flex: 1, color: "#1e3a5f", fontWeight: 600 }}>🔗 {l.izena}</span>
-                <button onClick={() => remL(i)} style={{ ...S.btnIcon, fontSize: 11, color: "#ef4444" }}>✕</button>
-              </div>
-              {l.url && <div style={{ fontSize: 10, color: "#6b7280", marginTop: 2 }}>{l.url}</div>}
-              {l.ruta && <div style={{ fontSize: 10, color: "#8b7e74", marginTop: 1 }}>📁 {l.ruta}</div>}
+            <div key={i} style={{ background: editingLink === i ? "#eff6ff" : "#faf8f5", borderRadius: 8, padding: "8px 10px", marginBottom: 4, border: "1px solid " + (editingLink === i ? "#3b82f6" : "#e5ddd3") }}>
+              {editingLink === i ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                  <input value={l.izena} onChange={function(e) { updateLink(i, "izena", e.target.value); }} style={{ ...S.input, fontSize: 12 }} placeholder="Izena" />
+                  <input value={l.url || ""} onChange={function(e) { updateLink(i, "url", e.target.value); }} style={{ ...S.input, fontSize: 12 }} placeholder="URL — https://..." />
+                  <div style={{ display: "flex", gap: 4 }}>
+                    <input value={l.ruta || ""} onChange={function(e) { updateLink(i, "ruta", e.target.value); }} style={{ ...S.input, flex: 1, fontSize: 12 }} placeholder="📁 Ruta" />
+                    <button onClick={function() { setEditingLink(null); }} style={{ ...S.btnSm, background: "#3b82f6", color: "#fff", border: "none", fontSize: 11 }}>✓ Ados</button>
+                  </div>
+                </div>
+              ) : (
+                <div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 12 }}>
+                    <span style={{ flex: 1, color: "#1e3a5f", fontWeight: 600, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>🔗 {l.izena}</span>
+                    <button onClick={function() { setEditingLink(i); }} style={{ ...S.btnIcon, fontSize: 11, color: "#3b82f6" }} title="Editatu">✏️</button>
+                    <button onClick={function() { remL(i); }} style={{ ...S.btnIcon, fontSize: 11, color: "#ef4444" }} title="Ezabatu">✕</button>
+                  </div>
+                  {l.url && <div style={{ fontSize: 10, color: "#6b7280", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{l.url}</div>}
+                  {l.ruta && <div style={{ fontSize: 10, color: "#8b7e74", marginTop: 1 }}>📁 {l.ruta}</div>}
+                </div>
+              )}
             </div>
           ))}
           <div style={{ background: "#f9fafb", borderRadius: 8, padding: 10, border: "1px dashed #d1d5db", marginTop: 6 }}>
@@ -1454,7 +1483,7 @@ function TaskModal({ task, c, onSave, onClose }) {
         </div>
 
         <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
-          <button onClick={onClose} style={S.btnSec}>Utzi</button>
+          <button onClick={handleClose} style={S.btnSec}>Utzi</button>
           <button onClick={() => {
             if (!f.izenburua) { alert("Izenburua beharrezkoa da."); return; }
             // Auto-add pending link if user forgot to click "+ Esteka"
@@ -2783,7 +2812,7 @@ const S = {
   select: { width: "100%", background: "#fff", border: "1px solid #d1d5db", borderRadius: 8, padding: "9px 12px", color: "#1f2937", fontSize: 13, boxSizing: "border-box", outline: "none", fontFamily: "inherit", appearance: "auto" },
   label: { display: "block", color: "#6b7280", fontSize: 11, marginBottom: 4, fontWeight: 600, textTransform: "uppercase", letterSpacing: 0.5 },
   overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.25)", display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: 40, zIndex: 100, overflow: "auto" },
-  modal: { background: "#fff", border: "1px solid #e5ddd3", borderRadius: 14, padding: 28, maxWidth: 680, width: "95%", maxHeight: "90vh", overflow: "auto", boxShadow: "0 20px 60px rgba(0,0,0,0.12)" },
+  modal: { background: "#fff", border: "1px solid #e5ddd3", borderRadius: 14, padding: 28, maxWidth: 820, width: "96%", maxHeight: "92vh", overflow: "auto", boxShadow: "0 20px 60px rgba(0,0,0,0.12)" },
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
