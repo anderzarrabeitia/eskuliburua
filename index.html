@@ -461,8 +461,14 @@ function App() {
       if (saved) {
         try {
           const data = JSON.parse(saved);
-          if (data.izena) {
+          // Only offer restore if the campaign has actual content
+          var hasContent = (data.atazak && data.atazak.length > 0) || (data.langileak && data.langileak.length > 0);
+          if (data.izena && hasContent) {
             setAutoSaveRestore(data);
+          } else {
+            // Empty campaign, clean up silently
+            localStorage.removeItem("eami_admin_autosave");
+            localStorage.removeItem("eami_admin_autosave_filename");
           }
         } catch(e) {}
       }
@@ -596,6 +602,15 @@ function App() {
                   })()}
                   <button onClick={function() { setView("user_profile"); }} style={S.btnSm}>⚙️ Profila aldatu</button>
                   <button onClick={function() { userFileRef.current && userFileRef.current.click(); }} style={S.btnSm}>📂 Beste kanpaina bat kargatu</button>
+                  <button onClick={function() {
+                    if (confirm("Profil guztiak ezabatu nahi dituzu? Ekintza hau ezin da desegin.")) {
+                      localStorage.removeItem("eami_profiles_list");
+                      localStorage.removeItem("eami_user_profile");
+                      setUserProfile(null);
+                      setProfilesKey(function(prev) { return prev + 1; });
+                      showToast("Profil guztiak ezabatuta");
+                    }
+                  }} style={{ ...S.btnSm, color: "#ef4444" }}>🗑️ Profil guztiak ezabatu</button>
                   <p style={{ fontSize: 10, color: "#9ca3af", margin: "0", fontFamily: "'Outfit', sans-serif" }}>ℹ️ Kanpaina berria kargatzean, eginiko atazak mantenduko dira</p>
                 </div>
               </details>
@@ -623,7 +638,9 @@ function App() {
             <p style={{ color: "#9ca3af", fontSize: 11, marginBottom: 10, fontFamily: "'Outfit', sans-serif" }}>Zuzendaritza taldea</p>
             {autoSaveRestore && !campaign && (
               <div style={{ background: "#fffbeb", border: "1px solid #fde68a", borderRadius: 8, padding: "10px 12px", marginBottom: 10, textAlign: "left" }}>
-                <p style={{ fontSize: 11, color: "#92400e", margin: "0 0 6px" }}>📦 Autogordetze: <b>{autoSaveRestore.izena}</b></p>
+                <p style={{ fontSize: 11, color: "#92400e", margin: "0 0 6px" }}>📦 Autogordetze: <b>{autoSaveRestore.izena}</b>
+                  <span style={{ color: "#b45309", fontWeight: 400 }}> · {(autoSaveRestore.atazak || []).length} ataza, {(autoSaveRestore.langileak || []).length} langile</span>
+                </p>
                 <div style={{ display: "flex", gap: 6 }}>
                   <button onClick={function() {
                     var pw = prompt("Admin pasahitza:");
@@ -642,11 +659,7 @@ function App() {
               </div>
             )}
             <div style={{ display: "flex", gap: 8 }}>
-              <button onClick={function() {
-                var pw = prompt("Admin pasahitza:");
-                if (pw === "eami2026") handleNew();
-                else if (pw !== null) alert("Pasahitz okerra!");
-              }} style={{ ...S.btnSec, flex: 1, fontSize: 12 }}>Kanpaina berria</button>
+              <button onClick={function() { handleNew(); }} style={{ ...S.btnSec, flex: 1, fontSize: 12 }}>Kanpaina berria</button>
               <button onClick={handleLoad} style={{ ...S.btnSec, flex: 1, fontSize: 12 }}>Kanpaina kargatu</button>
             </div>
           </div>
