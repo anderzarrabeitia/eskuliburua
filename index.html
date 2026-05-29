@@ -17,6 +17,8 @@
     ::-webkit-scrollbar-track { background: #f5f1eb; }
     ::-webkit-scrollbar-thumb { background: #d1c9bc; border-radius: 4px; }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    [contenteditable=true]:empty:before { content: attr(data-placeholder); color: #9ca3af; pointer-events: none; }
+    [contenteditable=true] ul, [contenteditable=true] ol { padding-left: 20px; margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -50,6 +52,7 @@ const KATEGORIAK_LEHENESPENAK = [
 const LANGILEAK_HUTSIK = [];
 
 const mkId = () => `ataza_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+const stripHtml = function(html) { if (!html) return ""; var div = document.createElement("div"); div.innerHTML = html; return div.textContent || div.innerText || ""; };
 
 const emptyTask = () => ({ id: mkId(), izenburua: "", mota: "egutegikoa", data: "", ordua: null, argibideak: "", estekak: [], arduradunak: [], informatiboak: [], kategoria: "bestelakoa", filtroak: { etapak: [] }, irudia: null });
 
@@ -440,9 +443,13 @@ function App() {
   useEffect(() => {
     if (!campaign || view !== "admin") return;
     const interval = setInterval(() => {
-      localStorage.setItem("eami_admin_autosave", JSON.stringify(campaign));
-      localStorage.setItem("eami_admin_autosave_filename", loadedFilename || "");
-      setLastAutoSave(new Date());
+      try {
+        localStorage.setItem("eami_admin_autosave", JSON.stringify(campaign));
+        localStorage.setItem("eami_admin_autosave_filename", loadedFilename || "");
+        setLastAutoSave(new Date());
+      } catch(e) {
+        console.warn("Autosave failed:", e.message);
+      }
     }, 5 * 60 * 1000); // 5 minutes
     return () => clearInterval(interval);
   }, [campaign, view, loadedFilename]);
@@ -474,11 +481,17 @@ function App() {
   const upCamp = (u) => setCampaign(p => ({ ...p, ...u }));
 
   const saveTask = (t) => {
-    setCampaign(prev => ({
-      ...prev,
-      atazak: prev.atazak.some(x => x.id === t.id) ? prev.atazak.map(x => x.id === t.id ? t : x) : [...prev.atazak, t]
-    }));
-    setEditTask(null); setShowTaskForm(false); showToast("Ataza gordeta");
+    try {
+      // Verify JSON serialization works before saving
+      JSON.stringify(t);
+      setCampaign(prev => ({
+        ...prev,
+        atazak: prev.atazak.some(x => x.id === t.id) ? prev.atazak.map(x => x.id === t.id ? t : x) : [...prev.atazak, t]
+      }));
+      setEditTask(null); setShowTaskForm(false); showToast("Ataza gordeta");
+    } catch(e) {
+      showToast("❌ Errorea gordetzean: " + (e.message || "saiatu berriro"));
+    }
   };
   const deleteTask = (id) => {
     askConfirm("Ataza hau ezabatu nahi duzu? Ekintza hau ezin da desegin.", () => {
@@ -516,7 +529,7 @@ function App() {
           all.some(a => a.mota === "pertsona" && (campaign.langileak.find(l => l.id === a.balioa) || {}).etapa === filterEtapa);
       });
     }
-    if (searchText) { const s = searchText.toLowerCase(); tasks = tasks.filter(t => t.izenburua.toLowerCase().includes(s) || t.argibideak.toLowerCase().includes(s)); }
+    if (searchText) { const s = searchText.toLowerCase(); tasks = tasks.filter(t => t.izenburua.toLowerCase().includes(s) || stripHtml(t.argibideak).toLowerCase().includes(s)); }
     tasks.sort((a, b) => (a.data || "9999") < (b.data || "9999") ? -1 : 1);
     return tasks;
   }, [campaign, filterEtapa, searchText]);
@@ -775,6 +788,7 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
       '.task{page-break-inside:avoid;margin-bottom:16px;padding:12px;border:1px solid #ddd;border-radius:8px;border-left:4px solid #1e3a5f}' +
       '.task h3{font-size:14px;margin:0 0 4px}.task .meta{font-size:11px;color:#888;margin-bottom:6px}' +
       '.task .desc{font-size:12px;line-height:1.5;white-space:pre-wrap;margin-bottom:6px}' +
+      '.task .desc ul,.task .desc ol{padding-left:20px;margin:4px 0}' +
       '.task .link{font-size:11px;color:#1e3a5f;margin:2px 0}.task .ruta{font-size:10px;color:#888}' +
       '.task img{max-width:300px;max-height:200px;border-radius:4px;margin-top:6px}' +
       '.cal-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid #ccc;font-size:11px}' +
@@ -811,7 +825,8 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
             dayTasks.forEach(function(t) {
               var kat = (c.kategoriak || KATEGORIAK_LEHENESPENAK).find(function(k) { return k.id === t.kategoria; });
               var kc = (kat && kat.kolorea) || "#1e3a5f";
-              html += '<div class="cal-chip" style="border-left-color:' + kc + ';background:' + kc + '15">' + t.izenburua + '</div>';
+              var timeStr = t.ordua ? '<span style="font-size:9px;opacity:0.7">' + t.ordua + '</span> ' : '';
+              html += '<div class="cal-chip" style="border-left-color:' + kc + ';background:' + kc + '15">' + timeStr + t.izenburua + '</div>';
             });
             html += '</div>';
             cursor.setDate(cursor.getDate() + 1);
@@ -829,6 +844,7 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
       var allTasks = [].concat(cal, gen);
       allTasks.forEach(function(t) {
         var ard = (t.arduradunak || []).map(function(a) { return getAssignLabel(a, c.langileak); }).join(", ");
+        var inf = (t.informatiboak || []).map(function(a) { return getAssignLabel(a, c.langileak); }).join(", ");
         var estekak = t.estekak || [];
         var kat = (c.kategoriak || KATEGORIAK_LEHENESPENAK).find(function(k) { return k.id === t.kategoria; });
         var kc = (kat && kat.kolorea) || "#1e3a5f";
@@ -837,7 +853,8 @@ function TasksView({ c, tasks, fe, setFe, st, setSt, onEdit, onNew, onDel, onDup
         html += '<div class="meta">\ud83d\udcc5 ' + fmtDate(t.data) + (t.ordua ? ' \u00b7 \u23f0 ' + t.ordua : '') + (t.mota === "orokorra" ? ' \u00b7 \ud83d\udccc Mugaeguna' : '');
         if (kat) html += ' \u00b7 <span style="color:' + kc + ';font-weight:bold">' + kat.izena + '</span>';
         html += '</div>';
-        if (ard) html += '<div class="assign">\ud83c\udfaf ' + ard + '</div>';
+        if (ard) html += '<div class="assign">\ud83c\udfaf <b>Arduradunak:</b> ' + ard + '</div>';
+        if (inf) html += '<div class="assign">\u2139\ufe0f <b>Informatiboak:</b> ' + inf + '</div>';
         if (t.argibideak) html += '<div class="desc">' + t.argibideak + '</div>';
         if (t.irudia) html += '<img src="' + t.irudia + '" />';
         estekak.forEach(function(l) {
@@ -1133,6 +1150,115 @@ function TaskRow({ t, c, onEdit, onDel, onDup }) {
   );
 }
 
+// ─── RICH TEXT EDITOR ───
+function RichTextEditor({ value, onChange, placeholder, minHeight }) {
+  var editorRef = useRef(null);
+  var isInternalChange = useRef(false);
+  var [showColorPicker, setShowColorPicker] = useState(false);
+
+  useEffect(function() {
+    if (editorRef.current && !isInternalChange.current) {
+      if (editorRef.current.innerHTML !== (value || "")) {
+        editorRef.current.innerHTML = value || "";
+      }
+    }
+    isInternalChange.current = false;
+  }, [value]);
+
+  var handleInput = function() {
+    if (editorRef.current) {
+      isInternalChange.current = true;
+      onChange(editorRef.current.innerHTML);
+    }
+  };
+
+  var exec = function(cmd, val) {
+    editorRef.current && editorRef.current.focus();
+    document.execCommand(cmd, false, val || null);
+    handleInput();
+  };
+
+  var handlePaste = function(e) {
+    e.preventDefault();
+    var text = e.clipboardData.getData("text/html") || e.clipboardData.getData("text/plain");
+    // Strip heavy formatting but keep basic tags
+    var div = document.createElement("div");
+    div.innerHTML = text;
+    // Remove scripts, styles, classes, complex attributes
+    var els = div.querySelectorAll("script, style, meta, link");
+    for (var i = 0; i < els.length; i++) els[i].remove();
+    var all = div.querySelectorAll("*");
+    for (var j = 0; j < all.length; j++) {
+      var el = all[j];
+      var allowed = ["style"];
+      var attrs = [].slice.call(el.attributes);
+      for (var k = 0; k < attrs.length; k++) {
+        if (allowed.indexOf(attrs[k].name) < 0) el.removeAttribute(attrs[k].name);
+      }
+    }
+    document.execCommand("insertHTML", false, div.innerHTML);
+    handleInput();
+  };
+
+  var btnStyle = function(active) {
+    return {
+      background: active ? "#e0e7ef" : "transparent", border: "1px solid #d1d5db",
+      borderRadius: 4, padding: "3px 7px", fontSize: 12, cursor: "pointer",
+      fontFamily: "inherit", color: "#374151", minWidth: 28, textAlign: "center",
+      fontWeight: active ? 700 : 400, lineHeight: 1.3,
+    };
+  };
+
+  var colors = ["#000000", "#ef4444", "#f59e0b", "#10b981", "#3b82f6", "#8b5cf6", "#ec4899", "#6b7280", "#1e3a5f"];
+
+  return (
+    <div style={{ border: "1px solid #d1d5db", borderRadius: 8, overflow: "hidden", background: "#fff" }}>
+      {/* Toolbar */}
+      <div style={{ display: "flex", gap: 3, padding: "5px 8px", borderBottom: "1px solid #e5e7eb", background: "#f9fafb", flexWrap: "wrap", alignItems: "center" }}>
+        <button type="button" onClick={function() { exec("bold"); }} style={btnStyle()} title="Negrita"><b>N</b></button>
+        <button type="button" onClick={function() { exec("italic"); }} style={btnStyle()} title="Kursiba"><i>K</i></button>
+        <button type="button" onClick={function() { exec("underline"); }} style={btnStyle()} title="Azpimarratua"><u>A</u></button>
+        <span style={{ width: 1, height: 20, background: "#d1d5db", margin: "0 2px" }} />
+        <select onChange={function(e) { if (e.target.value) exec("fontSize", e.target.value); e.target.value = ""; }}
+          style={{ ...btnStyle(), padding: "3px 4px", fontSize: 11, width: 50 }} defaultValue="">
+          <option value="" disabled>Tam.</option>
+          <option value="1">Txikia</option>
+          <option value="3">Normala</option>
+          <option value="5">Handia</option>
+          <option value="7">Oso handia</option>
+        </select>
+        <span style={{ width: 1, height: 20, background: "#d1d5db", margin: "0 2px" }} />
+        <div style={{ position: "relative" }}>
+          <button type="button" onClick={function() { setShowColorPicker(!showColorPicker); }} style={btnStyle()} title="Kolorea">🎨</button>
+          {showColorPicker && (
+            <div style={{ position: "absolute", top: "100%", left: 0, zIndex: 20, background: "#fff", border: "1px solid #d1d5db", borderRadius: 8, padding: 6, boxShadow: "0 4px 12px rgba(0,0,0,0.1)", display: "flex", gap: 4, flexWrap: "wrap", width: 120 }}>
+              {colors.map(function(c) { return (
+                <button key={c} type="button" onClick={function() { exec("foreColor", c); setShowColorPicker(false); }}
+                  style={{ width: 24, height: 24, borderRadius: 4, background: c, border: "2px solid #e5e7eb", cursor: "pointer", padding: 0 }} />
+              ); })}
+            </div>
+          )}
+        </div>
+        <span style={{ width: 1, height: 20, background: "#d1d5db", margin: "0 2px" }} />
+        <button type="button" onClick={function() { exec("justifyLeft"); }} style={btnStyle()} title="Ezkerrean">⬅</button>
+        <button type="button" onClick={function() { exec("justifyCenter"); }} style={btnStyle()} title="Erdian">⬛</button>
+        <button type="button" onClick={function() { exec("justifyRight"); }} style={btnStyle()} title="Eskuinean">➡</button>
+        <span style={{ width: 1, height: 20, background: "#d1d5db", margin: "0 2px" }} />
+        <button type="button" onClick={function() { exec("insertUnorderedList"); }} style={btnStyle()} title="Zerrenda">• ≡</button>
+      </div>
+      {/* Editable area */}
+      <div ref={editorRef} contentEditable="true"
+        onInput={handleInput} onPaste={handlePaste}
+        onBlur={handleInput}
+        data-placeholder={placeholder || ""}
+        style={{
+          minHeight: minHeight || 72, padding: "10px 12px", fontSize: 13, lineHeight: 1.6,
+          color: "#374151", outline: "none", overflow: "auto", maxHeight: 300,
+        }} />
+    </div>
+  );
+}
+
 // ─── TASK MODAL ───
 function TaskModal({ task, c, onSave, onClose }) {
   const [f, setF] = useState(JSON.parse(JSON.stringify(task)));
@@ -1145,7 +1271,12 @@ function TaskModal({ task, c, onSave, onClose }) {
 
   const addA = (list, mota, val) => { if (!val) return; const a = [...f[list]]; if (!a.some(x => x.mota === mota && x.balioa === val)) { a.push({ mota, balioa: val }); up(list, a); } };
   const remA = (list, i) => { const a = [...f[list]]; a.splice(i, 1); up(list, a); };
-  const addL = () => { if (!nl.izena) return; up("estekak", [...(f.estekak || []), { ...nl }]); setNl({ izena: "", url: "", ruta: "" }); };
+  const addL = () => {
+    if (!nl.izena && !nl.url) return;
+    var linkObj = { izena: nl.izena || nl.url || "Esteka", url: (nl.url || "").trim(), ruta: nl.ruta || "" };
+    up("estekak", [].concat(f.estekak || [], [linkObj]));
+    setNl({ izena: "", url: "", ruta: "" });
+  };
   const remL = (i) => { const a = [...(f.estekak || [])]; a.splice(i, 1); up("estekak", a); };
   const handleImageUpload = (e) => {
     const file = e.target.files[0]; if (!file) return;
@@ -1220,8 +1351,7 @@ function TaskModal({ task, c, onSave, onClose }) {
 
         <div style={{ marginBottom: 14 }}>
           <label style={S.label}>Argibideak</label>
-          <textarea value={f.argibideak} onChange={e => up("argibideak", e.target.value)}
-            style={{ ...S.input, minHeight: 72, resize: "vertical" }} placeholder="Nola egin, non egin, zer kontuan izan..." />
+          <RichTextEditor value={f.argibideak} onChange={function(v) { up("argibideak", v); }} placeholder="Nola egin, non egin, zer kontuan izan..." minHeight={72} />
         </div>
 
         {/* Links */}
@@ -1239,15 +1369,16 @@ function TaskModal({ task, c, onSave, onClose }) {
           ))}
           <div style={{ background: "#f9fafb", borderRadius: 8, padding: 10, border: "1px dashed #d1d5db", marginTop: 6 }}>
             <div style={{ display: "flex", gap: 6, marginBottom: 4 }}>
-              <input value={nl.izena} onChange={e => setNl(p => ({ ...p, izena: e.target.value }))} style={{ ...S.input, flex: 1 }} placeholder="Izena *" />
+              <input value={nl.izena} onChange={e => setNl(p => ({ ...p, izena: e.target.value }))} style={{ ...S.input, flex: 1 }} placeholder="Estekaren izena" />
             </div>
             <div style={{ display: "flex", gap: 6, marginBottom: 4 }}>
-              <input value={nl.url} onChange={e => setNl(p => ({ ...p, url: e.target.value }))} style={{ ...S.input, flex: 1 }} placeholder="URL (aukerakoa)" />
+              <input value={nl.url} onChange={e => setNl(p => ({ ...p, url: e.target.value }))} style={{ ...S.input, flex: 1 }} placeholder="URL (aukerakoa) — https://..." />
             </div>
             <div style={{ display: "flex", gap: 6 }}>
               <input value={nl.ruta} onChange={e => setNl(p => ({ ...p, ruta: e.target.value }))} style={{ ...S.input, flex: 1 }} placeholder="📁 Ruta (adib. DRIVE > Karpeta > Azpikarpeta)" />
-              <button onClick={addL} style={{ ...S.btnSm, background: "#1e3a5f", color: "#fff", border: "none", whiteSpace: "nowrap" }}>+ Esteka</button>
+              <button onClick={addL} disabled={!nl.izena && !nl.url} style={{ ...S.btnSm, background: (!nl.izena && !nl.url) ? "#d1d5db" : "#1e3a5f", color: "#fff", border: "none", whiteSpace: "nowrap", opacity: (!nl.izena && !nl.url) ? 0.5 : 1 }}>+ Esteka</button>
             </div>
+            {!nl.izena && !nl.url && <p style={{ fontSize: 10, color: "#9ca3af", margin: "4px 0 0" }}>Izena edo URL-a beharrezkoa da esteka gehitzeko</p>}
           </div>
         </div>
 
@@ -1311,7 +1442,16 @@ function TaskModal({ task, c, onSave, onClose }) {
 
         <div style={{ display: "flex", gap: 10, justifyContent: "flex-end" }}>
           <button onClick={onClose} style={S.btnSec}>Utzi</button>
-          <button onClick={() => { if (!f.izenburua) return; onSave(f); }} style={S.btnPri}>💾 Gorde</button>
+          <button onClick={() => {
+            if (!f.izenburua) { alert("Izenburua beharrezkoa da."); return; }
+            // Auto-add pending link if user forgot to click "+ Esteka"
+            var taskToSave = Object.assign({}, f);
+            if (nl.izena || nl.url) {
+              var pendingLink = { izena: nl.izena || nl.url || "Esteka", url: (nl.url || "").trim(), ruta: nl.ruta || "" };
+              taskToSave.estekak = [].concat(taskToSave.estekak || [], [pendingLink]);
+            }
+            onSave(taskToSave);
+          }} style={S.btnPri}>💾 Gorde</button>
         </div>
       </div>
     </div>
@@ -1902,7 +2042,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
     }
     if (filterText) {
       const s = filterText.toLowerCase();
-      tasks = tasks.filter(t => t.izenburua.toLowerCase().includes(s) || (t.argibideak || "").toLowerCase().includes(s));
+      tasks = tasks.filter(t => t.izenburua.toLowerCase().includes(s) || stripHtml(t.argibideak || "").toLowerCase().includes(s));
     }
     tasks.sort((a, b) => (a.data || "9999") < (b.data || "9999") ? -1 : 1);
     return tasks;
@@ -1945,7 +2085,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
         dtStart = dateClean;
         dtEnd = dateClean;
       }
-      var desc = (t.argibideak || "").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+      var desc = stripHtml(t.argibideak || "").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
       var summary = (t.izenburua || "").replace(/,/g, "\\,").replace(/;/g, "\\;");
       lines.push("BEGIN:VEVENT");
       if (t.ordua) {
@@ -1987,6 +2127,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
       .task{page-break-inside:avoid;margin-bottom:16px;padding:12px;border:1px solid #ddd;border-radius:8px;border-left:4px solid #1e3a5f}
       .task h3{font-size:14px;margin:0 0 4px}.task .meta{font-size:11px;color:#888;margin-bottom:6px}
       .task .desc{font-size:12px;line-height:1.5;white-space:pre-wrap;margin-bottom:6px}
+      .task .desc ul,.task .desc ol{padding-left:20px;margin:4px 0}
       .task .link{font-size:11px;color:#1e3a5f;margin:2px 0}.task .ruta{font-size:10px;color:#888}
       .task img{max-width:300px;max-height:200px;border-radius:4px;margin-top:6px}
       .cal-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid #ccc;font-size:11px}
@@ -2024,7 +2165,15 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
               const done = completed[t.id];
               const kat = (campaign.kategoriak || KATEGORIAK_LEHENESPENAK).find(k => k.id === t.kategoria);
               const kc = (kat && kat.kolorea) || "#1e3a5f";
-              html += `<div class="cal-chip" style="border-left-color:${kc};background:${kc}15${done ? ";text-decoration:line-through;opacity:0.5" : ""}">${t.izenburua}</div>`;
+              var roleIcon = "";
+              if (profile) {
+                var isArd = t.arduradunak.some(function(a) { return a.mota === "pertsona" && a.balioa === profile.id; }) || myTaskIds[t.id] === "direct";
+                var isInf = !isArd && (t.informatiboak.some(function(a) { return a.mota === "pertsona" && a.balioa === profile.id; }) || myTaskIds[t.id] === "info");
+                if (isArd) roleIcon = "🎯 ";
+                else if (isInf) roleIcon = "ℹ️ ";
+              }
+              var timeStr = t.ordua ? '<span style="font-size:9px;opacity:0.7">' + t.ordua + '</span> ' : '';
+              html += '<div class="cal-chip" style="border-left-color:' + kc + ';background:' + kc + '15' + (done ? ';text-decoration:line-through;opacity:0.5' : '') + '">' + roleIcon + timeStr + t.izenburua + '</div>';
             });
             html += '</div>';
             cursor.setDate(cursor.getDate() + 1);
@@ -2039,7 +2188,7 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
         html += '</div>';
       }
     } else {
-      // List print: task + description + links
+      // List print: task + description + links + assignments
       const allTasks = [...cal, ...gen];
       allTasks.forEach(t => {
         const status = getStatus(t);
@@ -2047,11 +2196,15 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
         const estekak = t.estekak || [];
         const kat = (campaign.kategoriak || KATEGORIAK_LEHENESPENAK).find(k => k.id === t.kategoria);
         const kc = (kat && kat.kolorea) || "#1e3a5f";
+        var ard = (t.arduradunak || []).map(function(a) { return getAssignLabel(a, campaign.langileak); }).join(", ");
+        var inf = (t.informatiboak || []).map(function(a) { return getAssignLabel(a, campaign.langileak); }).join(", ");
         html += `<div class="task" style="border-left-color:${kc}${done ? ";opacity:0.5" : ""}">`;
         html += `<h3>${done ? "✅ " : ""}${t.izenburua}</h3>`;
         html += `<div class="meta">📅 ${fmtDate(t.data)}${t.ordua ? ` · ⏰ ${t.ordua}` : ""}${t.mota === "orokorra" ? " · 📌 Mugaeguna" : ""}`;
         if (kat) html += ` · <span style="color:${kc};font-weight:bold">${kat.izena}</span>`;
         html += `</div>`;
+        if (ard) html += '<div class="assign">🎯 <b>Arduradunak:</b> ' + ard + '</div>';
+        if (inf) html += '<div class="assign">ℹ️ <b>Informatiboak:</b> ' + inf + '</div>';
         if (t.argibideak) html += `<div class="desc">${t.argibideak}</div>`;
         if (t.irudia) html += `<img src="${t.irudia}" />`;
         estekak.forEach(l => {
@@ -2209,16 +2362,18 @@ function UserMainView({ campaign, profile, completed, subscriptions, onToggleSub
       )}
 
       {/* FAB — create personal task */}
-      {!showAll && (
+      {!showAll && !selectedTask && !editPersonalTask && (
         <button onClick={function() { setEditPersonalTask({ id: "personal_" + Date.now() + "_" + Math.random().toString(36).substr(2, 4), izenburua: "", data: toDateStr(new Date()), ordua: null, argibideak: "" }); }}
           title="Ataza pertsonala gehitu" style={{
-          position: "fixed", bottom: 28, right: 28, width: 56, height: 56, borderRadius: "50%",
+          position: "fixed", bottom: 90, right: 24, width: 56, height: 56, borderRadius: "50%",
           background: "#8b5cf6", color: "#fff", border: "none", fontSize: 28, cursor: "pointer",
           boxShadow: "0 4px 16px rgba(139,92,246,0.4)", display: "flex", alignItems: "center", justifyContent: "center",
-          zIndex: 80, transition: "transform .15s",
+          zIndex: 90, transition: "transform .15s", lineHeight: 1,
         }}
           onMouseEnter={function(e) { e.currentTarget.style.transform = "scale(1.1)"; }}
-          onMouseLeave={function(e) { e.currentTarget.style.transform = "scale(1)"; }}>+</button>
+          onMouseLeave={function(e) { e.currentTarget.style.transform = "scale(1)"; }}>
+          <span style={{ fontSize: 14, position: "absolute", bottom: -18, right: 0, left: 0, textAlign: "center", color: "#8b5cf6", fontWeight: 700, fontFamily: "'Outfit', sans-serif", whiteSpace: "nowrap" }}>📝 Nirea</span>
+          +</button>
       )}
 
       {toast && <div style={{ position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)", background: "#1e3a5f", color: "#fff", padding: "10px 22px", borderRadius: 10, fontWeight: 600, fontSize: 13, zIndex: 300, boxShadow: "0 4px 16px rgba(0,0,0,0.15)" }}>{toast}</div>}
@@ -2263,7 +2418,7 @@ function UserListView({ tasks, campaign, completed, getStatus, STATUS_COLORS, ST
               {kat && <span style={{ color: katColor, marginRight: 6, fontWeight: 600 }}>{kat.izena}</span>}
               {t.ordua && <span style={{ marginRight: 6 }}>⏰ {t.ordua}</span>}
               {estekak.length > 0 && <span style={{ marginRight: 6 }}>🔗 {estekak.length} esteka</span>}
-              {t.argibideak && <span>📝 Argibideak</span>}
+              {t.argibideak && stripHtml(t.argibideak).trim() && <span>📝 Argibideak</span>}
               {showAll && isMine && <span style={{ marginLeft: 6, color: "#10b981", fontWeight: 600 }}>✓ Nirea</span>}
               {showAll && isSub && <span style={{ marginLeft: 6, color: "#8b5cf6", fontWeight: 600 }}>📌 Gehituta</span>}
             </div>
@@ -2542,10 +2697,10 @@ function UserTaskDetail({ task, campaign, completed, getStatus, STATUS_COLORS, S
         {ard && <div style={{ fontSize: 12, color: "#8b7e74", marginBottom: 16 }}>🎯 {ard}</div>}
 
         {/* Instructions */}
-        {task.argibideak && (
+        {task.argibideak && stripHtml(task.argibideak).trim() && (
           <div style={{ background: isPersonal ? "#f5f3ff" : "#faf8f5", borderRadius: 10, padding: 16, marginBottom: 16, border: "1px solid " + (isPersonal ? "#c4b5fd" : "#e5ddd3"), maxHeight: 300, overflow: "auto" }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: "#8b7e74", textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 8 }}>{isPersonal ? "Oharrak" : "Argibideak"}</div>
-            <div style={{ fontSize: 14, color: "#374151", lineHeight: 1.6, whiteSpace: "pre-wrap" }}>{task.argibideak}</div>
+            <div style={{ fontSize: 14, color: "#374151", lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: task.argibideak }} />
           </div>
         )}
 
