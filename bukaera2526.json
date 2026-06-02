@@ -1075,7 +1075,7 @@
       "id": "ataza_106",
       "izenburua": "Ikuskariarentzat de Txosten ebaluatiboaren azalpena",
       "mota": "egutegikoa",
-      "data": "",
+      "data": "2026-06-10",
       "ordua": null,
       "argibideak": "Zuzendariak ikuskariari bidali behar zaizkion txostenak zeintzuk diren azalduko du hurrengo egunetan bete daitezen.",
       "estekak": [
@@ -2715,7 +2715,7 @@
       "izenburua": "Ospakizuna",
       "mota": "egutegikoa",
       "data": "2026-06-29",
-      "ordua": null,
+      "ordua": "12:30",
       "argibideak": "Kurtso bukaerako ospakizun txikia.",
       "estekak": [],
       "arduradunak": [
@@ -2868,7 +2868,7 @@
       "id": "ataza_158",
       "izenburua": "Geletan behar diren materialak erregistratu",
       "mota": "orokorra",
-      "data": "2026-05-30",
+      "data": "2026-06-30",
       "ordua": null,
       "argibideak": "Altzariak, esetokiak, arbelak, kable informatikoak, etab. jasotzeko txostena",
       "estekak": [
@@ -2936,7 +2936,7 @@
       "id": "ataza_159",
       "izenburua": "Irakasleen liburu eskaria",
       "mota": "orokorra",
-      "data": "2026-05-30",
+      "data": "2026-06-30",
       "ordua": null,
       "argibideak": "Txosten honetan irakasle bakoitzak berarentzat nahi duen liburu eskaria idatziko du, beti ere, bere erabilera pertsonalerako (ez fotokopiak egiteko)",
       "estekak": [
@@ -2980,7 +2980,7 @@
       "id": "ataza_160",
       "izenburua": "Datorren urteko ordutegien baldintzak zehaztu",
       "mota": "orokorra",
-      "data": "2026-05-30",
+      "data": "2026-06-30",
       "ordua": null,
       "argibideak": "Datorren urtean zure eskola ordutegietan baldintzaren bat baduzu (bilerak, ordutegi murrizketa, ezintasunik...) txosten honetan ezarri datorren urteko eskola ordutegian zehazteko.",
       "estekak": [
@@ -4384,27 +4384,32 @@
     },
     {
       "id": "ataza_1779895016886_a48s2x",
-      "izenburua": "JPPen ebaluaketa igota",
+      "izenburua": "JPPen azalpena",
       "mota": "egutegikoa",
-      "data": "",
-      "ordua": null,
+      "data": "2026-06-05",
+      "ordua": "13:30",
       "argibideak": "Aurtengo JPPen ebaluaketa eta sinadura eskaneatu eta Drivera igo",
       "estekak": [],
       "arduradunak": [
         {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        }
+      ],
+      "informatiboak": [
         {
           "mota": "etapa",
           "balioa": "HH"
         },
         {
           "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
           "balioa": "DBH"
         }
       ],
-      "informatiboak": [],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
