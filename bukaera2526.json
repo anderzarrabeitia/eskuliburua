@@ -1224,7 +1224,7 @@
     },
     {
       "id": "ataza_108",
-      "izenburua": "Kurtso amaierako bakarkako txostena DBH 1-2-3",
+      "izenburua": "Bakarkako txostenak bukatu (kurtso amaierakoak) DBH 1-2-3",
       "mota": "egutegikoa",
       "data": "2026-06-18",
       "ordua": null,
@@ -1272,7 +1272,7 @@
     },
     {
       "id": "ataza_109",
-      "izenburua": "Ziklo bukaerako bakarkako txostenak LH 2-4",
+      "izenburua": "Bakarkako txostenak bukatu (Ziklo bukaerakoa) LH 2-4",
       "mota": "egutegikoa",
       "data": "2026-06-18",
       "ordua": null,
@@ -1316,7 +1316,7 @@
     },
     {
       "id": "ataza_110",
-      "izenburua": "Etapa bukaerako bakarkako txostena LH6 - DBH4",
+      "izenburua": "Bakarkako txostenak bukatuta (Etapa amaierakoa) LH6 - DBH4",
       "mota": "egutegikoa",
       "data": "2026-06-18",
       "ordua": null,
@@ -1795,7 +1795,7 @@
       "id": "ataza_125",
       "izenburua": "Kurtso bukaerako zirkularra",
       "mota": "egutegikoa",
-      "data": "2026-06-12",
+      "data": "2026-06-17",
       "ordua": null,
       "argibideak": "Kurtso bukaerako zirkularra prestatu eta bidali Alexiatik",
       "estekak": [
@@ -5064,6 +5064,65 @@
       "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1781266395190_stzs0q",
+      "izenburua": "EJko orrialdean Promozioa BAI/EZ jarri",
+      "mota": "egutegikoa",
+      "data": "2026-06-15",
+      "ordua": null,
+      "argibideak": "",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "LH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1781266503348_5b07ta",
+      "izenburua": "EJko orrialdean Promozioa BAI/EZ jarri ",
+      "mota": "egutegikoa",
+      "data": "2026-06-17",
+      "ordua": null,
+      "argibideak": "",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "ebaluazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
       },
       "irudia": null
     }
