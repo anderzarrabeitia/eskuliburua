@@ -2141,7 +2141,7 @@
       "id": "ataza_135",
       "izenburua": "Joaten diren ikasleentzako sobreak egin",
       "mota": "egutegikoa",
-      "data": "2026-06-17",
+      "data": "2026-06-23",
       "ordua": null,
       "argibideak": "Ikasleen sobreak prestatu palkoan dagoen dokumentazioarekin:&nbsp;<div>- Anexo V. </div><div>- Kurtso amaierako bakarkako txostena (DBH1,2 eta 3)</div><div>-&nbsp;Etapa bukaerako bakarkako txostena (LH6 - DBH4)</div>",
       "estekak": [],
@@ -2175,7 +2175,7 @@
       "id": "ataza_137",
       "izenburua": "Sobreak eman joaten direnei",
       "mota": "egutegikoa",
-      "data": "2026-06-18",
+      "data": "2026-06-25",
       "ordua": null,
       "argibideak": "Zentrutik joaten diren ikasleei sobreak eman palkoan dagoen dokumentazioarekin:&nbsp;<div><div>- Anexo V.</div><div>- Kurtso amaierako bakarkako txostena (DBH1,2 eta 3)</div><div>-&nbsp;Etapa bukaerako bakarkako txostena (LH6 - DBH4)</div><!--EndFragment--></div>",
       "estekak": [],
@@ -3114,7 +3114,7 @@
       "id": "ataza_120",
       "izenburua": "Anexo traslado egin eta inprimatu",
       "mota": "egutegikoa",
-      "data": "2026-06-16",
+      "data": "2026-06-22",
       "ordua": null,
       "argibideak": "Gotzonek txostena egin, inprimatu eta palkoan eskuragarri utziko ditu sobre edo artxibategian gordetzeko.",
       "estekak": [],
@@ -5123,6 +5123,97 @@
         "etapak": [
           "DBH"
         ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1781617894863_az5od6",
+      "izenburua": "DC Orientazio txostenak bete",
+      "mota": "egutegikoa",
+      "data": "2026-06-24",
+      "ordua": null,
+      "argibideak": "DCra joango den ikaslearen Orientazio txostena bete (Anexo II) sinatu, eskaneatu eta karpeta digital zein fisikoan gorde.Kontuz! 4. mailako errepikatuko duen ikasle bat DC zerrendan sartzekoa bada, bete behar den txonstena Anexo IV da.<div><div>Ikasle horren familiak sinatzeko txostena bete (Anexo III). Familiak sinatu, eskaneatu eta karpeta digital zein fisikoan gorde.</div></div>",
+      "estekak": [
+        {
+          "izena": "Anexo ereduak hartzeko",
+          "url": "https://drive.google.com/drive/folders/1eG52hRhb35wfVda68G-kBfaNCz6VzKn6?usp=drive_link",
+          "ruta": "DRIVE - PO.1. - 1.5. Aniztasunaren trataera - DC - Urterokoak"
+        },
+        {
+          "izena": "Anexo digitalak gordetzeko",
+          "url": "",
+          "ruta": "DRIVE - PO.1. - 1.5. Aniztasunaren trataera - DC - Dagokion urtea - Ikasle bakoitzaren karpeta digitala"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Orientatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": [
+          "DBH"
+        ]
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1781618587408_hc31eb",
+      "izenburua": "Datorren urteko errebisio medikoen zerrenda",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Zerrendan izena idatzi errebisioa egin nahi baduzu.<div>Erribisioa egin ez nahi baduzu, EZEZKO txostena bete eta administratzaileari eman</div>",
+      "estekak": [
+        {
+          "izena": "Zerrenda izena emateko",
+          "url": "https://docs.google.com/document/d/1VtyB2ibHbPmB6Qpj8spFTrNcVt72yc-5/edit?usp=drive_link&ouid=109514828723592733170&rtpof=true&sd=true",
+          "ruta": "DRIVE - KUDEAKETA AURRERATUA - P0.6. - 6.5 Riesgos laborales - Behaketa medikoa - Dagokion urtea"
+        },
+        {
+          "izena": "EZEZKOA sinatzeko txostena",
+          "url": "https://docs.google.com/document/d/1msiaCFmME3Z5RoBV_ugZzKvvuymIKq4JCOfu7xceNAY/edit?usp=drive_link",
+          "ruta": "DRIVE - KUDEAKETA AURRERATUA - P0.6. - 6.5 Riesgos laborales - Behaketa medikoa - Dagokion urtea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
       },
       "irudia": null
     }
