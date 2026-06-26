@@ -2512,7 +2512,7 @@
       "id": "ataza_146",
       "izenburua": "Artxibategiak antolatu (HH)",
       "mota": "egutegikoa",
-      "data": "2026-06-24",
+      "data": "2026-06-25",
       "ordua": null,
       "argibideak": "Ikasleen artxibategiak antolatu karpeta horietan. Atxikiturik duzuen argazkian jarraibide guztiak agertzen zaizkizue.",
       "estekak": [],
@@ -2623,78 +2623,6 @@
         }
       ],
       "kategoria": "formakuntza",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_149",
-      "izenburua": "Arloka etapen arteko koordinazioa",
-      "mota": "egutegikoa",
-      "data": "2026-06-26",
-      "ordua": "12:30-14:00",
-      "argibideak": "Arloko irakasleen artean elkartu eta urtean zehar zer landu dutenaren inguruan hausnarketa egin",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Arloko irakaslea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "HH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        }
-      ],
-      "kategoria": "koordinazioa",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
-      "id": "ataza_150",
-      "izenburua": "Etapa barruan arloen arteko koordinazioa",
-      "mota": "egutegikoa",
-      "data": "2026-06-26",
-      "ordua": "10:00-12:00",
-      "argibideak": "Etapa berdineko arloko irakasleen arteko koordinazio bilera.",
-      "estekak": [],
-      "arduradunak": [
-        {
-          "mota": "rola",
-          "balioa": "Arloko irakaslea"
-        },
-        {
-          "mota": "rola",
-          "balioa": "Tutorea"
-        }
-      ],
-      "informatiboak": [
-        {
-          "mota": "etapa",
-          "balioa": "LH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "DBH"
-        },
-        {
-          "mota": "etapa",
-          "balioa": "HH"
-        }
-      ],
-      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -3898,7 +3826,7 @@
       "id": "ataza_1779880433025_zswebi",
       "izenburua": "Artxibategiak antolatu DBH",
       "mota": "egutegikoa",
-      "data": "2026-06-25",
+      "data": "2026-06-26",
       "ordua": null,
       "argibideak": "Ikasleen artxibategiak antolatu karpeta horietan.&nbsp;\n\n<!--StartFragment-->Atxikiturik duzuen argazkian jarraibide guztiak agertzen zaizkizue.<!--EndFragment-->&nbsp;<b><i> Kontuz JPPekin.</i></b>",
       "estekak": [],
@@ -3930,7 +3858,7 @@
       "id": "ataza_1779880451864_styyqe",
       "izenburua": "Artxibategiak antolatu (LH)",
       "mota": "egutegikoa",
-      "data": "2026-06-26",
+      "data": "2026-06-29",
       "ordua": "9:00",
       "argibideak": "Ikasleen artxibategiak antolatu karpeta horietan.&nbsp;\n\n<!--StartFragment-->Atxikiturik duzuen argazkian jarraibide guztiak agertzen zaizkizue.&nbsp;<b><i>&nbsp;</i></b><!--EndFragment-->",
       "estekak": [],
@@ -4559,6 +4487,11 @@
           "izena": "Gidoia",
           "url": "https://docs.google.com/document/d/1UZBGZNxmbqLzA32YxfSZEQ863HxmTY7TQ6Pu2ymqDrA/edit?tab=t.0",
           "ruta": ""
+        },
+        {
+          "izena": "Sartzen eta irteten diren irakasleak",
+          "url": "https://docs.google.com/document/d/1Hlk7cLiEx8YkBt1dZ22D7nW7C_mKpB5tybETnshcj6w/edit?tab=t.0",
+          "ruta": ""
         }
       ],
       "arduradunak": [
@@ -4620,7 +4553,7 @@
       "izenburua": "Hurrengo urteko irakasgai eta tutoretzen komunikazioa",
       "mota": "egutegikoa",
       "data": "2026-06-26",
-      "ordua": null,
+      "ordua": "13:00",
       "argibideak": "Koordinatzaileak banan banan datorren urteko ikasgai zein tutoretzak azalduko ditu",
       "estekak": [],
       "arduradunak": [
@@ -4994,7 +4927,7 @@
     },
     {
       "id": "ataza_1780254383090_2ki0k3",
-      "izenburua": "Arloko irakasleen arteko koordinazioa (kopia)",
+      "izenburua": "Arloko irakasleen arteko koordinazioa ",
       "mota": "egutegikoa",
       "data": "2026-06-29",
       "ordua": null,
@@ -5212,6 +5145,54 @@
       ],
       "informatiboak": [],
       "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1782398060868_7fclwi",
+      "izenburua": "Bilera orokorra (HH-LH-DBH)",
+      "mota": "egutegikoa",
+      "data": "2026-06-26",
+      "ordua": "9:00",
+      "argibideak": "- Arloka elkartu,&nbsp;\n\n<!--StartFragment-->urtean zehar zer landu denareninguruan hausnarketa egin<!--EndFragment-->&nbsp;&nbsp;eta aurten erabili dituzuen materialak&nbsp; DRIVE unitatean gorde (P 1.1 Curriculum eta didaktika)<div><div><div>- Dokuemtua bete (ikasgaiak, proiektuak, non daude gordeta)</div><div><br></div></div></div>",
+      "estekak": [
+        {
+          "izena": " Arlo berdineko irakasleen koordinazioa",
+          "url": "https://docs.google.com/document/d/1QrUhu2AJQ611i_zeAJtWdgsuiJiu4MAkPAjFcAtwsVw/edit?tab=t.0",
+          "ruta": ""
+        },
+        {
+          "izena": "Proiektuak sartzeko dokumentua",
+          "url": "https://docs.google.com/spreadsheets/d/1wtLPewQgv9gl7vljyCW7kMWWW_04-0eSIDmD_lBt714/edit?gid=1854099918#gid=1854099918",
+          "ruta": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
