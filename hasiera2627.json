@@ -1,0 +1,1737 @@
+{
+  "izena": "2026-27 Ikasturtea",
+  "ikasturtea": "2026-27",
+  "pasahitza": "eami2027",
+  "mota": "kurtso_hasiera",
+  "sortzeData": "2026-08-25",
+  "etapak": [
+    "HE",
+    "HH",
+    "LH",
+    "DBH",
+    "PAS/EAE"
+  ],
+  "mailak": {
+    "HE": [
+      "HE0-1",
+      "HE1-2"
+    ],
+    "HH": [
+      "HH2",
+      "HH3",
+      "HH4",
+      "HH5"
+    ],
+    "LH": [
+      "LH1",
+      "LH2",
+      "LH3",
+      "LH4",
+      "LH5",
+      "LH6"
+    ],
+    "DBH": [
+      "DBH1",
+      "DBH2",
+      "DBH3",
+      "DBH4",
+      "DC3",
+      "DC4"
+    ]
+  },
+  "rolIrakaslegoa": [
+    "Tutorea",
+    "Arloko irakaslea",
+    "PT",
+    "PRL irakaslea",
+    "Beste motatako irakaslea",
+    "TEJI",
+    "Etapa koordinatzailea",
+    "Orientatzailea"
+  ],
+  "rolPas": [
+    "EAE",
+    "Idazkaria",
+    "Administratzailea",
+    "Atezaina",
+    "Mantenua",
+    "Beste motatako PAS"
+  ],
+  "rolOrokorra": [
+    "Prozesu/proiektu koordinatzailea",
+    "Prozesu/proiektu kidea"
+  ],
+  "kategoriak": [
+    {
+      "id": "ebaluazioa",
+      "izena": "Ebaluazioa",
+      "kolorea": "#3b82f6"
+    },
+    {
+      "id": "dokumentazioa",
+      "izena": "Dokumentazioa",
+      "kolorea": "#8b5cf6"
+    },
+    {
+      "id": "zirkularra",
+      "izena": "Zirkularra",
+      "kolorea": "#f59e0b"
+    },
+    {
+      "id": "koordinazioa",
+      "izena": "Koordinazioa",
+      "kolorea": "#10b981"
+    },
+    {
+      "id": "logistika",
+      "izena": "Logistika",
+      "kolorea": "#ef4444"
+    },
+    {
+      "id": "formakuntza",
+      "izena": "Formakuntza",
+      "kolorea": "#ec4899"
+    },
+    {
+      "id": "bestelakoa",
+      "izena": "Bestelakoa",
+      "kolorea": "#6b7280"
+    }
+  ],
+  "langileak": [
+    {
+      "id": "loli_gutierrez",
+      "izena": "Aitana Careaga",
+      "etapak": [
+        "HE"
+      ],
+      "mailak": [
+        "HE0-1"
+      ],
+      "rolak": [
+        "Tutorea",
+        "TEJI",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "aitanacareaga@elavemaria.com"
+    },
+    {
+      "id": "sandra_delafuente",
+      "izena": "Sandra de la Fuente",
+      "etapak": [
+        "HE"
+      ],
+      "mailak": [
+        "HE1-2"
+      ],
+      "rolak": [
+        "Tutorea",
+        "TEJI",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "sandrade@elavemaria.com"
+    },
+    {
+      "id": "maialen_etxebarria",
+      "izena": "Maialen Etxebarria",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH2"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Prozesu/proiektu kidea",
+        "Arloko irakaslea"
+      ],
+      "email": "maialenetxebarria@elavemaria.com"
+    },
+    {
+      "id": "begona_lorono",
+      "izena": "Begoña Loroño",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH4"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Etapa koordinatzailea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "begonalorono@elavemaria.com"
+    },
+    {
+      "id": "iratxe_otxandiano",
+      "izena": "Iratxe Otxandiano",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH5"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "iratxeotxandiano@elavemaria.com"
+    },
+    {
+      "id": "anemiren_sanchez",
+      "izena": "Ane Miren Sanchez",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH5"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anemirensanchez@elavemaria.com"
+    },
+    {
+      "id": "maitane_hernandez",
+      "izena": "Maitane Hernández",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH3"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "maitanehernandez@elavemaria.com"
+    },
+    {
+      "id": "nerea_fournier",
+      "izena": "Nerea Fournier",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH1"
+      ],
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea",
+        "Tutorea"
+      ],
+      "email": "nereafournier@elavemaria.com"
+    },
+    {
+      "id": "leire_navas",
+      "izena": "Leire Navas",
+      "etapak": [
+        "HH"
+      ],
+      "mailak": [
+        "HH2"
+      ],
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "leirenavas@elavemaria.com"
+    },
+    {
+      "id": "alba_gonzalez",
+      "izena": "Alba Gonzalez",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH2"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "albagonzalez@elavemaria.com"
+    },
+    {
+      "id": "igor_arribas",
+      "izena": "Igor Arribas",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH4"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "igorarribas@elavemaria.com"
+    },
+    {
+      "id": "ander_alvarez",
+      "izena": "Ander Alvarez",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH3"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anderalvarez@elavemaria.com"
+    },
+    {
+      "id": "sergio_gorostiza",
+      "izena": "Sergio Gorostiza",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH6"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "sergiogorostiza@elavemaria.com"
+    },
+    {
+      "id": "ander_unamuno",
+      "izena": "Ander Unamuno",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [
+        "LH5"
+      ],
+      "rolak": [
+        "Tutorea",
+        "PT",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "anderunamuno@elavemaria.com"
+    },
+    {
+      "id": "david_fernandez",
+      "izena": "David Fernandez",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "davidf@elavemaria.com"
+    },
+    {
+      "id": "urtzi_carrera",
+      "izena": "Urtzi Carrera",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Etapa koordinatzailea",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "urtzicarrera@elavemaria.com"
+    },
+    {
+      "id": "txaro_cores",
+      "izena": "Txaro Cores",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "rosariocores@elavemaria.com"
+    },
+    {
+      "id": "iratxe_varela",
+      "izena": "Iratxe Varela",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "iratxevarela@elavemaria.com"
+    },
+    {
+      "id": "oihane_fraile",
+      "izena": "Oihane Fraile",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "oihanefraile@elavemaria.com"
+    },
+    {
+      "id": "olatz_ruiz",
+      "izena": "Olatz Ruiz de Zárate",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "olatzruiz@elavemaria.com"
+    },
+    {
+      "id": "javier_baldazo",
+      "izena": "Javier Baldazo",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH2"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "javierbaldazo@elavemaria.com"
+    },
+    {
+      "id": "irati_castresana",
+      "izena": "Irati Castresana",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH2"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "iraticastresana@elavemaria.com"
+    },
+    {
+      "id": "maddi_martinez",
+      "izena": "Maddi Martínez",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DC3"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "maddimartinez@elavemaria.com"
+    },
+    {
+      "id": "marta_sanz",
+      "izena": "Marta Sanz",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH1"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "martasanz@elavemaria.com"
+    },
+    {
+      "id": "teresa_salvarrey",
+      "izena": "Teresa Salvarrey",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH4"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "teresasalvarrey@elavemaria.com"
+    },
+    {
+      "id": "irune_uriarte",
+      "izena": "Irune Uriarte",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "iruneuriarte@elavemaria.com"
+    },
+    {
+      "id": "imanol_canales",
+      "izena": "Imanol Canales",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH3"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "imanolcanales@elavemaria.com"
+    },
+    {
+      "id": "naia_etxebarria",
+      "izena": "Naia Etxebarria",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH3"
+      ],
+      "rolak": [
+        "Tutorea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "naiaetxebarria@elavemaria.com"
+    },
+    {
+      "id": "pello_lauzirika",
+      "izena": "Oihane Zabaleta",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea",
+        "Orientatzailea",
+        "Beste motatako irakaslea"
+      ],
+      "email": "oihanezabaleta@elavemaria.com"
+    },
+    {
+      "id": "amaia_vergel",
+      "izena": "Amaia Vergel",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "amaiavergel@elavemaria.com"
+    },
+    {
+      "id": "alva_deprado",
+      "izena": "Alva de Prado",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "PRL irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "alvadeprado@elavemaria.com"
+    },
+    {
+      "id": "gemma_arrizabalaga",
+      "izena": "Gemma Arrizabalaga",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "gemmaarrizabalaga@elavemaria.com"
+    },
+    {
+      "id": "jon_julian",
+      "izena": "Jon Julian",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Beste motatako irakaslea",
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "jonjulian@elavemaria.com"
+    },
+    {
+      "id": "asier_quintana",
+      "izena": "Asier Quintana",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [
+        "DBH1"
+      ],
+      "rolak": [
+        "Arloko irakaslea",
+        "Tutorea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "asierquintana@elavemaria.com"
+    },
+    {
+      "id": "nerea_gonzalez",
+      "izena": "Nerea Gonzalez",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "nereagonzalez@elavemaria.com"
+    },
+    {
+      "id": "ainara_ortega",
+      "izena": "Ainara Ortega",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Etapa koordinatzailea",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "ainaraortega@elavemaria.com"
+    },
+    {
+      "id": "patricia_quintanilla",
+      "izena": "Patricia Quintanilla",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "patriciaquintanilla@elavemaria.com"
+    },
+    {
+      "id": "enara_alonso",
+      "izena": "Enara Alonso",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PRL irakaslea",
+        "PT",
+        "Prozesu/proiektu kidea",
+        "Arloko irakaslea"
+      ],
+      "email": "enaraalonso@elavemaria.com"
+    },
+    {
+      "id": "ander_zarrabeitia",
+      "izena": "Ander Zarrabeitia",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea",
+        "Arloko irakaslea"
+      ],
+      "email": "anderzarrabeitia@elavemaria.com"
+    },
+    {
+      "id": "iker_elorza",
+      "izena": "Iker Elorza",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "ikerelorza@elavemaria.com"
+    },
+    {
+      "id": "nerea_oskotz",
+      "izena": "Nerea Oskotz",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "nereaoskotz@elavemaria.com"
+    },
+    {
+      "id": "elena_fernandez",
+      "izena": "Elena Fernández",
+      "etapak": [
+        "LH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "PT",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "elenafernandez@elavemaria.com"
+    },
+    {
+      "id": "maite_matesanz",
+      "izena": "Maite Matesanz",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea",
+        "Prozesu/proiektu koordinatzailea"
+      ],
+      "email": "maitematesanz@elavemaria.com"
+    },
+    {
+      "id": "naia_sanchez",
+      "izena": "Naia Sánchez",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "naiasanchez@elavemaria.com"
+    },
+    {
+      "id": "ainara_mieres",
+      "izena": "Ainara Mieres",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "ainaramieres@elavemaria.com"
+    },
+    {
+      "id": "arrate_monzon",
+      "izena": "Arrate Monzón",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "arratemonzon@elavemaria.com"
+    },
+    {
+      "id": "henar_perez",
+      "izena": "Henar Perez",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "henarperez@elavemaria.com"
+    },
+    {
+      "id": "nekane_plaza",
+      "izena": "Nekane Plaza",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "nekaneplaza@elavemaria.com"
+    },
+    {
+      "id": "maider_mier",
+      "izena": "Maider Mier",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "EAE",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "maidermier@elavemaria.com"
+    },
+    {
+      "id": "gotzone_vazquez",
+      "izena": "Gotzone Vázquez",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Idazkaria",
+        "Prozesu/proiektu koordinatzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "gotzonevazquez@elavemaria.com"
+    },
+    {
+      "id": "josune_alonso",
+      "izena": "Josune Alonso",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Atezaina",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "josunealonso@elavemaria.com"
+    },
+    {
+      "id": "rafa_gonzalez",
+      "izena": "Rafa González",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Mantenua",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "rafagonzalez@elavemaria.com"
+    },
+    {
+      "id": "natxo_ribechini",
+      "izena": "Natxo Ribechini",
+      "etapak": [
+        "PAS/EAE"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Administratzailea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "natxoribechini@elavemaria.com"
+    },
+    {
+      "id": "new_1787675042996",
+      "izena": "Irune Santamaria",
+      "etapak": [
+        "DBH"
+      ],
+      "mailak": [],
+      "rolak": [
+        "Arloko irakaslea",
+        "Prozesu/proiektu kidea"
+      ],
+      "email": "irunesantamaria@elavemaria.com"
+    }
+  ],
+  "atazak": [
+    {
+      "id": "ataza_156",
+      "izenburua": "Formakuntza erregistroa",
+      "mota": "orokorra",
+      "data": "2027-06-30",
+      "ordua": null,
+      "argibideak": "Ikasturtean jasotako formakuntzak erregistratu.",
+      "estekak": [
+        {
+          "izena": "Formakuntzen erregistroa",
+          "url": "https://docs.google.com/spreadsheets/d/11HEFVsOKYddRPvAwDH_Zi-xSuvoIkOgt1yMvZEOhRKg/edit?gid=0#gid=0",
+          "ruta": "DRIVE/KUDEAKETA AURRERATUA/P06Personas/6.1Selec, acoj FORMA/dagokion urtea/For akuntzen erregistroa"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1780596788487_wafus6",
+      "izenburua": "Kanal eta foroen partehartzearen erregistroa",
+      "mota": "orokorra",
+      "data": "2027-06-30",
+      "ordua": null,
+      "argibideak": "Ikasturtean zehar parte hartu dituzuen kanal eta foroen izenak erregistratu.",
+      "estekak": [
+        {
+          "izena": "Kanal eta foroen erregistroa",
+          "url": "https://docs.google.com/spreadsheets/d/10-eYLCJIndzZCpdIHR2dMuWTuJr12REOA1tsfPTsLXg/edit?usp=sharing",
+          "ruta": "DRIVE/KUDEAKETA AURRERATUA/P05/5.5.Berrikuntza/dagokion urtea/Kanal eta foroetan partehartzea"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_0",
+      "izenburua": "Harrera eta kafea Areto Nagusian",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "Langile guztien harrera. Kafea eta pastak Areto Nagusian.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_1",
+      "izenburua": "Kurtsoari hasiera emateko bilera",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "9:15 Areto Nagusian.\n- Otoitza eta leloa (Bego)\n- Titularidadearen gutuna, oporraldiko berriak, obrak\n- Langileen aurkezpena, EDan aldaketak (Nerea)\n- Kudeaketa aurreratua: eguna/astea/hilabeteko plangintza orokorra (Zarrabeitia)\n- Manual profesorado irakurri",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_2",
+      "izenburua": "Materialak jaso",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "10:30\n- Ordenagailua jaso (DC gelan)\n- Materiala eta kuadernoak jaso (DBH3 gelan)\n- Giltza jaso (DBH3 gelan)\n- Material fungible (Natxo)",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_3",
+      "izenburua": "Etapaka koordinazioa",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "10:45 — 5 talde:\n- HE-HH: Bego\n- LH: Urtzi\n- DBH: Ainara\n- PAS: Nerea\n- EAE: Nerea\n\nEdukia:\n- Karpetak eta agendak banatu\n- Langile berriei ongi etorria\n- Etapako irakasle zerrenda irakurri\n- Equipos fortalecidos irakurri\n- Egutegi laborala birpasatu\n- Lehenengo egunetako ordutegia azaldu\n- Irakasleen ordutegiak banatu eta hausnarketa indibiduala\n- Ikasleen irteera baimenak, alergia dokumentuak, Google baimena azaldu\n- Site eta materialak gordetzeko karpetak gogoratu\n- Google Classroom irizpideak gogoratu\n- Kurtso hasierako check-lista dokumentua azaldu",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_4",
+      "izenburua": "Etapako bilera jarraipena",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "12:00 — Irakaslearen karpeta etapaka.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_5",
+      "izenburua": "Prozesu/proiektuka bilerak",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "13:30\n- Berriak Harrera plana: Kudeaketa Aurreratua\n- Ekintza plana irakurri eta bete\n- Urteko plana dokumentuak betetzen joan (jarduera osagarriak)\n- Aurkezpena prestatu",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_6",
+      "izenburua": "Langile berrien harrera",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": null,
+      "argibideak": "Zarrabeitiak egingo du. Langile berriei eskolaren funtzionamendua azaldu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_7",
+      "izenburua": " HAUR ESKOLA hasten da (HE)",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "HE etapako ikasleak hasten dira. EAEek lagundu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_8",
+      "izenburua": "Etapaka bilera: eguneko egitaraua",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "9:00 — Eguneko plangintza etapaka.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_9",
+      "izenburua": "Ordutegien akatsak zuzendu",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "9:10 — Koordinatzaileekin bakarka. Ordutegiak KUDEAPPen sartzen joan.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_10",
+      "izenburua": "Koordinazioak TUTOREAK",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "10:00 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_11",
+      "izenburua": "Koordinazioak ARLOAK-EREMUAK",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "11:45 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_12",
+      "izenburua": "ALEXIA formakuntza",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "13:00 — Areto Nagusian. Irakasle guztientzat.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_13",
+      "izenburua": "KUDEAPP formakuntza",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "Areto Nagusian. Denek parte hartu behar dute.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_14",
+      "izenburua": "Teknologia martxan jarri",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "12:30 — Arazoak konpontzeko momentua:\n- Pantaila digitalak\n- Armairu digitalak\n- Ordenagailuak eta tabletak\n- STEAM aparailuak\n- 3D inprimagailua eta laser ebakitzailea\n- Pasahitzak eta tresna digitalak: DRIVE, inprimagailua, Microsoft kontuak...\n- Alexia ondo dagoela konprobatu",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_15",
+      "izenburua": "Gela bakoitzeko zerrendak eguneratu",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "14:00 — Tutoreek:\n- Klase bakoitzeko zerrendak eguneratu\n- Alergien zerrenda\n- Familiekin bilera zerrenda\n- Irteeren zerrenda\n- Ordenagailuen zerrenda",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_16",
+      "izenburua": "Prozesu/proiektuka bilerak",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": null,
+      "argibideak": "13:30\n- Berriak Harrera plana: Metodologiak\n- Ekintza plana berrikusi\n- Urteko plana bete",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_17",
+      "izenburua": "Etapaka bilera: eguneko egitaraua",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "9:00 — Eguneko plangintza etapaka.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_18",
+      "izenburua": "Zikloetan koordinazioa + HPB",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "9:10 — Koordinazioa zikloetan eta Hezkuntza Proiektu Berrikuntzak.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_19",
+      "izenburua": "Prozesu/proiektuka aurkezpenak",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "10:30 — Proiektu taldeen plangintzaren aurkezpena Areto Nagusian.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_20",
+      "izenburua": "Kudeapp formakuntza aurreratua",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "12:00 — Mintegiak, kontaktuak, estrategia...",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_21",
+      "izenburua": "PROGRAMAZIOAK formakuntza",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "Liburutegian. Irakasle guztientzat.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_22",
+      "izenburua": "Errekreoak eta zaintzak azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "Sarrerak, irteerak, laguntzaileak, elkarbizitza arauak irakurri. Koordinatzaileek azaldu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_23",
+      "izenburua": "Prozesu/proiektuka bilerak + Urteko Plana",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "Proiektuka bilera. Urteko Plana lantzeko saioa.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_24",
+      "izenburua": "Gelak martxan jarri",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "Irakasle guztiek gelak prestatu: Tresna digitalak, Berriak Harrera plana.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_25",
+      "izenburua": "Ordutegiak zuzendu",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": null,
+      "argibideak": "Denek ordutegiak berrikusi eta zuzendu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_26",
+      "izenburua": "Etapaka bilera: eguneko egitaraua",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "9:00 — Eguneko plangintza etapaka.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_27",
+      "izenburua": "Kudeapp bete",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "9:30\n- Fitxa pertsonala bete\n- Ordutegiak sartuta egon behar dute",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_28",
+      "izenburua": "Lehen klase eguneko antolakuntza adostu",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "10:00 — Tutore eta koordinatzaileekin lehenengo egunaren antolaketa prestatu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_29",
+      "izenburua": "Programazioak formakuntza",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "11:00 — Liburutegian.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_30",
+      "izenburua": "Gelak txukundu eta prestatu",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "12:00 — Gelak txukundu, materialak antolatu. Unitate didaktikoak, programazioak, urteko plana lantzeko momentua.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_31",
+      "izenburua": "Txostena bete",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "HH, LH eta DBH etapetako txostenak bete. Denek.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_32",
+      "izenburua": " DBH hasten da — Harrera",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": null,
+      "argibideak": "DBH ikasleen harrera eguna. Aurkezpena Areto Nagusian 10:30ean.\nEAEek lagundu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_33",
+      "izenburua": "Gelak martxan jarri HH-LH",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": null,
+      "argibideak": "HH eta LH irakasleek gelak prestatzen jarraitu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_34",
+      "izenburua": "Orientazio zerbitzua: jarraibideak",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": null,
+      "argibideak": "Liburutegian. Irakasle guztientzat. Orientazio zerbitzuaren jarraibideak ikasturte berrirako.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_35",
+      "izenburua": " HH eta LH hasten da",
+      "mota": "egutegikoa",
+      "data": "2026-09-08",
+      "ordua": null,
+      "argibideak": "HH eta LH etapetako ikasleak hasten dira.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_36",
+      "izenburua": "KUDEAPP ordutegia sartuta (TEJI-PAS-EAE)",
+      "mota": "egutegikoa",
+      "data": "2026-09-08",
+      "ordua": null,
+      "argibideak": "TEJI, PAS eta EAE langileek ordutegiak KUDEAPPen sartuta izan behar dituzte.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_37",
+      "izenburua": "JPP azalpena",
+      "mota": "egutegikoa",
+      "data": "2026-09-09",
+      "ordua": null,
+      "argibideak": "Liburutegian. Irakasle guztientzat. Jarraipen eta Plangintza Pertsonala azaldu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_38",
+      "izenburua": "Urteko Plana",
+      "mota": "egutegikoa",
+      "data": "2026-09-09",
+      "ordua": null,
+      "argibideak": "Irakasle guztiek urteko plana lantzen jarraitu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_39",
+      "izenburua": "Ikasleen ordenagailua — Erregistroa beteta",
+      "mota": "egutegikoa",
+      "data": "2026-09-10",
+      "ordua": null,
+      "argibideak": "LH5-6 eta DBH tutoreek ikasleen ordenagailuen erregistroa beteta izan behar dute.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_40",
+      "izenburua": "Gurasoen bilera HH-DBH",
+      "mota": "egutegikoa",
+      "data": "2026-09-15",
+      "ordua": null,
+      "argibideak": "HH eta DBH etapetako gurasoen bilera. Tutoreek antolatu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_41",
+      "izenburua": "Gurasoen bilera HE-LH",
+      "mota": "egutegikoa",
+      "data": "2026-09-17",
+      "ordua": null,
+      "argibideak": "HE eta LH etapetako gurasoen bilera. Tutoreek antolatu.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_42",
+      "izenburua": "Ikasleen irteera eta alergien erregistroa",
+      "mota": "egutegikoa",
+      "data": "2026-09-17",
+      "ordua": null,
+      "argibideak": "Tutoreek ikasleen irteera-baimenak eta alergien erregistroa beteta izan behar dute.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_43",
+      "izenburua": "KUDEAPP ordutegia sartuta (irakaslegoa)",
+      "mota": "orokorra",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "Irakasle guztiek ordutegiak KUDEAPPen sartuta izan behar dituzte.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_44",
+      "izenburua": "Urteko Plana beteta",
+      "mota": "orokorra",
+      "data": "2026-09-25",
+      "ordua": null,
+      "argibideak": "Irakasle guztiek urteko plana beteta izan behar dute. Denek.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_45",
+      "izenburua": "Programazioak eginda",
+      "mota": "orokorra",
+      "data": "2026-09-30",
+      "ordua": null,
+      "argibideak": "Arloko irakasle guztiek programazioak prest izan behar dituzte.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "import_1787675763594_46",
+      "izenburua": "Kudeaketa Aurreratua — Iraileko atazak bukatuta",
+      "mota": "orokorra",
+      "data": "2026-09-30",
+      "ordua": null,
+      "argibideak": "Prozesu/proiektu bakoitzeko iraileko atazak bukatuta egon behar dira.",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    }
+  ],
+  "url": "https://anderzarrabeitia.github.io/eskuliburua/hasiera2627.json"
+}
