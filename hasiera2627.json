@@ -47,7 +47,8 @@
     "Beste motatako irakaslea",
     "TEJI",
     "Etapa koordinatzailea",
-    "Orientatzailea"
+    "Orientatzailea",
+    "Zuzendaritza taldea"
   ],
   "rolPas": [
     "EAE",
@@ -161,7 +162,8 @@
         "Etapa koordinatzailea",
         "Arloko irakaslea",
         "Prozesu/proiektu koordinatzailea",
-        "Prozesu/proiektu kidea"
+        "Prozesu/proiektu kidea",
+        "Zuzendaritza taldea"
       ],
       "email": "begonalorono@elavemaria.com"
     },
@@ -352,7 +354,8 @@
         "Arloko irakaslea",
         "Etapa koordinatzailea",
         "Prozesu/proiektu kidea",
-        "Prozesu/proiektu koordinatzailea"
+        "Prozesu/proiektu koordinatzailea",
+        "Zuzendaritza taldea"
       ],
       "email": "urtzicarrera@elavemaria.com"
     },
@@ -632,7 +635,8 @@
       "rolak": [
         "PT",
         "Prozesu/proiektu kidea",
-        "Prozesu/proiektu koordinatzailea"
+        "Prozesu/proiektu koordinatzailea",
+        "Zuzendaritza taldea"
       ],
       "email": "nereagonzalez@elavemaria.com"
     },
@@ -647,7 +651,8 @@
         "PT",
         "Etapa koordinatzailea",
         "Prozesu/proiektu kidea",
-        "Prozesu/proiektu koordinatzailea"
+        "Prozesu/proiektu koordinatzailea",
+        "Zuzendaritza taldea"
       ],
       "email": "ainaraortega@elavemaria.com"
     },
@@ -690,7 +695,8 @@
         "PT",
         "Prozesu/proiektu koordinatzailea",
         "Prozesu/proiektu kidea",
-        "Arloko irakaslea"
+        "Arloko irakaslea",
+        "Zuzendaritza taldea"
       ],
       "email": "anderzarrabeitia@elavemaria.com"
     },
@@ -875,22 +881,10 @@
       "mailak": [],
       "rolak": [
         "Administratzailea",
-        "Prozesu/proiektu kidea"
+        "Prozesu/proiektu kidea",
+        "Zuzendaritza taldea"
       ],
       "email": "natxoribechini@elavemaria.com"
-    },
-    {
-      "id": "new_1787675042996",
-      "izena": "Irune Santamaria",
-      "etapak": [
-        "DBH"
-      ],
-      "mailak": [],
-      "rolak": [
-        "Arloko irakaslea",
-        "Prozesu/proiektu kidea"
-      ],
-      "email": "irunesantamaria@elavemaria.com"
     }
   ],
   "atazak": [
@@ -985,11 +979,57 @@
       "izenburua": "Harrera eta kafea Areto Nagusian",
       "mota": "egutegikoa",
       "data": "2026-09-01",
-      "ordua": null,
+      "ordua": "9:00-9:10",
       "argibideak": "Langile guztien harrera. Kafea eta pastak Areto Nagusian.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ainara_ortega"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "urtzi_carrera"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "natxo_ribechini"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1004,8 +1044,42 @@
       "ordua": null,
       "argibideak": "9:15 Areto Nagusian.\n- Otoitza eta leloa (Bego)\n- Titularidadearen gutuna, oporraldiko berriak, obrak\n- Langileen aurkezpena, EDan aldaketak (Nerea)\n- Kudeaketa aurreratua: eguna/astea/hilabeteko plangintza orokorra (Zarrabeitia)\n- Manual profesorado irakurri",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1018,10 +1092,40 @@
       "mota": "egutegikoa",
       "data": "2026-09-01",
       "ordua": null,
-      "argibideak": "10:30\n- Ordenagailua jaso (DC gelan)\n- Materiala eta kuadernoak jaso (DBH3 gelan)\n- Giltza jaso (DBH3 gelan)\n- Material fungible (Natxo)",
+      "argibideak": "10:30\n- Ordenagailua jaso bigarren solairuko azkenengo gelan - Materiala eta kuadernoak jaso - Giltza jaso - Material fungible (\n\n<!--StartFragment-->LH6. mailan&nbsp;)<!--EndFragment-->",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "natxo_ribechini"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "david_fernandez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1036,8 +1140,34 @@
       "ordua": null,
       "argibideak": "10:45 — 5 talde:\n- HE-HH: Bego\n- LH: Urtzi\n- DBH: Ainara\n- PAS: Nerea\n- EAE: Nerea\n\nEdukia:\n- Karpetak eta agendak banatu\n- Langile berriei ongi etorria\n- Etapako irakasle zerrenda irakurri\n- Equipos fortalecidos irakurri\n- Egutegi laborala birpasatu\n- Lehenengo egunetako ordutegia azaldu\n- Irakasleen ordutegiak banatu eta hausnarketa indibiduala\n- Ikasleen irteera baimenak, alergia dokumentuak, Google baimena azaldu\n- Site eta materialak gordetzeko karpetak gogoratu\n- Google Classroom irizpideak gogoratu\n- Kurtso hasierako check-lista dokumentua azaldu",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1050,10 +1180,36 @@
       "mota": "egutegikoa",
       "data": "2026-09-01",
       "ordua": null,
-      "argibideak": "12:00 — Irakaslearen karpeta etapaka.",
+      "argibideak": "12:00 — Irakaslearen karpeta etapaka banatu eta ordutegiak",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1065,11 +1221,21 @@
       "izenburua": "Prozesu/proiektuka bilerak",
       "mota": "egutegikoa",
       "data": "2026-09-01",
-      "ordua": null,
-      "argibideak": "13:30\n- Berriak Harrera plana: Kudeaketa Aurreratua\n- Ekintza plana irakurri eta bete\n- Urteko plana dokumentuak betetzen joan (jarduera osagarriak)\n- Aurkezpena prestatu",
+      "ordua": "13:30",
+      "argibideak": "13:30\n- Berriak Harrera plana: Kudeaketa Aurreratua\n- Ekintza plana irakurri eta bete\n- Urteko plana dokumentuak betetzen joan (jarduera osagarriak)\n- Aurkezpena prestatu<div>JARRAIBIDEAK KUDEAPP-EN IZANGO DITUZUE</div>",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1081,11 +1247,25 @@
       "izenburua": "Langile berrien harrera",
       "mota": "egutegikoa",
       "data": "2026-09-01",
-      "ordua": null,
+      "ordua": "13:30",
       "argibideak": "Zarrabeitiak egingo du. Langile berriei eskolaren funtzionamendua azaldu.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "loli_gutierrez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "pello_lauzirika"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1100,8 +1280,34 @@
       "ordua": null,
       "argibideak": "HE etapako ikasleak hasten dira. EAEek lagundu.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "loli_gutierrez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "sandra_delafuente"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_gonzalez"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Zuzendaritza taldea"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1116,11 +1322,33 @@
       "ordua": null,
       "argibideak": "9:00 — Eguneko plangintza etapaka.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -1129,14 +1357,36 @@
       "izenburua": "Ordutegien akatsak zuzendu",
       "mota": "egutegikoa",
       "data": "2026-09-02",
-      "ordua": null,
+      "ordua": "9:10",
       "argibideak": "9:10 — Koordinatzaileekin bakarka. Ordutegiak KUDEAPPen sartzen joan.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "logistika",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -1145,14 +1395,28 @@
       "izenburua": "Koordinazioak TUTOREAK",
       "mota": "egutegikoa",
       "data": "2026-09-02",
-      "ordua": null,
+      "ordua": "10:00",
       "argibideak": "10:00 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -1161,44 +1425,68 @@
       "izenburua": "Koordinazioak ARLOAK-EREMUAK",
       "mota": "egutegikoa",
       "data": "2026-09-02",
-      "ordua": null,
-      "argibideak": "11:45 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
+      "ordua": "12:00",
+      "argibideak": "12:00 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
     {
       "id": "import_1787675763594_12",
-      "izenburua": "ALEXIA formakuntza",
+      "izenburua": "Urteko plana azalpena",
       "mota": "egutegikoa",
       "data": "2026-09-02",
-      "ordua": null,
-      "argibideak": "13:00 — Areto Nagusian. Irakasle guztientzat.",
+      "ordua": "13:00",
+      "argibideak": "13:00 — Areto Nagusian langile guztientzat",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
-      "id": "import_1787675763594_13",
-      "izenburua": "KUDEAPP formakuntza",
-      "mota": "egutegikoa",
-      "data": "2026-09-02",
-      "ordua": null,
-      "argibideak": "Areto Nagusian. Denek parte hartu behar dute.",
-      "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1208,13 +1496,55 @@
       "id": "import_1787675763594_14",
       "izenburua": "Teknologia martxan jarri",
       "mota": "egutegikoa",
-      "data": "2026-09-02",
-      "ordua": null,
+      "data": "2026-09-03",
+      "ordua": "12:30",
       "argibideak": "12:30 — Arazoak konpontzeko momentua:\n- Pantaila digitalak\n- Armairu digitalak\n- Ordenagailuak eta tabletak\n- STEAM aparailuak\n- 3D inprimagailua eta laser ebakitzailea\n- Pasahitzak eta tresna digitalak: DRIVE, inprimagailua, Microsoft kontuak...\n- Alexia ondo dagoela konprobatu",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "david_fernandez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_alvarez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_unamuno"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "asier_quintana"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1224,12 +1554,22 @@
       "id": "import_1787675763594_15",
       "izenburua": "Gela bakoitzeko zerrendak eguneratu",
       "mota": "egutegikoa",
-      "data": "2026-09-02",
-      "ordua": null,
+      "data": "2026-09-04",
+      "ordua": "14:00",
       "argibideak": "14:00 — Tutoreek:\n- Klase bakoitzeko zerrendak eguneratu\n- Alergien zerrenda\n- Familiekin bilera zerrenda\n- Irteeren zerrenda\n- Ordenagailuen zerrenda",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Zuzendaritza taldea"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1241,12 +1581,22 @@
       "izenburua": "Prozesu/proiektuka bilerak",
       "mota": "egutegikoa",
       "data": "2026-09-02",
-      "ordua": null,
-      "argibideak": "13:30\n- Berriak Harrera plana: Metodologiak\n- Ekintza plana berrikusi\n- Urteko plana bete",
+      "ordua": "13:30",
+      "argibideak": "13:30\n- Aurreko eguneko atazak egiten jarraitu",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu kidea"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1257,12 +1607,34 @@
       "izenburua": "Etapaka bilera: eguneko egitaraua",
       "mota": "egutegikoa",
       "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "9:00 — Eguneko plangintza etapaka.",
+      "ordua": "9:00",
+      "argibideak": "9:00 — Eguneko plangintza etapaka. Zalantzen sakua ireki (KUDEAPP eta ALEXIA). Koordinatzaileek Zarrabeitiari helaraziko dizkiete",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1273,14 +1645,40 @@
       "izenburua": "Zikloetan koordinazioa + HPB",
       "mota": "egutegikoa",
       "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "9:10 — Koordinazioa zikloetan eta Hezkuntza Proiektu Berrikuntzak.",
+      "ordua": "9:10",
+      "argibideak": "9:10 — Ekintza plana berrikusi eta betetzen joan. Ikuskariarentzako urteko plana betetzen joan",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "dokumentazioa",
       "filtroak": {
-        "etapak": []
+        "etapak": [
+          "HH",
+          "LH",
+          "DBH"
+        ]
       },
       "irudia": null
     },
@@ -1289,12 +1687,34 @@
       "izenburua": "Prozesu/proiektuka aurkezpenak",
       "mota": "egutegikoa",
       "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "10:30 — Proiektu taldeen plangintzaren aurkezpena Areto Nagusian.",
+      "ordua": "10:30",
+      "argibideak": "10:30 — Proiektu taldeen plangintzaren aurkezpena Areto Nagusian. Ekintza planaren ideia nagusiak eta taldeak antolatuko dituen jarduera osagarrien egutegia azaldu.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Prozesu/proiektu koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1302,15 +1722,37 @@
     },
     {
       "id": "import_1787675763594_20",
-      "izenburua": "Kudeapp formakuntza aurreratua",
+      "izenburua": "Kudeapp formakuntza ",
       "mota": "egutegikoa",
       "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "12:00 — Mintegiak, kontaktuak, estrategia...",
+      "ordua": "12:00",
+      "argibideak": "12:00 — Mintegiak, kontaktuak, estrategia... Zalantzen sakua argitu (Alexia eta Kudeapp)",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1320,9 +1762,9 @@
       "id": "import_1787675763594_21",
       "izenburua": "PROGRAMAZIOAK formakuntza",
       "mota": "egutegikoa",
-      "data": "2026-09-03",
+      "data": "2026-09-16",
       "ordua": null,
-      "argibideak": "Liburutegian. Irakasle guztientzat.",
+      "argibideak": "Klaustroan azalduko da",
       "estekak": [],
       "arduradunak": [],
       "informatiboak": [],
@@ -1336,13 +1778,31 @@
       "id": "import_1787675763594_22",
       "izenburua": "Errekreoak eta zaintzak azalpena",
       "mota": "egutegikoa",
-      "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "Sarrerak, irteerak, laguntzaileak, elkarbizitza arauak irakurri. Koordinatzaileek azaldu.",
+      "data": "2026-09-04",
+      "ordua": "9:10",
+      "argibideak": "<br>",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1401,12 +1861,30 @@
       "izenburua": "Etapaka bilera: eguneko egitaraua",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
+      "ordua": "9:00",
       "argibideak": "9:00 — Eguneko plangintza etapaka.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1417,12 +1895,33 @@
       "izenburua": "Kudeapp bete",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
-      "argibideak": "9:30\n- Fitxa pertsonala bete\n- Ordutegiak sartuta egon behar dute",
+      "ordua": "9:30",
+      "argibideak": "9:30\n- Fitxa pertsonala bete&nbsp;<div>Ordutegiak sartuta egon behar dute</div>",
       "estekak": [],
-      "arduradunak": [],
+      "arduradunak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
       "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "kategoria": "dokumentazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1433,12 +1932,30 @@
       "izenburua": "Lehen klase eguneko antolakuntza adostu",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
-      "argibideak": "10:00 — Tutore eta koordinatzaileekin lehenengo egunaren antolaketa prestatu.",
+      "ordua": "10:00",
+      "argibideak": "10:00 — Tutore eta koordinatzaileekin lehenengo egunaren antolaketa prestatu.<div><!--StartFragment-->Sarrerak, irteerak, laguntzaileak, elkarbizitza arauak irakurri. Koordinatzaileek azaldu.<!--EndFragment--></div>",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1446,15 +1963,33 @@
     },
     {
       "id": "import_1787675763594_29",
-      "izenburua": "Programazioak formakuntza",
+      "izenburua": "IKP eguneraketaren lehenengo pilula",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
-      "argibideak": "11:00 — Liburutegian.",
+      "ordua": "11:00",
+      "argibideak": "11:00 — STEAM gelan<div>Ebaluazio irizpideak, arloak eta taldeak zehaztu, formakuntzak, etb</div>",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1465,12 +2000,25 @@
       "izenburua": "Gelak txukundu eta prestatu",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
+      "ordua": "12:00",
       "argibideak": "12:00 — Gelak txukundu, materialak antolatu. Unitate didaktikoak, programazioak, urteko plana lantzeko momentua.",
       "estekak": [],
-      "arduradunak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
       "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -1478,15 +2026,25 @@
     },
     {
       "id": "import_1787675763594_31",
-      "izenburua": "Txostena bete",
+      "izenburua": "Harrera plana: metodologietan formakuntza",
       "mota": "egutegikoa",
       "data": "2026-09-04",
-      "ordua": null,
-      "argibideak": "HH, LH eta DBH etapetako txostenak bete. Denek.",
+      "ordua": "12:00",
+      "argibideak": "Zuzendari pedagogikoaren bulegoan formakuntza (berrientzat bakarrik)",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "loli_gutierrez"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1497,11 +2055,25 @@
       "izenburua": " DBH hasten da — Harrera",
       "mota": "egutegikoa",
       "data": "2026-09-07",
-      "ordua": null,
+      "ordua": "10:30",
       "argibideak": "DBH ikasleen harrera eguna. Aurkezpena Areto Nagusian 10:30ean.\nEAEek lagundu.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
       "kategoria": "bestelakoa",
       "filtroak": {
         "etapak": []
@@ -1513,12 +2085,30 @@
       "izenburua": "Gelak martxan jarri HH-LH",
       "mota": "egutegikoa",
       "data": "2026-09-07",
-      "ordua": null,
+      "ordua": "9:10",
       "argibideak": "HH eta LH irakasleek gelak prestatzen jarraitu.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Beste motatako irakaslea"
+        }
+      ],
+      "kategoria": "logistika",
       "filtroak": {
         "etapak": []
       },
@@ -1529,12 +2119,34 @@
       "izenburua": "Orientazio zerbitzua: jarraibideak",
       "mota": "egutegikoa",
       "data": "2026-09-07",
-      "ordua": null,
+      "ordua": "12:00",
       "argibideak": "Liburutegian. Irakasle guztientzat. Orientazio zerbitzuaren jarraibideak ikasturte berrirako.",
       "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "pello_lauzirika"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
@@ -1725,6 +2337,372 @@
       "argibideak": "Prozesu/proiektu bakoitzeko iraileko atazak bukatuta egon behar dira.",
       "estekak": [],
       "arduradunak": [],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788175322981_0mfzcu",
+      "izenburua": "Atsedenaldia",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": "11:30",
+      "argibideak": "Kafea eta pintxoa",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788175406489_cy7b82",
+      "izenburua": "Atsedenaldia ",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": "11:30",
+      "argibideak": "Kafea eta pintxoa",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788175407166_ke3l3s",
+      "izenburua": "Atsedenaldia ",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": "11:30",
+      "argibideak": "Kafea eta pintxoa",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788175407807_0kkbd6",
+      "izenburua": "Atsedenaldia ",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": "11:30",
+      "argibideak": "Kafea eta pintxoa",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788175773908_6xqxz4",
+      "izenburua": "HE gelak antolatu",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": "13:00",
+      "argibideak": "HEko tutoreak koordinatuko dira EAEn laguntzarekin gelen antolakuntza",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "sandra_delafuente"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "loli_gutierrez"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "begona_lorono"
+        },
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
+      "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788177268280_0by3v6",
+      "izenburua": "ENBOR eskaria antolatu",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": "13:30",
+      "argibideak": "<ul><li>Kutxak gela batera mugitu.</li><li>Eskariaren orriaeskuan izan eta Enborren albarana</li><li>Aztertu eskaria, materiala eta albaranak bat datozela</li></ul><div>arazorik izatekotan Natxorekin hitz egin</div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "natxo_ribechini"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "logistika",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788178044520_xlwjyl",
+      "izenburua": "Harrera plana: tresna digitaletan formakuntza",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": "9:10",
+      "argibideak": "Zuzendari pedagogikoaren bulegoan formakuntza (berrientzat bakarrik)",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "ander_zarrabeitia"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "pertsona",
+          "balioa": "loli_gutierrez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "pello_lauzirika"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788178219543_140o8h",
+      "izenburua": "Etapaka bilera: eguneko egitaraua ",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": "9:00",
+      "argibideak": "9:00 — Eguneko plangintza etapaka.",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Etapa koordinatzailea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788178348314_1sdw4i",
+      "izenburua": "Atsedenaldia  ",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": "11:30",
+      "argibideak": "Kafea eta pintxoa",
+      "estekak": [],
+      "arduradunak": [],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788178409259_cjwrxu",
+      "izenburua": "Lan pertsonala",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": "12:30",
+      "argibideak": "Bakoitzak bere lan pertsonala egin: urteko plana, unitate didaktikoak, programazioak...",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Beste motatako irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
       "informatiboak": [],
       "kategoria": "bestelakoa",
       "filtroak": {
