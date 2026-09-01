@@ -898,7 +898,7 @@
       "estekak": [
         {
           "izena": "Formakuntzen erregistroa",
-          "url": "https://docs.google.com/spreadsheets/d/11HEFVsOKYddRPvAwDH_Zi-xSuvoIkOgt1yMvZEOhRKg/edit?gid=0#gid=0",
+          "url": "https://docs.google.com/spreadsheets/d/1-WVYm08DXFtvbiviCyoD5yGl5nh79hH8wFTyC_t1nes/edit?gid=0#gid=0",
           "ruta": "DRIVE/KUDEAKETA AURRERATUA/P06Personas/6.1Selec, acoj FORMA/dagokion urtea/For akuntzen erregistroa"
         }
       ],
@@ -941,7 +941,7 @@
       "estekak": [
         {
           "izena": "Kanal eta foroen erregistroa",
-          "url": "https://docs.google.com/spreadsheets/d/10-eYLCJIndzZCpdIHR2dMuWTuJr12REOA1tsfPTsLXg/edit?usp=sharing",
+          "url": "https://docs.google.com/spreadsheets/d/1KF9YubihzlCT2Xy24kdK-6n9zVEzcPXP170fy4HqOeA/edit?gid=0#gid=0",
           "ruta": "DRIVE/KUDEAKETA AURRERATUA/P05/5.5.Berrikuntza/dagokion urtea/Kanal eta foroetan partehartzea"
         }
       ],
@@ -2288,7 +2288,28 @@
       "ordua": null,
       "argibideak": "Irakasle guztiek ordutegiak KUDEAPPen sartuta izan behar dituzte.",
       "estekak": [],
-      "arduradunak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PRL irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
       "informatiboak": [],
       "kategoria": "bestelakoa",
       "filtroak": {
@@ -2320,7 +2341,12 @@
       "ordua": null,
       "argibideak": "Arloko irakasle guztiek programazioak prest izan behar dituzte.",
       "estekak": [],
-      "arduradunak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        }
+      ],
       "informatiboak": [],
       "kategoria": "bestelakoa",
       "filtroak": {
@@ -2533,7 +2559,13 @@
       "data": "2026-09-03",
       "ordua": "13:30",
       "argibideak": "<ul><li>Kutxak gela batera mugitu.</li><li>Eskariaren orriaeskuan izan eta Enborren albarana</li><li>Aztertu eskaria, materiala eta albaranak bat datozela</li></ul><div>arazorik izatekotan Natxorekin hitz egin</div>",
-      "estekak": [],
+      "estekak": [
+        {
+          "izena": "Enbor eskaria",
+          "url": "https://docs.google.com/spreadsheets/d/1D_njcatHFI9OD4n6zkJeePFo7cTxDi4smHP8oxdoCS8/edit?gid=23390432#gid=23390432",
+          "ruta": ""
+        }
+      ],
       "arduradunak": [
         {
           "mota": "pertsona",
@@ -2705,6 +2737,479 @@
       ],
       "informatiboak": [],
       "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788214231058_qr849q",
+      "izenburua": "LANGILEEN KUDEAKETARAKO GIDA",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "",
+      "estekak": [
+        {
+          "izena": "Langileen kudeaketarako gida",
+          "url": "https://docs.google.com/document/d/1jU2pfFks_Z1TzUBL1rASnWO_Ey1C9f5qztdtkx3utY8/edit?usp=sharing",
+          "ruta": "Kudeaketa Aurreratua/P06 Personas/6.1 Selec, acog FORMA/PE24-28/2026-2027/HARRERA PLANA ETA GAINERAKO  DOKUMENTAZIO OROKORRA"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Zuzendaritza taldea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "PAS/EAE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        }
+      ],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788214786419_zl9ry6",
+      "izenburua": "Behaketa medikoa",
+      "mota": "egutegikoa",
+      "data": "2026-09-01",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Ane Miren</li><li>9:15: Arrate</li><li>9:30: Ander Alvarez</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "arrate_monzon"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "anemiren_sanchez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_alvarez"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788214961111_04jswz",
+      "izenburua": "Behaketa medikoa ",
+      "mota": "egutegikoa",
+      "data": "2026-09-02",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Maitane - Nerea Fournier</li><li>9:15: Amaia Vergel</li><li>9:30: Alva De Prado</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "maitane_hernandez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_fournier"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "amaia_vergel"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "alva_deprado"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788214973234_s1qq1u",
+      "izenburua": "Behaketa medikoa ",
+      "mota": "egutegikoa",
+      "data": "2026-09-03",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Txaro - Sergio</li><li>9:15: Unamuno</li><li>9:30: David</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "txaro_cores"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "sergio_gorostiza"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "ander_unamuno"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "david_fernandez"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788214975066_y7c7hz",
+      "izenburua": "Behaketa medikoa ",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Javi - Maddi</li><li>9:15: Alba Gonzalez</li><li>9:30: Olatz</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "alba_gonzalez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "olatz_ruiz"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "javier_baldazo"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "maddi_martinez"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215274363_urtazc",
+      "izenburua": "Behaketa medikoa  ",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Naia Sanchez - Nekane</li><li>9:15: Patricia</li><li>9:30: Oihane</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "naia_sanchez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nekane_plaza"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "patricia_quintanilla"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "oihane_fraile"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215275376_zi4jcu",
+      "izenburua": "Behaketa medikoa  (kopia)",
+      "mota": "egutegikoa",
+      "data": "2026-09-08",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><div><ul><li>8:45: Naia Etxebarria&nbsp;</li><li>9:00:&nbsp;\nIrune<!--EndFragment--></li><li>9:15: Oskotz</li><li>9:30: Leire Navas</li></ul></div></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "naia_etxebarria"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "irune_uriarte"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "nerea_oskotz"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "leire_navas"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215276261_oj3h8k",
+      "izenburua": "Behaketa medikoa  ",
+      "mota": "egutegikoa",
+      "data": "2026-09-09",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Igor - Marta</li><li>9:15: Gemma</li><li>9:30: Irati</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "igor_arribas"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "marta_sanz"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "gemma_arrizabalaga"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "irati_castresana"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215277058_5k5wbd",
+      "izenburua": "Behaketa medikoa  ",
+      "mota": "egutegikoa",
+      "data": "2026-09-10",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Gotzone - Maider</li><li>9:15: Maialen</li><li>9:30: Henar</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "gotzone_vazquez"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "maider_mier"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "maialen_etxebarria"
+        },
+        {
+          "mota": "pertsona",
+          "balioa": "henar_perez"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215278049_gicnnp",
+      "izenburua": "Behaketa medikoa  ",
+      "mota": "egutegikoa",
+      "data": "2026-09-11",
+      "ordua": "9:00",
+      "argibideak": "Behaketa medikua:<div><ul><li>9:00: Rafa</li></ul></div>",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "pertsona",
+          "balioa": "rafa_gonzalez"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788215799678_mo05hj",
+      "izenburua": "Pasaden kurtsoko azterketak bota",
+      "mota": "egutegikoa",
+      "data": "2026-09-04",
+      "ordua": null,
+      "argibideak": "Pasaden urteko azterketa guztiak ikastetxeko paper kontenedoreetara bota (astelehenean udaletxetik etorriko dira azterketak eraman eta suntsitzeko)",
+      "estekak": [],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "bestelakoa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788216080183_j56prb",
+      "izenburua": "Familien bilera erregistroa",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Familia guztiekin izandako bileren erregistroa egin (kursto hasierako bilerara etorri diren familiak barne).&nbsp;<div>Zerbait oso garrantzitsua landu baduzue bileran, komeni da erregistroan laburpen txikia idaztea</div>",
+      "estekak": [
+        {
+          "izena": "Familiekin bilera erregistroa",
+          "url": "https://docs.google.com/spreadsheets/d/1goi0x7JM7fLWjyUTWpP7JqXgGbcm1OCCqgtm4Q_lknM/edit?usp=sharing",
+          "ruta": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        }
+      ],
+      "informatiboak": [],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788216297144_81fmd7",
+      "izenburua": "Irteerak eta alergiak",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "Irteerak eta alergiak dokumentua eguneratu eta paper guztiak jasotzean, koordinatzaileari eman",
+      "estekak": [
+        {
+          "izena": "Irteerak eta alergiak",
+          "url": "https://docs.google.com/spreadsheets/d/1K-HfI36fnXP1jEkFrRY9PnDOBDn-boIBTCX10u0V6og/edit?usp=drive_link",
+          "ruta": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Tutorea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "rola",
+          "balioa": "Arloko irakaslea"
+        },
+        {
+          "mota": "rola",
+          "balioa": "PT"
+        },
+        {
+          "mota": "rola",
+          "balioa": "EAE"
+        }
+      ],
+      "kategoria": "dokumentazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788217738783_uc7ipq",
+      "izenburua": "Lehen egunetako antolamendua",
+      "mota": "egutegikoa",
+      "data": "2026-09-07",
+      "ordua": null,
+      "argibideak": "Lehenengo egunetan zelan antolatuko garen zehaztuko dugu. Linkean sartu ezkero, informazio guztia eskuratu dezakezue",
+      "estekak": [
+        {
+          "izena": "Sarrerak eta irteerak",
+          "url": "https://docs.google.com/document/d/1Rxi-2yAiqHFHiGIByk7Rw7oNsHMcwfntE3QQPHr6uVs/edit?tab=t.0",
+          "ruta": ""
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Zuzendaritza taldea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        }
+      ],
+      "kategoria": "koordinazioa",
       "filtroak": {
         "etapak": []
       },
