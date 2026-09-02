@@ -1396,8 +1396,19 @@
       "mota": "egutegikoa",
       "data": "2026-09-02",
       "ordua": "10:00",
-      "argibideak": "10:00 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
-      "estekak": [],
+      "argibideak": "10:00 — Estekan duzuen gidoia eta erreferentziazko dokumentuak erabili. Ekainean sortutatko zalantzez hitz egin eta ikasleen egoeren birpasoa",
+      "estekak": [
+        {
+          "izena": "Koordinazio dokumentua",
+          "url": "https://docs.google.com/document/d/1Hlk7cLiEx8YkBt1dZ22D7nW7C_mKpB5tybETnshcj6w/edit?tab=t.0",
+          "ruta": "Kudeaketa Aurreratua/ 01 hezkuntza proiektua/1.9 koordinazioa"
+        },
+        {
+          "izena": "Gida dokumentua",
+          "url": "https://docs.google.com/document/d/1Iey09_rwWm82ZojzAJTnBLwKFgcoliIoPQn3hgKjntc/edit?usp=drive_link",
+          "ruta": ""
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
@@ -1426,8 +1437,19 @@
       "mota": "egutegikoa",
       "data": "2026-09-02",
       "ordua": "12:00",
-      "argibideak": "12:00 — Kurtso hasierako Check-listean dagoen gidoia eta erreferentziazko dokumentuak erabili.",
-      "estekak": [],
+      "argibideak": "12:00 —&nbsp;Estekan duzuen gidoia eta erreferentziazko dokumentuak erabili. Ekainean sortutatko zalantzez hitz egin eta kurtsoka lantzen dena birpasatu<!--EndFragment-->",
+      "estekak": [
+        {
+          "izena": "Koordinazio dokumentua",
+          "url": "https://docs.google.com/document/d/1isR2y0s6cmbP5YAEdJ6CkXkKtoGoJELhppEDchZI1KA/edit?usp=drive_link",
+          "ruta": ""
+        },
+        {
+          "izena": "Gida dokumentua",
+          "url": "https://docs.google.com/document/d/12dfs0VJypCzvZGW4bIgRwguroYdG88KwU2815Ldi7ro/edit?usp=drive_link",
+          "ruta": ""
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
