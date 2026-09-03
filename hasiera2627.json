@@ -1837,38 +1837,6 @@
       "irudia": null
     },
     {
-      "id": "import_1787675763594_23",
-      "izenburua": "Prozesu/proiektuka bilerak + Urteko Plana",
-      "mota": "egutegikoa",
-      "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "Proiektuka bilera. Urteko Plana lantzeko saioa.",
-      "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
-      "id": "import_1787675763594_24",
-      "izenburua": "Gelak martxan jarri",
-      "mota": "egutegikoa",
-      "data": "2026-09-03",
-      "ordua": null,
-      "argibideak": "Irakasle guztiek gelak prestatu: Tresna digitalak, Berriak Harrera plana.",
-      "estekak": [],
-      "arduradunak": [],
-      "informatiboak": [],
-      "kategoria": "bestelakoa",
-      "filtroak": {
-        "etapak": []
-      },
-      "irudia": null
-    },
-    {
       "id": "import_1787675763594_26",
       "izenburua": "Etapaka bilera: eguneko egitaraua",
       "mota": "egutegikoa",
