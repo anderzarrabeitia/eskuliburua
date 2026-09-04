@@ -1914,7 +1914,13 @@
       "data": "2026-09-04",
       "ordua": "10:00",
       "argibideak": "10:00 — Tutore eta koordinatzaileekin lehenengo egunaren antolaketa prestatu.<div><!--StartFragment-->Sarrerak, irteerak, laguntzaileak, elkarbizitza arauak irakurri. Koordinatzaileek azaldu.<!--EndFragment--></div>",
-      "estekak": [],
+      "estekak": [
+        {
+          "izena": "Lehenengo egunetako antolakuntza",
+          "url": "https://docs.google.com/document/d/1Rxi-2yAiqHFHiGIByk7Rw7oNsHMcwfntE3QQPHr6uVs/edit?tab=t.0",
+          "ruta": ""
+        }
+      ],
       "arduradunak": [
         {
           "mota": "rola",
@@ -3187,6 +3193,50 @@
         {
           "mota": "etapa",
           "balioa": "LH"
+        }
+      ],
+      "kategoria": "koordinazioa",
+      "filtroak": {
+        "etapak": []
+      },
+      "irudia": null
+    },
+    {
+      "id": "ataza_1788426881245_iep3nd",
+      "izenburua": "Ikasturteko ekintza bereziak",
+      "mota": "orokorra",
+      "data": "",
+      "ordua": null,
+      "argibideak": "",
+      "estekak": [
+        {
+          "izena": "https://docs.google.com/spreadsheets/d/11YtDpFtkYPQWTSg3q-0FAyMoP-D07T99-zvP34AgtG4/edit?gid=0#gid=0",
+          "url": "https://docs.google.com/spreadsheets/d/11YtDpFtkYPQWTSg3q-0FAyMoP-D07T99-zvP34AgtG4/edit?gid=0#gid=0",
+          "ruta": "KUDEAKETA AURRERATUA/P01 hezkuntza proiektua/1.9 koordinazioa/24-28/26-27"
+        }
+      ],
+      "arduradunak": [
+        {
+          "mota": "rola",
+          "balioa": "Zuzendaritza taldea"
+        }
+      ],
+      "informatiboak": [
+        {
+          "mota": "etapa",
+          "balioa": "HE"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "HH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "LH"
+        },
+        {
+          "mota": "etapa",
+          "balioa": "DBH"
         }
       ],
       "kategoria": "koordinazioa",
